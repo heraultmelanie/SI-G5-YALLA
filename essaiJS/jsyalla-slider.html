@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>YallaJS</title>
+
+    <!-- VIEWPORT : responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS : lien -->
+    <link href="styles/jsyalla.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- ***** Images slider ***** -->
+    <section class="slider">
+        <ul>
+            <li class="slides slid_1">
+                <a href=""><img src="img-content/jano3.jpg"></a>
+            </li>
+            <li class="slides slid_2">
+                <a href=""><img src="img-content/jano4.jpg"></a>
+            </li>
+            <li class="slides slid_3">
+                <a href=""><img src="img-content/jano5.png"></a>
+            </li>
+            <li class="slides slid_4">
+                <a href=""><img src="img-content/work1.jpg"></a>
+            </li>
+            <li class="slides slid_5">
+                <a href=""><img src="img-content/work2.jpg"></a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ***** Bullets associées ***** -->
+    <div class="nav-bullet">
+        <ul>
+            <li>
+                <a href="#" class="bullets bul_1"></a>
+            </li>
+            <li>
+                <a href="#" class="bullets bul_2"></a>
+            </li>
+            <li>
+                <a href="#" class="bullets bul_3"></a>
+            </li>
+            <li>
+                <a href="#" class="bullets bul_4"></a>
+            </li>
+            <li>
+                <a href="#" class="bullets bul_5"></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        var slideIndex = 0;
+        var bulletIndex = 0;
+        var slides = document.querySelectorAll(".slides");
+        var bullets = document.querySelectorAll(".nav-bullet li");
+        carousel();
+
+        function carousel() {
+            // img
+            for (var i = 0; i < slides.length; i++) {
+                oneSlide = slides[i];
+                oneSlide.style.display = "none";
+            }
+            // bullets
+            for (var i = 0; i < bullets.length; i++) {
+                oneBullet = bullets[i];
+                oneBullet.style.border = "5px solid #2b6847";
+                // au clic : non fonctionnel
+                oneBullet.addEventListener('click', function () {
+                    slides[slideIndex].style.display = "block";
+                })
+            }
+
+            // si fin tour carousel, retour au premier
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+                bulletIndex = 0;
+            }
+            if (slideIndex >= slides.length + 1) {
+                bulletIndex = 0;
+            }
+
+            slides[slideIndex].style.display = "block";
+            bullets[bulletIndex].style.border = "5px solid #ffca59";
+            slideIndex++;
+            bulletIndex++;
+            setTimeout(carousel, 3000);
+            // appelle carousel au bout de 3000 ms. 
+        }
+    </script>
+
+</body>
+
+</html>
