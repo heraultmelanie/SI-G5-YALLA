@@ -4,20 +4,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="16x16" href="img-layout/yalla-logo">
 	<meta content="Présentation de l'association Yalla pour les enfants">
-	<link rel="stylesheet" href="styles/style.scss">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Rozha+One" rel="stylesheet">
+	<link rel="stylesheet" href="styles/css/style.css">
 	<meta charset="UTF-8">
 	<title>Yalla - Pour les enfants</title>
 </head>
 <body>
 	<header>
-	<h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla"></a></h1>
+		<h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1>
 	<!-- <input id="burger" type="checkbox" /> -->
 
-		    <label for="burger">
-		        <span></span>
-		        <span></span>
-		        <span></span>
-		    </label>
+	    <label for="burger">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	    </label>
 		<nav>
 			<ul>
 				<li>
@@ -29,22 +30,24 @@
 				<li>
 					<a href="#">Nous connaître</a>
 				</li>
-				<li>
+				<li class="help-us">
 					<a href="#">Aidez-nous !</a>
 				</li>
 			</ul>
 		</nav>
-		<h2>Pour le bonheur des enfants syriens</h2>
+		<h2>Pour <span id="slide-words">LE BONHEUR</span></br> des enfants syriens</h2>
+		<button class="help-us">Aidez-nous !</button>
 	</header>
 
 	<main class="homepage-content">
-		<section class="hompage-section">
-			<article class="hompage-presentation">
+		<section class="homepage-section">
+			<article class="homepage-presentation">
 				<h3>? Qui sommes nous</h3>
 				<p>Depuis maintenant 4 ans, Yalla! Pour les enfants est une association de droit français indépendante, apolitique, non-confessionnelle et impartiale.</p>
-				<p>Basée au Liban, Yalla! se donne pour mission première de remettre les enfants déscolarisés à la suite d'un conflit sur le chemin de l'école. <button><a href="#">En savoir plus</a></button></p>
+				<p>Basée au Liban, Yalla! se donne pour mission première de remettre les enfants déscolarisés à la suite d'un conflit sur le chemin de l'école. 
+				<button><a href="#">En savoir plus</a></button></p>
 			</article>
-			<article class="hompage-newsletter">
+			<article class="homepage-newsletter">
 				<h4>Newsletter</h4>
 				<p>Entrez votre adresse mail pour ne rien manquer de nos activités</p>
 				<input type="text" id="enter-mail" placeholder="ex : vbadach@gmail.com">
