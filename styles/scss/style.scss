@@ -1,15 +1,13 @@
 @import "partial/reset";
-
 $red: #902a15;
 $yellow: #ffca59;
 $green: #2b6847;
 $blue: #243160;
-
-$rozha: 'Rozha One', serif;
-$poppins: 'Poppins', sans-serif;
-
+$rozha: 'Rozha One',
+serif;
+$poppins: 'Poppins',
+sans-serif;
 @import "partial/commun";
-
 @import "partial/header";
-
+@import "partial/aboutus";
 @import "partial/homepage";

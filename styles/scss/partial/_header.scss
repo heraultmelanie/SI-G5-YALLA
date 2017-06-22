@@ -1,43 +1,43 @@
 header {
-	overflow: hidden;
-	background-image:url(../../img-layout/header-fond.jpg);
-	background-repeat: no-repeat;
-	height: 465px;
-	background-size: cover;
-	h1 {
-		a {
-			#logo {
-				height: 125px;	
-				width: 108px;
-				margin-top: 108px;
-				margin-left: 35%;
-			}
-		}
-	}
-	nav {
-		display: none;
-		ul  {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			list-style-type: none;
-
-		}
-	}
-	h2 {
-		height: 102px;
-		font-size: 27px;
-		color: #fff;
-		line-height: 36px;
-		font-weight: 400;
-		margin-left: 12%;
-		margin-top:  49px;
-		#slide-words{
-			color: $blue;
-			font-size: 43px;
-
-		}
-
-	}
-
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: 465px;
+    background-size: cover;
+    h1 {
+        a {
+            #logo {
+                height: 125px;
+                width: 108px;
+                margin-top: 108px;
+                margin-left: 35%;
+            }
+        }
+    }
+    .icone-burger{
+        display: none;
+    }
+    /* nav burger menu au clic */
+    nav {
+        display: none;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+        }
+    }
+    /* titre principal */
+    h2 {
+        height: 102px;
+        font-size: 27px;
+        color: #fff;
+        line-height: 36px;
+        font-weight: 400;
+        margin-left: 12%;
+        margin-top: 49px;
+        #slide-words {
+            color: $blue;
+            font-size: 43px;
+        }
+    }
 }

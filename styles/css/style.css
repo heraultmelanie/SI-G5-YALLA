@@ -16,7 +16,8 @@
   clear: both; }
 
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%; }
 
 h2,
 h3,
@@ -44,15 +45,18 @@ a {
 
 header {
   overflow: hidden;
-  background-image: url(../../img-layout/header-fond.jpg);
   background-repeat: no-repeat;
   height: 465px;
-  background-size: cover; }
+  background-size: cover;
+  /* nav burger menu au clic */
+  /* titre principal */ }
   header h1 a #logo {
     height: 125px;
     width: 108px;
     margin-top: 108px;
     margin-left: 35%; }
+  header .icone-burger {
+    display: none; }
   header nav {
     display: none; }
     header nav ul {
@@ -71,6 +75,171 @@ header {
     header h2 #slide-words {
       color: #243160;
       font-size: 43px; }
+
+header.aboutus-header {
+  position: relative;
+  background-image: url(../../img-layout/expo_ant.jpg); }
+  header.aboutus-header h2 {
+    font-family: 'Rozha One', serif;
+    font-size: 24px;
+    text-align: center;
+    height: auto;
+    margin: 0; }
+  header.aboutus-header .aboutus-team {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    border: 2px solid yellow; }
+    header.aboutus-header .aboutus-team ul.team-picture {
+      position: relative;
+      list-style-type: none; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-frame {
+        display: block;
+        position: absolute;
+        top: 15%;
+        width: 122px;
+        height: 122px;
+        border: 10px solid #FFF;
+        background: #fff;
+        border: 10px solid #FFF;
+        border-radius: 50%; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
+        left: -15vh; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
+        right: -15vh; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-active {
+        display: block;
+        width: 174px;
+        height: 174px;
+        border: 10px solid #FFF;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto; }
+        header.aboutus-header .aboutus-team ul.team-picture li.team-active img {
+          width: 100%;
+          height: 100%; }
+      header.aboutus-header .aboutus-team ul.team-picture li {
+        display: none; }
+    header.aboutus-header .aboutus-team ul.team-name {
+      position: relative;
+      list-style-type: none; }
+      header.aboutus-header .aboutus-team ul.team-name li.name-active {
+        display: inline-block;
+        width: 100%;
+        color: #FFF; }
+        header.aboutus-header .aboutus-team ul.team-name li.name-active h5 {
+          margin-top: 10px;
+          font-family: 'Rozha One', serif;
+          font-size: 18px;
+          text-align: center;
+          color: #fff; }
+        header.aboutus-header .aboutus-team ul.team-name li.name-active p {
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          text-align: center; }
+      header.aboutus-header .aboutus-team ul.team-name li {
+        display: none; }
+
+main.aboutus-main div {
+  position: relative;
+  margin-bottom: 58px;
+  font-family: 'Poppins', sans-serif; }
+  main.aboutus-main div h3 {
+    width: 80%;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #902a15;
+    text-align: right; }
+    main.aboutus-main div h3 span {
+      font-size: 48px;
+      padding: 0 2%; }
+  main.aboutus-main div h4 {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+    color: #243160; }
+  main.aboutus-main div p.catch-line {
+    width: 80%;
+    margin: 25px auto 47px auto;
+    color: #902a15;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right; }
+  main.aboutus-main div img {
+    display: block;
+    position: absolute;
+    height: 192px;
+    bottom: 25vh;
+    left: -5vh; }
+  main.aboutus-main div p.content-philosophy {
+    margin: 0 10% 17px 10%;
+    font-size: 12px;
+    line-height: 18px; }
+  main.aboutus-main div p.ct-philo1 {
+    width: 46%;
+    float: right;
+    text-align: right; }
+  main.aboutus-main div p.ct-philo2 {
+    width: 80%;
+    float: left; }
+main.aboutus-main .values .img {
+  width: 202px;
+  height: 202px;
+  margin: 15px 0 0 0;
+  background: purple; }
+  main.aboutus-main .values .img strong {
+    position: absolute;
+    bottom: 15%;
+    font-size: 14px;
+    font-family: 'Rozha One', serif;
+    color: #2b6847;
+    background: #fff;
+    padding: 5%; }
+main.aboutus-main .values .img-left strong {
+  right: -30%; }
+main.aboutus-main .values .img-right {
+  margin: 0 0 0 45%; }
+  main.aboutus-main .values .img-right strong {
+    left: 0; }
+main.aboutus-main .values .img-centered {
+  margin: 0 auto; }
+  main.aboutus-main .values .img-centered strong {
+    left: 0; }
+main.aboutus-main .values p {
+  width: 80%;
+  margin: 0 auto 65px auto;
+  padding-top: 7px;
+  font-size: 12px;
+  line-height: 18px; }
+  main.aboutus-main .values p span.law-rights {
+    color: #2b6847;
+    text-decoration: underline; }
+main.aboutus-main .values p.content-left {
+  text-align: left; }
+main.aboutus-main .values p.content-right {
+  text-align: right; }
+main.aboutus-main div.secularism .img2 {
+  position: relative;
+  width: 90%;
+  height: 170px;
+  margin: 0 0 0 10%;
+  background: purple; }
+  main.aboutus-main div.secularism .img2 strong {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    font-family: 'Rozha One', serif;
+    font-size: 14px;
+    padding: 1%;
+    color: #2b6847;
+    background: yellow; }
+main.aboutus-main .gif {
+  width: 100%;
+  height: 252px;
+  background: blue; }
 
 .homepage-content .homepage-section .homepage-presentation h3 {
   color: #902a15;
