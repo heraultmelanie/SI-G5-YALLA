@@ -66,16 +66,15 @@ header {
     color: #fff;
     line-height: 36px;
     font-weight: 400;
-    margin-left: 32px;
+    margin-left: 12%;
     margin-top: 49px; }
     header h2 #slide-words {
       color: #243160;
       font-size: 43px; }
 
-.homepage-content .hompepage-section .homepage-presentation h3 {
-  float: right;
+.homepage-content .homepage-section .homepage-presentation h3 {
   color: #902a15;
-  font-size: 48px;
+  font-size: 37px;
   margin-top: 32px; }
 
 /*# sourceMappingURL=style.css.map */
