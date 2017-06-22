@@ -1,0 +1,81 @@
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+h2,
+h3,
+h4,
+h5,
+nav ul li a {
+  font-family: "Rozha One", serif; }
+
+a {
+  text-decoration: none; }
+
+.help-us {
+  background: #243160;
+  color: #fff;
+  width: 473.5px;
+  height: 57px;
+  padding: 10px 5%;
+  font-size: 27px;
+  font-family: "Rozha One", serif;
+  border: 1px solid #243160; }
+
+.partners-row1 img,
+.partners-row2 img {
+  width: 20%; }
+
+header {
+  overflow: hidden;
+  background-image: url(../../img-layout/header-fond.jpg);
+  background-repeat: no-repeat;
+  height: 465px;
+  background-size: cover; }
+  header h1 a #logo {
+    height: 125px;
+    width: 108px;
+    margin-top: 108px;
+    margin-left: 35%; }
+  header nav {
+    display: none; }
+    header nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style-type: none; }
+  header h2 {
+    height: 102px;
+    font-size: 27px;
+    color: #fff;
+    line-height: 36px;
+    font-weight: 400;
+    margin-left: 32px;
+    margin-top: 49px; }
+    header h2 #slide-words {
+      color: #243160;
+      font-size: 43px; }
+
+.homepage-content .hompepage-section .homepage-presentation h3 {
+  float: right;
+  color: #902a15;
+  font-size: 48px;
+  margin-top: 32px; }
+
+/*# sourceMappingURL=style.css.map */
