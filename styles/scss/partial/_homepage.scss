@@ -1,12 +1,23 @@
 .homepage-content {
-	.hompepage-section {
+	.homepage-section {
 		.homepage-presentation {
 			h3 {
-				float: right;
 				color: $red;
-				font-size: 48px;
+				font-size: 37px;
 				margin-top: 32px;
 			}
+			p {
+				
+			}
+		}
+		.homepage-newsletter {
+			h4{
+
+			}
+			p {
+
+			}
+
 		}
 	}
 }
