@@ -1,6 +1,7 @@
 header.aboutus-header {
     position: relative;
     background-image: url(../../img-layout/expo_ant.jpg);
+    /* ----- HEADER ----- */
     h2 {
         font-family: 'Rozha One', serif;
         font-size: 24px;
@@ -28,10 +29,10 @@ header.aboutus-header {
                 border-radius: 50%;
             }
             li.team-frame.left {
-                left: -15vh;
+                left: -22vh;
             }
             li.team-frame.right {
-                right: -15vh;
+                right: -22vh;
             }
             li.team-active {
                 display: block;
@@ -78,11 +79,18 @@ header.aboutus-header {
     }
 }
 
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
 main.aboutus-main {
+    font-family: 'Poppins', sans-serif;
+    /* ----- COMMUN DIV ----- */
     div {
         position: relative;
         margin-bottom: 58px;
-        font-family: 'Poppins', sans-serif;
         h3 {
             width: 80%;
             margin-top: 40px;
@@ -101,6 +109,7 @@ main.aboutus-main {
             text-align: right;
             color: $blue;
         }
+        /* ----- DIV : Aide humanitaire proximité ----- */
         p.catch-line {
             width: 80%;
             margin: 25px auto 47px auto;
@@ -109,12 +118,12 @@ main.aboutus-main {
             line-height: 18px;
             text-align: right;
         }
-        img {
+        img.arabic-script {
             display: block;
             position: absolute;
-            height: 192px;
+            height: 170px;
             bottom: 25vh;
-            left: -5vh;
+            left: -3vh;
         }
         p.content-philosophy {
             margin: 0 10% 17px 10%;
@@ -122,7 +131,7 @@ main.aboutus-main {
             line-height: 18px;
         }
         p.ct-philo1 {
-            width: 46%;
+            width: 60%;
             float: right;
             text-align: right;
         }
@@ -131,81 +140,205 @@ main.aboutus-main {
             float: left;
         }
     }
+    /* ----- DIV : toutes valeurs ----- */
     .values {
-        .img {
-            width: 202px;
-            height: 202px;
-            margin: 15px 0 0 0;
-            background: purple;
+        .content-img-strong {
+            position: relative;
+            .ct-img {
+                width: 65%;
+                margin: 15px 0 0 0;
+                img {
+                    width: 100%;
+                }
+            }
             strong {
+                width: 65%;
                 position: absolute;
-                bottom: 15%;
+                bottom: 10%;
                 font-size: 14px;
                 font-family: 'Rozha One', serif;
                 color: $green;
                 background: #fff;
-                padding: 5%;
+                padding: 2%;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
             }
-        }
-        .img-left {
-            strong {
-                right: -30%;
-            }
-        }
-        .img-right {
-            margin: 0 0 0 45%;
-            strong {
-                left: 0;
-            }
-        }
-        .img-centered {
-            margin: 0 auto;
-            strong {
-                left: 0;
-            }
-        }
-        p {
-            width: 80%;
-            margin: 0 auto 65px auto;
-            padding-top: 7px;
-            font-size: 12px;
-            line-height: 18px;
-            span.law-rights {
-                color: $green;
-                text-decoration: underline;
-            }
-        }
-        p.content-left {
-            text-align: left;
-        }
-        p.content-right {
-            text-align: right;
+            
         }
     }
-    div.secularism {
-        .img2 {
-            position: relative;
+    .img-left {
+        strong {
+            left: 35%;
+        }
+    }
+    .img-right {
+        //margin: 0 0 0 45%;
+        strong {
+            //left: 0;
+        }
+    }
+    .img-centered {
+        //margin: 0 auto;
+        strong {
+            //left: 0;
+        }
+    }
+    p {
+        width: 80%;
+        margin: 0 auto 65px auto;
+        padding-top: 7px;
+        font-size: 12px;
+        line-height: 18px;
+        span.law-rights {
+            color: $green;
+            text-decoration: underline;
+        }
+    }
+    p.content-left {
+        text-align: left;
+    }
+    p.content-right {
+        text-align: right;
+    }
+}
+
+
+/* ----- DIV : Laicité ----- */
+
+div.secularism {
+    position: relative;
+    .content-img2-strong {
+        .ct-img2 {
             width: 90%;
-            height: 170px;
             margin: 0 0 0 10%;
-            background: purple;
-            strong {
-                display: block;
+            img {
                 width: 100%;
-                position: absolute;
-                bottom: 10%;
-                text-align: center;
-                font-family: 'Rozha One', serif;
-                font-size: 14px;
-                padding: 1%;
-                color: $green;
-                background: yellow;
             }
         }
+        strong {
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 15%;
+            text-align: center;
+            font-family: 'Rozha One', serif;
+            font-size: 14px;
+            padding: 2%;
+            color: $green;
+            background: #fff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+        }
     }
-    .gif {
+}
+
+
+/* ----- DIV : Transparence ----- */
+
+div.transparency {
+    strong {
         width: 100%;
-        height: 252px;
-        background: blue;
+        text-align: center;
+    }
+}
+
+
+/* ----- DIV : Gif ----- */
+
+.gif {
+    width: 100%;
+    height: 252px;
+    background: blue;
+}
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 768px) {
+    main.aboutus-main {
+        /* ----- MEDIA COMMUN DIV ----- */
+        div {
+            h3 {
+                font-size: 36px;
+                span {
+                    font-size: 72px;
+                }
+            }
+            h4 {
+                margin: 0 auto 52px auto;
+                font-size: 36px;
+            }
+            /* ----- MEDIA DIV : Aide humanitaire proximité ----- */
+            p.catch-line {
+                width: 70%;
+                margin: 0 10% 64px 20%;
+                font-size: 24px;
+                line-height: 36px;
+            }
+            img.arabic-script {
+                height: 55%;
+                bottom: 8vh;
+            }
+            p.content-philosophy {
+                width: 48%;
+                margin: 0 10% 60px 10%;
+                font-size: 24px;
+                line-height: 36px;
+            }
+            p.ct-philo2 {
+                margin-left: 20%;
+            }
+        }
+        /* ----- MEDIA DIV : toutes valeurs ----- */
+        .values {
+            .ct-img {
+                width: 40%;
+                strong {
+                    display: block;
+                    width: 100%;
+                    font-size: 30px;
+                    padding: 5% 0;
+                    text-align: center;
+                    background: yellow;
+                }
+            }
+            .img-left {
+                strong {
+                    right: 0;
+                }
+            }
+            .img-right {
+                margin: 0 0 0 60%;
+                strong {}
+            }
+            .img-centered {
+                strong {}
+            }
+            p {
+                font-size: 30px;
+                line-height: 40px;
+                span.law-rights {}
+            }
+            p.content-left {}
+            p.content-right {}
+        }
+        /* ----- MEDIA DIV : Laicité ----- */
+        div.secularism {
+            .ct-img2 {
+                width: 60%;
+                margin: 0 0 0 40%;
+                strong {
+                    display: block;
+                    width: 100vh;
+                    font-size: 30px;
+                    text-align: right;
+                    padding-right: 10%;
+                    background: yellow;
+                }
+            }
+        }
+        /* ----- MEDIA DIV : Transparence ----- */
+        div.transparency {
+            strong {}
+        }
+        /* ----- MEDIA DIV : Gif ----- */
+        .gif {}
     }
 }

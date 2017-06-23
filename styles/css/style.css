@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0 auto;
   padding: 0; }
@@ -87,7 +88,8 @@ header {
 
 header.aboutus-header {
   position: relative;
-  background-image: url(../../img-layout/expo_ant.jpg); }
+  background-image: url(../../img-layout/expo_ant.jpg);
+  /* ----- HEADER ----- */ }
   header.aboutus-header h2 {
     font-family: 'Rozha One', serif;
     font-size: 24px;
@@ -113,9 +115,9 @@ header.aboutus-header {
         border: 10px solid #FFF;
         border-radius: 50%; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
-        left: -15vh; }
+        left: -22vh; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
-        right: -15vh; }
+        right: -22vh; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-active {
         display: block;
         width: 174px;
@@ -149,107 +151,175 @@ header.aboutus-header {
       header.aboutus-header .aboutus-team ul.team-name li {
         display: none; }
 
-main.aboutus-main div {
-  position: relative;
-  margin-bottom: 58px;
-  font-family: 'Poppins', sans-serif; }
-  main.aboutus-main div h3 {
+main.aboutus-main {
+  font-family: 'Poppins', sans-serif;
+  /* ----- COMMUN DIV ----- */
+  /* ----- DIV : toutes valeurs ----- */ }
+  main.aboutus-main div {
+    position: relative;
+    margin-bottom: 58px;
+    /* ----- DIV : Aide humanitaire proximité ----- */ }
+    main.aboutus-main div h3 {
+      width: 80%;
+      margin-top: 40px;
+      font-size: 24px;
+      color: #902a15;
+      text-align: right; }
+      main.aboutus-main div h3 span {
+        font-size: 48px;
+        padding: 0 2%; }
+    main.aboutus-main div h4 {
+      width: 80%;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: right;
+      color: #243160; }
+    main.aboutus-main div p.catch-line {
+      width: 80%;
+      margin: 25px auto 47px auto;
+      color: #902a15;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: right; }
+    main.aboutus-main div img.arabic-script {
+      display: block;
+      position: absolute;
+      height: 170px;
+      bottom: 25vh;
+      left: -3vh; }
+    main.aboutus-main div p.content-philosophy {
+      margin: 0 10% 17px 10%;
+      font-size: 12px;
+      line-height: 18px; }
+    main.aboutus-main div p.ct-philo1 {
+      width: 60%;
+      float: right;
+      text-align: right; }
+    main.aboutus-main div p.ct-philo2 {
+      width: 80%;
+      float: left; }
+  main.aboutus-main .values .content-img-strong {
+    position: relative; }
+    main.aboutus-main .values .content-img-strong .ct-img {
+      width: 65%;
+      margin: 15px 0 0 0; }
+      main.aboutus-main .values .content-img-strong .ct-img img {
+        width: 100%; }
+    main.aboutus-main .values .content-img-strong strong {
+      width: 65%;
+      position: absolute;
+      bottom: 10%;
+      font-size: 14px;
+      font-family: 'Rozha One', serif;
+      color: #2b6847;
+      background: #fff;
+      padding: 2%;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
+  main.aboutus-main .img-left strong {
+    left: 35%; }
+  main.aboutus-main p {
     width: 80%;
-    margin-top: 40px;
-    font-size: 24px;
-    color: #902a15;
-    text-align: right; }
-    main.aboutus-main div h3 span {
-      font-size: 48px;
-      padding: 0 2%; }
-  main.aboutus-main div h4 {
-    width: 80%;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: right;
-    color: #243160; }
-  main.aboutus-main div p.catch-line {
-    width: 80%;
-    margin: 25px auto 47px auto;
-    color: #902a15;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: right; }
-  main.aboutus-main div img {
-    display: block;
-    position: absolute;
-    height: 192px;
-    bottom: 25vh;
-    left: -5vh; }
-  main.aboutus-main div p.content-philosophy {
-    margin: 0 10% 17px 10%;
+    margin: 0 auto 65px auto;
+    padding-top: 7px;
     font-size: 12px;
     line-height: 18px; }
-  main.aboutus-main div p.ct-philo1 {
-    width: 46%;
-    float: right;
+    main.aboutus-main p span.law-rights {
+      color: #2b6847;
+      text-decoration: underline; }
+  main.aboutus-main p.content-left {
+    text-align: left; }
+  main.aboutus-main p.content-right {
     text-align: right; }
-  main.aboutus-main div p.ct-philo2 {
-    width: 80%;
-    float: left; }
-main.aboutus-main .values .img {
-  width: 202px;
-  height: 202px;
-  margin: 15px 0 0 0;
-  background: purple; }
-  main.aboutus-main .values .img strong {
-    position: absolute;
-    bottom: 15%;
-    font-size: 14px;
-    font-family: 'Rozha One', serif;
-    color: #2b6847;
-    background: #fff;
-    padding: 5%; }
-main.aboutus-main .values .img-left strong {
-  right: -30%; }
-main.aboutus-main .values .img-right {
-  margin: 0 0 0 45%; }
-  main.aboutus-main .values .img-right strong {
-    left: 0; }
-main.aboutus-main .values .img-centered {
-  margin: 0 auto; }
-  main.aboutus-main .values .img-centered strong {
-    left: 0; }
-main.aboutus-main .values p {
-  width: 80%;
-  margin: 0 auto 65px auto;
-  padding-top: 7px;
-  font-size: 12px;
-  line-height: 18px; }
-  main.aboutus-main .values p span.law-rights {
-    color: #2b6847;
-    text-decoration: underline; }
-main.aboutus-main .values p.content-left {
-  text-align: left; }
-main.aboutus-main .values p.content-right {
-  text-align: right; }
-main.aboutus-main div.secularism .img2 {
-  position: relative;
-  width: 90%;
-  height: 170px;
-  margin: 0 0 0 10%;
-  background: purple; }
-  main.aboutus-main div.secularism .img2 strong {
+
+/* ----- DIV : Laicité ----- */
+div.secularism {
+  position: relative; }
+  div.secularism .content-img2-strong .ct-img2 {
+    width: 90%;
+    margin: 0 0 0 10%; }
+    div.secularism .content-img2-strong .ct-img2 img {
+      width: 100%; }
+  div.secularism .content-img2-strong strong {
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     text-align: center;
     font-family: 'Rozha One', serif;
     font-size: 14px;
-    padding: 1%;
+    padding: 2%;
     color: #2b6847;
-    background: yellow; }
-main.aboutus-main .gif {
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
+
+/* ----- DIV : Transparence ----- */
+div.transparency strong {
+  width: 100%;
+  text-align: center; }
+
+/* ----- DIV : Gif ----- */
+.gif {
   width: 100%;
   height: 252px;
   background: blue; }
 
+@media screen and (min-width: 768px) {
+  main.aboutus-main {
+    /* ----- MEDIA COMMUN DIV ----- */
+    /* ----- MEDIA DIV : toutes valeurs ----- */
+    /* ----- MEDIA DIV : Laicité ----- */
+    /* ----- MEDIA DIV : Transparence ----- */
+    /* ----- MEDIA DIV : Gif ----- */ }
+    main.aboutus-main div {
+      /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+      main.aboutus-main div h3 {
+        font-size: 36px; }
+        main.aboutus-main div h3 span {
+          font-size: 72px; }
+      main.aboutus-main div h4 {
+        margin: 0 auto 52px auto;
+        font-size: 36px; }
+      main.aboutus-main div p.catch-line {
+        width: 70%;
+        margin: 0 10% 64px 20%;
+        font-size: 24px;
+        line-height: 36px; }
+      main.aboutus-main div img.arabic-script {
+        height: 55%;
+        bottom: 8vh; }
+      main.aboutus-main div p.content-philosophy {
+        width: 48%;
+        margin: 0 10% 60px 10%;
+        font-size: 24px;
+        line-height: 36px; }
+      main.aboutus-main div p.ct-philo2 {
+        margin-left: 20%; }
+    main.aboutus-main .values .ct-img {
+      width: 40%; }
+      main.aboutus-main .values .ct-img strong {
+        display: block;
+        width: 100%;
+        font-size: 30px;
+        padding: 5% 0;
+        text-align: center;
+        background: yellow; }
+    main.aboutus-main .values .img-left strong {
+      right: 0; }
+    main.aboutus-main .values .img-right {
+      margin: 0 0 0 60%; }
+    main.aboutus-main .values p {
+      font-size: 30px;
+      line-height: 40px; }
+    main.aboutus-main div.secularism .ct-img2 {
+      width: 60%;
+      margin: 0 0 0 40%; }
+      main.aboutus-main div.secularism .ct-img2 strong {
+        display: block;
+        width: 100vh;
+        font-size: 30px;
+        text-align: right;
+        padding-right: 10%;
+        background: yellow; } }
 header {
   background-image: url(../../img-layout/header-fond.jpg); }
 
