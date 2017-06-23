@@ -1,8 +1,12 @@
 header {	
-	background-image:url(../../img-layout/header-fond.jpg);
+	background-image:url(../../img-layout/header-fond1.jpg);
 	h1 {
 		a {
 			#logo {
+				height: 125px;	
+				width: 108px;
+				margin-top: 108px;
+				margin-left: 35%;
 			}
 		}
 	}
@@ -11,7 +15,31 @@ header {
 		}
 	}
 	h2 {
-		#slide-words{
+		height: 102px;
+		font-size: 27px;
+		color: #fff;
+		line-height: 36px;
+		font-weight: 400;
+		margin: 30px 15%;
+	}
+	#slide-words{
+		color: $blue;
+		font-size: 43px;
+
+	}
+	.help-us {
+		display: inline-block;
+		background: $blue;
+		
+		width: 100%;
+		height: 57px;
+		padding: 10px 5%;
+		font-size: 27px;
+		font-family: $rozha;
+		border: 1px solid $blue;
+		text-align: center;
+		a {
+			color: #fff;
 		}
 	}
 }
@@ -20,6 +48,7 @@ header {
 .homepage-content {
 	.homepage-section {
 		.homepage-presentation {
+			position: relative;
 			h3 {
 				color: $red;
 				font-size: 24px;
@@ -31,6 +60,18 @@ header {
 					font-size: 48px;
 					text-align: center;
 				}
+			}
+			.img-deco {
+				position: absolute;
+				display: block;
+				z-index: -20;
+				width: 120px;
+				height: 120px;
+			}
+			.deco2 {
+				position: absolute;
+				display: block;
+				right: 0;
 			}
 			p {
 				width: 70%;
@@ -55,7 +96,7 @@ header {
 				}
 			}
 			p:last-child {
-				margin-top: 40px;
+				margin-top: 60px;
 			}
 		}
 		.homepage-newsletter {
@@ -92,12 +133,13 @@ header {
 				background: $green;
 				padding: 5px 20px;
 				font-size: 14px;
-				color: #fff;
 				font-family: $rozha;
 				font-weight: 400;
 				margin:5% 40%;
+				a {
+					color: #fff;
+				}
 			}
-
 		}
 		.homepage-actuality {
 			h3 {
@@ -139,3 +181,108 @@ header {
 	}
 }
 
+/*----RESPONSIVE------*/ 
+@media screen and (min-width: 768px) {
+	header {	
+		h1 {
+			a {
+				#logo {
+					width: 25%;
+					margin-left: 35%;
+				}
+			}
+		}
+		nav {
+			ul  {
+			}
+		}
+		h2 { 
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 60px;
+			br {
+				display: none;
+			}
+		}
+		#slide-words{
+		}
+		.help-us {
+			
+		}
+	}
+
+	.homepage-content {
+		.homepage-section {
+			.homepage-presentation {
+				position: relative;
+				h3 {
+					font-size: 28px;
+					#size-question {
+						font-size: 56px;
+						text-align: center;
+					}
+				}
+				.img-deco {
+					width:200px;
+					height: 200px;
+				}
+				.deco2 {
+				}
+				p {
+					font-size: 16px;
+
+					.style-text {
+					}
+
+					#more-information {
+						font-size: 16px;
+						a{
+						}
+					}
+				}
+				p:last-child {
+				}
+			}
+			.homepage-newsletter {
+				h4 { 
+					font-size: 40px;
+					
+					span {
+					}
+				}
+				p {
+					font-size: 16px;
+				}
+				#enter-mail {
+					font-size: 16px;
+				}
+				.btn-send {
+					font-size: 18px;
+					a {
+					}
+				}
+			}
+			.homepage-actuality {
+				h3 {
+					font-size: 28px;
+				}
+			}
+			.homepage-partners{
+				h5 {
+					font-size: 18px;
+				}
+				.partners-row1 {
+					img {
+
+					}
+				}
+			}
+			.partners-row2 {
+				img {
+				}
+			}
+		}
+	}
+
+}

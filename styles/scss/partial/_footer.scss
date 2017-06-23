@@ -2,14 +2,31 @@ footer {
 	background: #4A4A4A;
 	ul {
 		display: flex;
-  		justify-content: center;
-  		align-items: center;
- 		align-content: space-around;
+		justify-content: center;
+		align-items: center;
+		align-content: space-around;
 		li {
 			margin-top: 15px;
 			margin-bottom: 15px;
 			a {
 				color: #fff;
+			}
+		}
+	}
+}
+
+/*----RESPONSIVE ------*/
+@media screen and (max-width: 768px) {
+	footer {
+		ul {
+			li {
+				font-size: 15px;
+				a {
+					color: #fff;
+				}
+			}
+			li:hover{
+				text-decoration: underline;
 			}
 		}
 	}
