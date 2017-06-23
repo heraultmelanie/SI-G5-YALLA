@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- ---- début header ----- -->
     <header class="aboutus-header">
         <!-- prévoir burger menu au clic avec logo -->
         <!-- <h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1> -->
@@ -42,17 +43,22 @@
         <!-- contenu header -->
         <div class="aboutus-team">
             <ul class="team-picture">
-                <li class="team-frame left"></li>
-                <li class="team-active"><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li><img src="img-content/bruno.jpg" alt="Mary Lemeland Mellionnee"></li>
-                <li class="team-frame right"></li>
+
+                <li class="team-frame left frame-mq768"></li>
+                <li class="team-active">1</li>
+
+                <div class="team-hide">
+                    <li class="team-mq768">2</li>
+                    <li class="team-mq768">3</li>
+                    <li class="team-mq768">4</li>
+                    <li class="team-mq768">5</li>
+                    <li class="team-mq768">6</li>
+                    <li class="team-mq768">7</li>
+                    <li class="team-mq768">8</li>
+                </div>
+                <li class="team-frame right frame-mq768"></li>
             </ul>
+            
             <ul class="team-name">
                 <li class="name-active">
                     <h5>Mary Lemeland Mellionnee</h5>
@@ -62,26 +68,31 @@
             </ul>
         </div>
     </header>
+    <!-- ---- fin header ----- -->
 
+    <!-- ---- début main ----- -->
     <main class="aboutus-main">
         <div class="clearfix">
             <h3><span>!</span>Notre philosophie</h3>
             <h4>L'aide humanitaire de proximité</h4>
             <p class="catch-line">Développer la solidarité internationale en créant un pont entre les sociétés civiles en mesure de d’aider et celles qui en ont besoin.</p>
             <img src="img-content/nous7.png" class="arabic-script">
-            <p class="content-philosophy ct-philo1">Grâce à une structure rationalisée, au plus près des donateurs et des bénéficiaires, Yalla ! permet aux membres de la société civile solidaire de visualiser l’impact de leurs dons.</p>
-            <p class="content-philosophy ct-philo2">Afin de garantir l’efficacité et la pérennité de ses projets, Yalla ! implique les bénéficiaires de l’aide à toutes les étapes du développement du projet, de l’élaboration à l’évaluation.</p>
+            <p class="content content-philosophy ct-philo1">Grâce à une structure rationalisée, au plus près des donateurs et des bénéficiaires, Yalla ! permet aux membres de la société civile solidaire de visualiser l’impact de leurs dons.</p>
+            <p class="content content-philosophy ct-philo2">Afin de garantir l’efficacité et la pérennité de ses projets, Yalla ! implique les bénéficiaires de l’aide à toutes les étapes du développement du projet, de l’élaboration à l’évaluation.</p>
         </div>
+
+        <!-- ---- début valeurs ----- -->
         <div class="values kid-rights">
             <h4>Les droits de l’enfant comme valeurs souveraines</h4>
-            <div class="content-img-strong img-left">
-                <div class="ct-img">
+            <div class="content-img-strong">
+                <div class="ct-img img-left">
                     <img src="img-content/nous5.png">
                 </div>
-                <strong>Les droits de l'enfant</strong>
+                <strong class="img-left-strong">Les droits de l'enfant</strong>
             </div>
-            <p class="content-left">Les missions de Yalla ! sont guidées par le respect et la mise en œuvre des droits fondamentaux de l’enfant tels que définis dans la <span class="law-rights">Convention internationale des droit de l’enfant de 1989.</span></p>
+            <p class="content content-left">Les missions de Yalla ! sont guidées par le respect et la mise en œuvre des droits fondamentaux de l’enfant tels que définis dans la <span class="law-rights">Convention internationale des droit de l’enfant de 1989.</span></p>
         </div>
+
         <div class="values secularism">
             <div class="content-img2-strong">
                 <div class="ct-img2">
@@ -89,32 +100,32 @@
                 </div>
                 <strong>Laïcité et apolitisme</strong>
             </div>
-            <p class="content-right">La religion et la politique sont absentes des enseignements et activités dispensés par Yalla ! afin que tout enfant et tout bénévole participant aux projets se sent accueilli et respecté quelles que soient ses opinions religieuses ou politiques.</p>
+            <p class="content content-right2">La religion et la politique sont absentes des enseignements et activités dispensés par Yalla ! afin que tout enfant et tout bénévole participant aux projets se sent accueilli et respecté quelles que soient ses opinions religieuses ou politiques.</p>
         </div>
+
         <div class="values equality">
-            <div class="content-img-strong img-right">
-                <div class="ct-img ">
+            <div class="content-img-strong ">
+                <div class="ct-img img-right">
                     <img src="img-content/nous2.png">
                 </div>
-                <strong>Égalité</strong>
+                <strong class="img-right-strong">Égalité</strong>
             </div>
-
-
-            <p class="content-right">Tout enfant et tout bénévole est considéré par Yalla ! de la même façon, quelque soit son sexe, sa nationalité ou son appartenance ethnique ou religieuse. Yalla ! promeut l’égalité fille-garçon à travers ses activités et enseignements. La mixité au sein des équipes de bénévoles est également un impératif que se donne Yalla !. </p>
+            <p class="content content-right">Tout enfant et tout bénévole est considéré par Yalla ! de la même façon, quelque soit son sexe, sa nationalité ou son appartenance ethnique ou religieuse. Yalla ! promeut l’égalité fille-garçon à travers ses activités et enseignements. La mixité au sein des équipes de bénévoles est également un impératif que se donne Yalla !. </p>
         </div>
         <div class="values transparency">
-            <div class="content-img-strong img-centered">
-                <div class="ct-img">
+            <div class="content-img-strong">
+                <div class="ct-img img-centered">
                     <img src="img-content/nous3.png">
                 </div>
-                <strong>Transparence</strong>
+                <strong class="img-centered-strong">Transparence</strong>
             </div>
-            <p class="content-left">Yalla ! est responsable, vis-à-vis de ses donateurs et des bénéficiaires de l’aide, de la manière dont elle met en œuvre sa mission et gère ses comptes.</p>
+            <p class="content-left2">Yalla ! est responsable, vis-à-vis de ses donateurs et des bénéficiaires de l’aide, de la manière dont elle met en œuvre sa mission et gère ses comptes.</p>
         </div>
-        <div class="gif">GIF</div>
+        <!-- ---- fin valeur ----- -->
+
+        <div class="gif">gif</div>
     </main>
-
-
+    <!-- ---- fin main ----- -->
 
 </body>
 
