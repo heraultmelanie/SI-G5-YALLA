@@ -55,17 +55,10 @@ header.aboutus-header {
   position: relative;
   background-image: url(../../img-layout/expo_ant.jpg);
   /* ----- HEADER ----- */ }
-  header.aboutus-header h2 {
-    font-family: 'Rozha One', serif;
-    font-size: 24px;
-    text-align: center;
-    height: auto;
-    margin: 0; }
   header.aboutus-header .aboutus-team {
     position: absolute;
     top: 20%;
-    width: 100%;
-    border: 2px solid yellow; }
+    width: 100%; }
     header.aboutus-header .aboutus-team ul.team-picture {
       list-style-type: none; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame {
@@ -74,10 +67,9 @@ header.aboutus-header {
         top: 5%;
         width: 122px;
         height: 122px;
+        border-radius: 50%;
         border: 10px solid #FFF;
-        background: #fff;
-        border: 10px solid #FFF;
-        border-radius: 50%; }
+        background: #fff; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
         left: -12vh; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
@@ -86,10 +78,10 @@ header.aboutus-header {
         display: block;
         width: 174px;
         height: 174px;
-        border: 10px solid #FFF;
+        margin: 3% auto 0 auto;
         border-radius: 50%;
+        border: 10px solid #FFF;
         overflow: hidden;
-        margin: 0 auto;
         text-align: center;
         padding-top: 20px;
         font-size: 36px; }
@@ -106,62 +98,56 @@ header.aboutus-header {
         width: 100%;
         color: #FFF; }
         header.aboutus-header .aboutus-team ul.team-name li.name-active h5 {
-          margin-top: 10px;
-          font-family: 'Rozha One', serif;
           font-size: 18px;
+          font-family: 'Rozha One', serif;
           text-align: center;
           color: #fff; }
         header.aboutus-header .aboutus-team ul.team-name li.name-active p {
-          font-family: 'Poppins', sans-serif;
           font-size: 12px;
+          font-family: 'Poppins', sans-serif;
           text-align: center; }
       header.aboutus-header .aboutus-team ul.team-name li {
         display: none; }
 
-/* ---
+                /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-/* ---------------
+                /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   header.aboutus-header {
     position: relative; }
     header.aboutus-header .aboutus-team {
       top: 10%; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
-        left: -12vh; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
-        right: -12vh; }
+      header.aboutus-header .aboutus-team ul.team-picture li.frame-mq768 {
+        display: none; }
       header.aboutus-header .aboutus-team ul.team-picture div.team-hide {
-        margin: 20vh 0 0 0;
+        margin: 14vh 0 0 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        flex-wrap: nowrap;
-        background: orange; }
+        flex-wrap: nowrap; }
         header.aboutus-header .aboutus-team ul.team-picture div.team-hide li.team-mq768 {
           display: inline-block;
-          min-width: 100px;
-          background: purple;
-          border-radius: 50%;
           height: 100px;
+          min-width: 100px;
+          border-radius: 50%;
+          border: 2px solid #243160;
+          background: purple;
           text-align: center;
           padding-top: 20px;
           font-size: 36px; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-active {
-        background: #fff; }
       header.aboutus-header .aboutus-team ul.team-name {
         width: 100%;
         position: absolute;
-        top: 30vh;
-        background: red; }
+        top: 34.5vh; }
         header.aboutus-header .aboutus-team ul.team-name li.name-active h5 {
-          font-size: 24px; }
+          font-size: 18px; }
         header.aboutus-header .aboutus-team ul.team-name li.name-active p {
-          font-size: 16px; } }
-/* ---
+          font-size: 14px; } }
+                /* ---
 ----------------------------------------
 -------------------fin responsive header
 ----------------------------------------
@@ -169,7 +155,10 @@ header.aboutus-header {
 main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
-  /* ----- DIV : toutes valeurs ----- */ }
+  /* ----- DIV : toutes valeurs ----- */
+  /* ----- DIV : Laicité ----- */
+  /* ----- DIV : Transparence ----- */
+  /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
     /* ----- DIV : Aide humanitaire proximité ----- */ }
@@ -222,6 +211,7 @@ main.aboutus-main {
     main.aboutus-main .values .content-img-strong strong {
       position: absolute;
       bottom: 10%;
+      z-index: +1;
       font-size: 14px;
       font-family: 'Rozha One', serif;
       color: #2b6847;
@@ -261,44 +251,45 @@ main.aboutus-main {
   main.aboutus-main p.content-right2,
   main.aboutus-main p.content-left2 {
     text-align: right; }
-
-/* ----- DIV : Laicité ----- */
-div.secularism {
-  position: relative; }
-  div.secularism .content-img2-strong .ct-img2 {
-    width: 90%;
-    margin: 0 0 0 10%; }
-    div.secularism .content-img2-strong .ct-img2 img {
-      width: 100%; }
-  div.secularism .content-img2-strong strong {
-    display: block;
+  main.aboutus-main div.secularism {
+    position: relative; }
+    main.aboutus-main div.secularism .content-img2-strong .ct-img2 {
+      width: 90%;
+      margin: 0 0 0 10%; }
+      main.aboutus-main div.secularism .content-img2-strong .ct-img2 img {
+        width: 100%; }
+    main.aboutus-main div.secularism .content-img2-strong strong {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 8%;
+      text-align: center;
+      font-family: 'Rozha One', serif;
+      font-size: 14px;
+      padding: 2%;
+      color: #2b6847;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
+  main.aboutus-main div.transparency strong.img-centered-strong {
     width: 100%;
+    text-align: center; }
+  main.aboutus-main div.transparency img.transparency-mq1040 {
+    display: none;
+    height: 450px;
+    width: auto;
     position: absolute;
-    bottom: 8%;
-    text-align: center;
-    font-family: 'Rozha One', serif;
-    font-size: 14px;
-    padding: 2%;
-    color: #2b6847;
-    background: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
+    right: 0;
+    bottom: 0; }
+  main.aboutus-main div.gif {
+    background: blue;
+    height: 300px; }
 
-/* ----- DIV : Transparence ----- */
-div.transparency strong {
-  width: 100%;
-  text-align: center; }
-
-/* ----- DIV : Gif ----- */
-div.gif {
-  background: blue;
-  height: 300px; }
-
-/* ---
+                /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-/* ---------------
+                /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   main.aboutus-main {
@@ -318,20 +309,23 @@ div.gif {
       margin-bottom: 7%; }
     main.aboutus-main .values .content-img-strong strong {
       font-size: 24px; }
-    main.aboutus-main div.secularism .content-img2-strong strong {
+    main.aboutus-main .values div.secularism .content-img2-strong strong {
       font-size: 24px; }
-    main.aboutus-main strong p {
+    main.aboutus-main .values strong p {
       font-size: 16px;
       line-height: 30px; }
-    main.aboutus-main p {
+    main.aboutus-main .values p {
       font-size: 16px;
       line-height: 30px; } }
-/* ---------------
+                /* ---------------
 ------------------------------------------------------------- 1040 PX ----------------*/
 @media screen and (min-width: 1040px) {
   main.aboutus-main {
     /* ----- commun div----- */
-    /* ----- toutes valeurs ----- */ }
+    /* ----- toutes valeurs ----- */
+    /* ----- valeur : Laicité ----- */
+    /* ----- Transparence ----- */
+    /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
       /* ----- valeur : Aide humanitaire proximité ----- */ }
@@ -393,33 +387,29 @@ div.gif {
         width: 47%; }
     main.aboutus-main .content-img-strong .img-centered-strong {
       padding: 1% 0; }
-
-  /* ----- valeur : Laicité ----- */
-  div.secularism .content-img2-strong .ct-img2 {
-    width: 60%;
-    margin: 0 0 0 40%; }
-  div.secularism .content-img2-strong strong {
-    font-size: 30px;
-    text-align: right;
-    padding: 1% 10% 1% 0; }
-  div.secularism p.content-right2 {
-    top: 0;
-    left: 5%;
-    width: 30%;
-    padding-top: 0; }
-
-  /* ----- Transparence ----- */
-  div.transparency {
-    position: relative;
-    margin-bottom: 0; }
-    div.transparency p.content-left2 {
-      width: 50%;
-      font-size: 18px;
-      line-height: 40px;
-      text-align: right; }
-
-  /* ----- div : Gif ----- */ }
-/* -------------- 
+    main.aboutus-main div.secularism .content-img2-strong .ct-img2 {
+      width: 60%;
+      margin: 0 0 0 40%; }
+    main.aboutus-main div.secularism .content-img2-strong strong {
+      font-size: 30px;
+      text-align: right;
+      padding: 1% 10% 1% 0; }
+    main.aboutus-main div.secularism p.content-right2 {
+      top: 0;
+      left: 5%;
+      width: 30%;
+      padding-top: 0; }
+    main.aboutus-main div.transparency {
+      position: relative;
+      margin-bottom: 0; }
+      main.aboutus-main div.transparency img.transparency-mq1040 {
+        display: block; }
+      main.aboutus-main div.transparency p.content-left2 {
+        width: 50%;
+        font-size: 18px;
+        line-height: 40px;
+        text-align: right; } }
+                /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
@@ -787,5 +777,52 @@ footer {
       color: #fff; }
   footer ul li:hover {
     text-decoration: underline; } }
+main.admin-homepage {
+  font-family: 'Poppins', sans-serif; }
+  main.admin-homepage div.admin-homepage-banner {
+    float: left;
+    width: 6%;
+    height: 100vh;
+    background: #243160; }
+  main.admin-homepage section.admin-content {
+    float: right;
+    width: 94%;
+    display: flex; }
+    main.admin-homepage section.admin-content div {
+      width: 50%; }
+    main.admin-homepage section.admin-content div.account-info {
+      border-right: 2px solid grey;
+      height: 100vh;
+      margin-top: 5%; }
+      main.admin-homepage section.admin-content div.account-info h2.admin-homepage {
+        padding-left: 10%;
+        font-size: 21px;
+        font-weight: 200;
+        color: #243160; }
+      main.admin-homepage section.admin-content div.account-info label {
+        margin: 20% 0 3% 20%;
+        display: block;
+        font-size: 21px;
+        color: #902a15; }
+      main.admin-homepage section.admin-content div.account-info input {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 1px solid #243160; }
+      main.admin-homepage section.admin-content div.account-info input[placeholder] {
+        color: #243160;
+        font-size: 14px;
+        padding: 0 0 1% 3%; }
+      main.admin-homepage section.admin-content div.account-info input#old-password {
+        margin-bottom: 5%; }
+    main.admin-homepage section.admin-content div.addsupp-user {
+      height: 100vh;
+      margin-top: 5%; }
+      main.admin-homepage section.admin-content div.addsupp-user h2.admin-homepage {
+        padding-left: 10%;
+        font-size: 21px;
+        font-weight: 200;
+        color: #243160; }
 
 /*# sourceMappingURL=style.css.map */
