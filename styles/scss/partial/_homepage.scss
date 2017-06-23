@@ -43,11 +43,15 @@ header {
 					color: $red;
 				}
 
-				.more-information {
-					color: $green;
+				#more-information {
 					float: right;
 					font-weight: bold;
 					margin-bottom: 30px;
+					background: #fff;
+					border:none;
+					a{
+						color: $green;
+					}
 				}
 			}
 			p:last-child {
