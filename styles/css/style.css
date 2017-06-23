@@ -131,7 +131,7 @@ main.aboutus-main {
   main.aboutus-main div {
     position: relative;
     margin-bottom: 58px;
-    /* ----- DIV : Aide humanitaire proximité ----- */ }
+    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -204,7 +204,7 @@ main.aboutus-main {
   main.aboutus-main p.content-right {
     text-align: right; }
 
-/* ----- DIV : Laicité ----- */
+/* ----- DIV : Laicit├® ----- */
 div.secularism {
   position: relative; }
   div.secularism .content-img2-strong .ct-img2 {
@@ -240,11 +240,11 @@ div.transparency strong {
   main.aboutus-main {
     /* ----- MEDIA COMMUN DIV ----- */
     /* ----- MEDIA DIV : toutes valeurs ----- */
-    /* ----- MEDIA DIV : Laicité ----- */
+    /* ----- MEDIA DIV : Laicit├® ----- */
     /* ----- MEDIA DIV : Transparence ----- */
     /* ----- MEDIA DIV : Gif ----- */ }
     main.aboutus-main div {
-      /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+      /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -300,6 +300,8 @@ header {
     width: 108px;
     margin-top: 108px;
     margin-left: 35%; }
+  header nav {
+    display: none; }
   header h2 {
     height: 102px;
     font-size: 27px;
@@ -428,21 +430,44 @@ header {
 
 /*----RESPONSIVE------*/
 @media screen and (min-width: 768px) {
-  header h1 a #logo {
-    width: 25%;
-    margin-left: 35%; }
-  header h2 {
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 60px; }
-    header h2 br {
+  header {
+    position: relative; }
+    header h1 a #logo {
+      display: none;
+      position: absolute;
+      z-index: 22;
+      display: block;
+      position: fixe;
+      width: 150px;
+      margin: 0;
+      height: 1; }
+    header nav {
+      display: block;
+      float: right;
+      position: absolute;
+      z-index: 22;
+      background: blue; }
+      header nav ul {
+        position: absolute;
+        margin: 10px 0; }
+    header h2 {
+      width: 90%;
+      height: auto;
+      font-size: 80px;
+      margin: 0 auto;
+      margin-top: 175px;
+      line-height: 80%; }
+    header #slide-words {
+      font-size: 100px; }
+    header .help-us {
       display: none; }
 
   .homepage-content .homepage-section .homepage-presentation {
     position: relative; }
     .homepage-content .homepage-section .homepage-presentation h3 {
-      font-size: 28px; }
+      width: 70%;
+      font-size: 28px;
+      text-align: right; }
       .homepage-content .homepage-section .homepage-presentation h3 #size-question {
         font-size: 56px;
         text-align: center; }
@@ -453,14 +478,18 @@ header {
       font-size: 16px; }
       .homepage-content .homepage-section .homepage-presentation p #more-information {
         font-size: 16px; }
-  .homepage-content .homepage-section .homepage-newsletter h4 {
-    font-size: 40px; }
-  .homepage-content .homepage-section .homepage-newsletter p {
-    font-size: 16px; }
-  .homepage-content .homepage-section .homepage-newsletter #enter-mail {
-    font-size: 16px; }
-  .homepage-content .homepage-section .homepage-newsletter .btn-send {
-    font-size: 18px; }
+  .homepage-content .homepage-section .homepage-newsletter {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px; }
+    .homepage-content .homepage-section .homepage-newsletter h4 {
+      font-size: 40px; }
+    .homepage-content .homepage-section .homepage-newsletter p {
+      font-size: 16px; }
+    .homepage-content .homepage-section .homepage-newsletter #enter-mail {
+      font-size: 16px; }
+    .homepage-content .homepage-section .homepage-newsletter .btn-send {
+      font-size: 18px; }
   .homepage-content .homepage-section .homepage-actuality h3 {
     font-size: 28px; }
   .homepage-content .homepage-section .homepage-partners h5 {
