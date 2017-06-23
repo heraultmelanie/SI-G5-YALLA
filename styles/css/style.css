@@ -16,13 +16,9 @@
   clear: both; }
 
 body {
-<<<<<<< Updated upstream
+  font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   font-size: 62.5%; }
-=======
-  font-size: 62.5%;
-  font-family: "Poppins", sans-serif; }
->>>>>>> Stashed changes
 
 h2,
 h3,
@@ -37,20 +33,17 @@ a {
 ul {
   list-style-type: none; }
 
+/* a ajouter commun */
 header {
   overflow: hidden;
   background-repeat: no-repeat;
   height: 465px;
-  background-size: cover;
-  /* nav burger menu au clic */
-  /* titre principal */ }
+  background-size: cover; }
   header h1 a #logo {
     height: 125px;
     width: 108px;
     margin-top: 108px;
     margin-left: 35%; }
-  header .icone-burger {
-    display: none; }
   header nav {
     display: none; }
     header nav ul {
@@ -245,6 +238,9 @@ main.aboutus-main .gif {
   width: 100%;
   height: 252px;
   background: blue; }
+
+header {
+  background-image: url(../../img-layout/header-fond.jpg); }
 
 .homepage-content .homepage-section .homepage-presentation h3 {
   color: #902a15;
