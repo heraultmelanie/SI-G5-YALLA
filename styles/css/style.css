@@ -16,7 +16,6 @@
   clear: both; }
 
 body {
-  font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   font-size: 62.5%; }
 
@@ -32,6 +31,18 @@ a {
 
 ul {
   list-style-type: none; }
+  ul .help-us {
+    background: #243160;
+    color: #fff;
+    width: 473.5px;
+    height: 57px;
+    padding: 10px 5%;
+    font-size: 27px;
+    font-family: "Rozha One", serif;
+    border: 1px solid #243160; }
+  ul .partners-row1 img,
+  ul .partners-row2 img {
+    width: 20%; }
 
 /* a ajouter commun */
 header {
@@ -259,11 +270,14 @@ header {
   text-align: right; }
   .homepage-content .homepage-section .homepage-presentation p .style-text {
     color: #902a15; }
-  .homepage-content .homepage-section .homepage-presentation p .more-information {
-    color: #2b6847;
+  .homepage-content .homepage-section .homepage-presentation p #more-information {
     float: right;
     font-weight: bold;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background: #fff;
+    border: none; }
+    .homepage-content .homepage-section .homepage-presentation p #more-information a {
+      color: #2b6847; }
 .homepage-content .homepage-section .homepage-presentation p:last-child {
   margin-top: 40px; }
 .homepage-content .homepage-section .homepage-newsletter {
