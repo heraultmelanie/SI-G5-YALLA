@@ -41,9 +41,6 @@ ul {
     font-size: 27px;
     font-family: "Rozha One", serif;
     border: 1px solid #243160; }
-  ul .partners-row1 img,
-  ul .partners-row2 img {
-    width: 20%; }
 
 /* a ajouter commun */
 header {
@@ -53,11 +50,6 @@ header {
   background-size: cover; }
   header nav {
     display: none; }
-    header nav ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style-type: none; }
 
 header.aboutus-header {
   position: relative;
@@ -294,14 +286,31 @@ div.transparency strong {
         padding-right: 10%;
         background: yellow; } }
 header {
-  background-image: url(../../img-layout/header-fond1.jpg); }
+  background-image: url(../../img-layout/header-fond1.jpg);
+  z-index: -50;
+  /*NAV*/
+  /*JUSQU'ICI*/ }
   header h1 a #logo {
     height: 125px;
     width: 108px;
     margin-top: 108px;
     margin-left: 35%; }
   header nav {
+    width: 100%;
     display: none; }
+    header nav ul {
+      text-align: center;
+      display: flex;
+      justify-content: start-end; }
+      header nav ul li {
+        width: 100%;
+        padding-top: 10px; }
+        header nav ul li a {
+          font-size: 18px;
+          color: #fff; }
+      header nav ul .help-us-nav {
+        background: #243160;
+        padding: 10px 20px; }
   header h2 {
     height: 102px;
     font-size: 27px;
@@ -354,13 +363,13 @@ header {
     text-align: right; }
     .homepage-content .homepage-section .homepage-presentation p .style-text {
       color: #902a15; }
-    .homepage-content .homepage-section .homepage-presentation p #more-information {
+    .homepage-content .homepage-section .homepage-presentation p .more-information {
       float: right;
       font-weight: bold;
       margin-bottom: 30px;
       background: #fff;
       border: none; }
-      .homepage-content .homepage-section .homepage-presentation p #more-information a {
+      .homepage-content .homepage-section .homepage-presentation p .more-information a {
         color: #2b6847; }
   .homepage-content .homepage-section .homepage-presentation p:last-child {
     margin-top: 60px; }
@@ -399,13 +408,56 @@ header {
     margin: 5% 40%; }
     .homepage-content .homepage-section .homepage-newsletter .btn-send a {
       color: #fff; }
-.homepage-content .homepage-section .homepage-actuality h3 {
-  width: 70%;
-  font-size: 24px;
-  margin-top: 33px;
-  text-align: right;
-  color: #902a15;
-  font-weight: 400; }
+.homepage-content .homepage-section .homepage-actuality {
+  width: 100%; }
+  .homepage-content .homepage-section .homepage-actuality h3 {
+    width: 80%;
+    font-size: 24px;
+    margin: 33px;
+    text-align: right;
+    color: #902a15;
+    font-weight: 400; }
+  .homepage-content .homepage-section .homepage-actuality .actuality-articles {
+    width: 100%; }
+    .homepage-content .homepage-section .homepage-actuality .actuality-articles .article {
+      width: 100%; }
+      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details {
+        width: 60%;
+        float: left; }
+        .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p {
+          padding: 0 30px;
+          text-align: right;
+          font-size: 14px;
+          margin-top: 20px; }
+          .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p .more-information {
+            float: right;
+            font-weight: bold;
+            margin: 20px 0;
+            background: #fff;
+            border: none; }
+            .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p .more-information a {
+              font-size: 14px;
+              color: #2b6847;
+              margin-top: 30px; }
+      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-img {
+        width: 40%;
+        float: right; }
+        .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-img img {
+          width: 100%; }
+    .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres {
+      width: 100%;
+      box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.24); }
+      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres h5 {
+        font-size: 24px;
+        color: #243160;
+        margin-top: 30px;
+        text-align: right;
+        padding: 10px 30px; }
+      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres p {
+        font-size: 16px;
+        text-align: right;
+        color: #9B9B9B;
+        padding: 10px 30px; }
 .homepage-content .homepage-section .homepage-partners {
   width: 90%; }
   .homepage-content .homepage-section .homepage-partners h5 {
@@ -442,20 +494,15 @@ header {
       margin: 0;
       height: 1; }
     header nav {
-      display: block;
-      float: right;
-      position: absolute;
-      z-index: 22;
-      background: blue; }
-      header nav ul {
-        position: absolute;
-        margin: 10px 0; }
+      display: inline-block;
+      width: 80%;
+      margin-left: 20%; }
     header h2 {
       width: 90%;
       height: auto;
       font-size: 80px;
       margin: 0 auto;
-      margin-top: 175px;
+      margin-top: 160px;
       line-height: 80%; }
     header #slide-words {
       font-size: 100px; }
@@ -466,7 +513,7 @@ header {
     position: relative; }
     .homepage-content .homepage-section .homepage-presentation h3 {
       width: 70%;
-      font-size: 28px;
+      font-size: 34px;
       text-align: right; }
       .homepage-content .homepage-section .homepage-presentation h3 #size-question {
         font-size: 56px;
@@ -476,7 +523,7 @@ header {
       height: 200px; }
     .homepage-content .homepage-section .homepage-presentation p {
       font-size: 16px; }
-      .homepage-content .homepage-section .homepage-presentation p #more-information {
+      .homepage-content .homepage-section .homepage-presentation p .more-information {
         font-size: 16px; }
   .homepage-content .homepage-section .homepage-newsletter {
     width: 60%;
@@ -491,9 +538,84 @@ header {
     .homepage-content .homepage-section .homepage-newsletter .btn-send {
       font-size: 18px; }
   .homepage-content .homepage-section .homepage-actuality h3 {
-    font-size: 28px; }
+    font-size: 34px; }
   .homepage-content .homepage-section .homepage-partners h5 {
-    font-size: 18px; } }
+    font-size: 24px; } }
+@media screen and (min-width: 1040px) {
+  header {
+    position: relative; }
+    header h1 a #logo {
+      display: none;
+      position: absolute;
+      z-index: 22;
+      display: block;
+      position: fixe;
+      width: 150px;
+      margin: 0;
+      height: 1; }
+    header nav {
+      display: inline-block;
+      width: 60%;
+      margin-left: 40%; }
+      header nav ul li a {
+        font-size: 24px; }
+    header h2 {
+      width: 90%;
+      height: auto;
+      font-size: 80px;
+      margin: 0 auto;
+      margin-top: 160px;
+      line-height: 80%; }
+    header #slide-words {
+      font-size: 100px; }
+    header .help-us {
+      display: none; }
+
+  .homepage-content .homepage-section .homepage-presentation {
+    position: relative; }
+    .homepage-content .homepage-section .homepage-presentation h3 {
+      width: 70%;
+      font-size: 60px;
+      text-align: right; }
+      .homepage-content .homepage-section .homepage-presentation h3 #size-question {
+        font-size: 95px;
+        text-align: center; }
+    .homepage-content .homepage-section .homepage-presentation .img-deco {
+      width: 200px;
+      height: 200px; }
+    .homepage-content .homepage-section .homepage-presentation p {
+      font-size: 24px; }
+      .homepage-content .homepage-section .homepage-presentation p .more-information {
+        font-size: 24px;
+        margin-top: 50px; }
+  .homepage-content .homepage-section .homepage-newsletter {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px; }
+    .homepage-content .homepage-section .homepage-newsletter h4 {
+      font-size: 40px; }
+    .homepage-content .homepage-section .homepage-newsletter p {
+      font-size: 24px; }
+    .homepage-content .homepage-section .homepage-newsletter #enter-mail {
+      font-size: 24px; }
+    .homepage-content .homepage-section .homepage-newsletter .btn-send {
+      font-size: 24px; }
+  .homepage-content .homepage-section .homepage-actuality h3 {
+    font-size: 60px; }
+  .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p {
+    font-size: 18px; }
+    .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p .more-information a {
+      font-size: 24px; }
+  .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres h5 {
+    font-size: 24px; }
+  .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres p {
+    font-size: 18px; }
+  .homepage-content .homepage-section .homepage-partners h5 {
+    font-size: 40px; }
+  .homepage-content .homepage-section .homepage-partners .partners-row1 img {
+    width: 10%; }
+  .homepage-content .homepage-section .partners-row2 img {
+    width: 20%; } }
 footer {
   background: #4A4A4A; }
   footer ul {
@@ -510,7 +632,7 @@ footer {
 /*----RESPONSIVE ------*/
 @media screen and (max-width: 768px) {
   footer ul li {
-    font-size: 15px; }
+    font-size: 24px; }
     footer ul li a {
       color: #fff; }
   footer ul li:hover {
