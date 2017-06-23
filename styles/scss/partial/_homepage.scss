@@ -1,290 +1,551 @@
-header {
-    background-image: url(../../img-layout/header-fond1.jpg);
-    h1 {
-        a {
-            #logo {
-                height: 125px;
-                width: 108px;
-                margin-top: 108px;
-                margin-left: 35%;
-            }
-        }
-    }
-    nav {
-        display: none;
-        ul {}
-    }
-    h2 {
-        height: 102px;
-        font-size: 27px;
-        color: #fff;
-        line-height: 36px;
-        font-weight: 400;
-        margin: 30px 15%;
-    }
-    #slide-words {
-        color: $blue;
-        font-size: 43px;
-    }
-    .help-us {
-        display: inline-block;
-        background: $blue;
-        width: 100%;
-        height: 57px;
-        padding: 10px 5%;
-        font-size: 27px;
-        font-family: $rozha;
-        border: 1px solid $blue;
-        text-align: center;
-        a {
-            color: #fff;
-        }
-    }
-}
 
-.homepage-content {
-    .homepage-section {
-        .homepage-presentation {
-            position: relative;
-            h3 {
-                color: $red;
-                font-size: 24px;
-                margin-top: 32px;
-                text-align: center;
-                font-weight: 400;
-                #size-question {
-                    font-size: 48px;
-                    text-align: center;
-                }
-            }
-            .img-deco {
-                position: absolute;
-                display: block;
-                z-index: -20;
-                width: 120px;
-                height: 120px;
-            }
-            .deco2 {
-                position: absolute;
-                display: block;
-                right: 0;
-            }
-            p {
-                width: 70%;
-                font-size: 12px;
-                line-height: 180%;
-                margin-bottom: 20px;
-                text-align: right;
-                .style-text {
-                    color: $red;
-                }
-                #more-information {
-                    float: right;
-                    font-weight: bold;
-                    margin-bottom: 30px;
-                    background: #fff;
-                    border: none;
-                    a {
-                        color: $green;
-                    }
-                }
-            }
-            p:last-child {
-                margin-top: 60px;
-            }
-        }
-        .homepage-newsletter {
-            overflow: hidden;
-            width: 100%;
-            margin-top: 23px;
-            background: $green;
-            h4 {
-                text-align: center;
-                font-size: 36px;
-                font-weight: 400;
-                margin-top: 26px;
-                color: #fff;
-                font-weight: 400;
-                span {
-                    color: $yellow;
-                }
-            }
-            p {
-                width: 70%;
-                text-align: right;
-                color: #fff;
-                padding-bottom: 10px;
-            }
-            #enter-mail {
-                width: 100%;
-                background: #fff;
-                border: none;
-                padding: 8px 0;
-                text-align: center;
-            }
-            .btn-send {
-                border: 1px solid #fff;
-                background: $green;
-                padding: 5px 20px;
-                font-size: 14px;
-                font-family: $rozha;
-                font-weight: 400;
-                margin: 5% 40%;
-                a {
-                    color: #fff;
-                }
-            }
-        }
-        .homepage-actuality {
-            h3 {
-                width: 70%;
-                font-size: 24px;
-                margin-top: 33px;
-                text-align: right;
-                color: $red;
-                font-weight: 400;
-            }
-        }
-        .homepage-partners {
-            width: 90%;
-            h5 {
-                font-size: 14px;
-                color: $red;
-                font-weight: 400;
-                margin-top: 64px;
-            }
-            .partners-row1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 7px 0;
-                img {
-                    width: 20%;
-                }
-            }
-        }
-        .partners-row2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 11px 0;
-            img {
-                width: 30%;
-            }
-        }
-    }
-}
+header {	
+	background-image:url(../../img-layout/header-fond1.jpg);
+	z-index: -50;
+	h1 {
+		a {
+			#logo {
+				height: 125px;	
+				width: 108px;
+				margin-top: 108px;
+				margin-left: 35%;
+			}
+		}
+	}
+	/*NAV*/
+	nav {
+		width:100%;
+		display: none;
+		ul  {
+			text-align: center;
+			display: flex;
+			justify-content: start-end;
+			li {
+				width: 100%;
+				padding-top: 10px;
+				a {
+					font-size: 18px;
+					color: #fff;
+				}
+			}
+			.help-us-nav  {
+				background: $blue;
+				padding: 10px 20px;
+			}
+		}
+		}/*JUSQU'ICI*/
+		h2 {
+			height: 102px;
+			font-size: 27px;
+			color: #fff;
+			line-height: 36px;
+			font-weight: 400;
+			margin: 30px 15%;
+		}
+		#slide-words{
+			color: $blue;
+			font-size: 43px;
+
+		}
+		.help-us {
+			display: inline-block;
+			background: $blue;
+
+			width: 100%;
+			height: 57px;
+			padding: 10px 5%;
+			font-size: 27px;
+			font-family: $rozha;
+			border: 1px solid $blue;
+			text-align: center;
+			a {
+				color: #fff;
+			}
+		}
+	}
 
 
-/*----RESPONSIVE------*/
+	.homepage-content {
+		.homepage-section {
+			.homepage-presentation {
+				position: relative;
+				h3 {
+					color: $red;
+					font-size: 24px;
+					margin-top: 32px;
+					text-align: center;
+					font-weight: 400;
 
-@media screen and (min-width: 768px) {
-    header {
-        position: relative;
-        h1 {
-            a {
-                #logo {
-                    display: none;
-                    position: absolute;
-                    z-index: 22;
-                    display: block;
-                    position: fixe;
-                    width: 150px;
-                    margin: 0;
-                    height: 1;
-                }
-            }
-        }
-        nav {
-            display: block;
-            background: yellow;
-            ul {
-                position: absolute;
-                margin: 10px 0;
-                li {
-                    a {}
-                }
-            }
-        }
-        h2 {
-            width: 90%;
-            height: auto;
-            font-size: 80px;
-            margin: 0 auto;
-            margin-top: 175px;
-            line-height: 80%;
-            br {}
-        }
-        #slide-words {
-            font-size: 100px;
-        }
-        .help-us {
-            display: none;
-        }
-    }
-    .homepage-content {
-        .homepage-section {
-            .homepage-presentation {
-                position: relative;
-                h3 {
-                    width: 70%;
-                    font-size: 28px;
-                    text-align: right;
-                    #size-question {
-                        font-size: 56px;
-                        text-align: center;
-                    }
-                }
-                .img-deco {
-                    width: 200px;
-                    height: 200px;
-                }
-                .deco2 {}
-                p {
-                    font-size: 16px;
-                    .style-text {}
-                    #more-information {
-                        font-size: 16px;
-                        a {}
-                    }
-                }
-                p:last-child {}
-            }
-            .homepage-newsletter {
-                width: 60%;
-                margin: 0 auto;
-                margin-top: 30px;
-                h4 {
-                    font-size: 40px;
-                    span {}
-                }
-                p {
-                    font-size: 16px;
-                }
-                #enter-mail {
-                    font-size: 16px;
-                }
-                .btn-send {
-                    font-size: 18px;
-                    a {}
-                }
-            }
-            .homepage-actuality {
-                h3 {
-                    font-size: 28px;
-                }
-            }
-            .homepage-partners {
-                h5 {
-                    font-size: 18px;
-                }
-                .partners-row1 {
-                    img {}
-                }
-            }
-            .partners-row2 {
-                img {}
-            }
-        }
-    }
-}
+					#size-question {
+						font-size: 48px;
+						text-align: center;
+					}
+				}
+				.img-deco {
+					position: absolute;
+					display: block;
+					z-index: -20;
+					width: 120px;
+					height: 120px;
+				}
+				.deco2 {
+					position: absolute;
+					display: block;
+					right: 0;
+				}
+				p {
+					width: 70%;
+					font-size: 12px;
+					line-height: 180%;
+					margin-bottom: 20px;
+					text-align: right;
+
+					.style-text {
+						color: $red;
+					}
+
+					.more-information {
+						float: right;
+						font-weight: bold;
+						margin-bottom: 30px;
+						background: #fff;
+						border:none;
+						a{
+							color: $green;
+						}
+					}
+				}
+				p:last-child {
+					margin-top: 60px;
+				}
+			}
+			.homepage-newsletter {
+				overflow: hidden;
+				width: 100%;
+				margin-top: 23px;
+				background: $green;
+				h4 { 
+					text-align: center;
+					font-size: 36px;
+					font-weight: 400;
+					margin-top: 26px;
+					color: #fff;
+					font-weight: 400;
+					span {
+						color: $yellow;
+					}
+				}
+				p {
+					width: 70%;
+					text-align: right;
+					color:#fff;
+					padding-bottom: 10px;
+				}
+				#enter-mail {
+					width: 100%;
+					background: #fff;
+					border: none;
+					padding: 8px 0;
+					text-align: center;
+				}
+				.btn-send {
+					border: 1px solid #fff;
+					background: $green;
+					padding: 5px 20px;
+					font-size: 14px;
+					font-family: $rozha;
+					font-weight: 400;
+					margin:5% 40%;
+					a {
+						color: #fff;
+					}
+				}
+			}
+			.homepage-actuality {	
+				width: 100%;
+				h3 {
+					width: 80%;
+					font-size: 24px;
+					margin: 33px;
+					text-align: right;
+					color: $red;
+					font-weight: 400;
+				}
+				.actuality-slider {
+
+				}
+				.actuality-articles {
+					width: 100%;
+					.article {
+						width: 100%;
+						.article-details {
+							width: 60%;
+							float: left;
+							p {
+								padding: 0 30px;
+								text-align: right;
+								font-size: 14px;
+								margin-top: 20px;
+								.more-information {
+									float: right;
+									font-weight: bold;
+									margin: 20px 0;
+									background: #fff;
+									border:none;
+									a {
+										font-size: 14px;
+										color:$green;
+										margin-top: 30px;
+									}
+								}
+							}
+						}
+						.article-img {
+							width: 40%;
+							float: right;
+							img{
+								width: 100%;
+							}
+
+						}
+
+					}
+					.article-pres {
+						width: 100%;
+						box-shadow: 0 1px 0px 0 rgba(0,0,0,0.24);
+						h5 {
+							font-size: 24px;
+							color: $blue;
+							margin-top: 30px;
+							text-align: right;
+							padding: 10px 30px;
+
+						}
+						p {
+							font-size: 16px;
+							text-align: right;
+							color: #9B9B9B;
+							padding: 10px 30px;
+						}
+					}
+				}
+			}
+			.homepage-partners{
+				width: 90%;
+				h5 {
+					font-size: 14px;
+					color: $red;
+					font-weight: 400;
+					margin-top: 64px;
+				}
+				.partners-row1 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 7px 0;
+					img {
+						width: 20%;
+					}
+				}
+			}
+			.partners-row2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 11px 0;
+				img {
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	/*----RESPONSIVE------*/ 
+	@media screen and (min-width: 768px) {
+		header {
+			position: relative;
+			h1 {
+				a {
+					#logo {
+						display:none;
+						position: absolute;
+						z-index: 22;
+						display: block;
+						position: fixe;
+						width: 150px;
+						margin: 0;
+						height: 1;
+					}
+				}
+			}
+			nav {
+				display: inline-block;
+				width: 80%; 
+				margin-left: 20%;
+				ul  {
+
+					li {
+						a {
+
+						}
+					}
+				}
+			}
+			h2 { 
+				width: 90%;
+				height: auto;
+				font-size: 80px;
+				margin: 0 auto;
+				margin-top: 160px;
+				line-height: 80%;
+				br {
+
+				}
+			}
+			#slide-words{
+				font-size: 100px;
+			}
+			.help-us {
+				display:none;
+			}
+		}
+
+		.homepage-content {
+			.homepage-section {
+				.homepage-presentation {
+					position: relative;
+					h3 {
+						width: 70%;
+						font-size: 34px;
+						text-align: right;
+						#size-question {
+							font-size: 56px;
+							text-align: center;
+						}
+					}
+					.img-deco {
+						width:200px;
+						height: 200px;
+					}
+					.deco2 {
+					}
+					p {
+						font-size: 16px;
+
+						.style-text {
+						}
+
+						.more-information {
+							font-size: 16px;
+							a{
+							}
+						}
+					}
+					p:last-child {
+					}
+				}
+				.homepage-newsletter {
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 30px;
+					h4 { 
+						font-size: 40px;
+
+						span {
+						}
+					}
+					p {
+						font-size: 16px;
+					}
+					#enter-mail {
+						font-size: 16px;
+					}
+					.btn-send {
+						font-size: 18px;
+						a {
+						}
+					}
+				}
+				.homepage-actuality {
+					h3 {
+						font-size: 34px;
+					}
+				}
+				.homepage-partners{
+					h5 {
+						font-size: 24px;
+					}
+					.partners-row1 {
+						img {
+
+						}
+					}
+				}
+				.partners-row2 {
+					img {
+					}
+				}
+			}
+		}
+
+	}
+
+	@media screen and (min-width: 1040px) {
+		header {
+			position: relative;
+			h1 {
+				a {
+					#logo {
+						display:none;
+						position: absolute;
+						z-index: 22;
+						display: block;
+						position: fixe;
+						width: 150px;
+						margin: 0;
+						height: 1;
+					}
+				}
+			}
+			nav {
+				display: inline-block;
+				width: 60%; 
+				margin-left: 40%;
+				ul  {
+
+					li {
+
+						a {
+							font-size: 24px;
+						}
+					}
+				}
+			}
+			h2 { 
+				width: 90%;
+				height: auto;
+				font-size: 80px;
+				margin: 0 auto;
+				margin-top: 160px;
+				line-height: 80%;
+				br {
+
+				}
+			}
+			#slide-words{
+				font-size: 100px;
+			}
+			.help-us {
+				display:none;
+			}
+		}
+
+		.homepage-content {
+			.homepage-section {
+				.homepage-presentation {
+					position: relative;
+					h3 {
+						width: 70%;
+						font-size: 60px;
+						text-align: right;
+						#size-question {
+							font-size: 95px;
+							text-align: center;
+						}
+					}
+					.img-deco {
+						width:200px;
+						height: 200px;
+					}
+					.deco2 {
+					}
+					p {
+						font-size: 24px;
+
+						.style-text {
+						}
+
+						.more-information {
+							font-size: 24px;
+							margin-top: 50px;
+							a{
+							}
+						}
+					}
+					p:last-child {
+					}
+				}
+				.homepage-newsletter {
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 30px;
+					h4 { 
+						font-size: 40px;
+
+						span {
+						}
+					}
+					p {
+						font-size: 24px;
+					}
+					#enter-mail {
+						font-size: 24px;
+					}
+					.btn-send {
+						font-size: 24px;
+						a {
+						}
+					}
+				}
+				.homepage-actuality {
+					h3 {
+						font-size: 60px;
+					}
+					.actuality-articles {
+						.article {
+							.article-details {
+								p {
+									font-size: 18px;
+									.more-information {
+										a {
+											font-size: 24px;
+										}
+									}
+								}
+							}
+							.article-img {
+								img {
+
+								}
+							}
+						}
+						.article-pres {
+							h5 {
+								font-size: 24px;
+							}
+							p {
+								font-size: 18px;
+							}
+						}
+					}	
+				}
+				.homepage-partners{
+					h5 {
+						font-size: 40px;
+					}
+					.partners-row1 {
+						img {
+							width:10%;
+						}
+					}
+				}
+				.partners-row2 {
+					img {
+						width: 20%;
+					}
+				}
+			}
+		}
+
+	}
+
