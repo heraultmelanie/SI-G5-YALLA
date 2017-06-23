@@ -6,7 +6,7 @@ header.aboutus-header {
         font-family: 'Rozha One', serif;
         font-size: 24px;
         text-align: center;
-        height: auto;
+        //height: auto;
         margin: 0;
     }
     .aboutus-team {
@@ -15,11 +15,12 @@ header.aboutus-header {
         width: 100%;
         border: 2px solid yellow;
         ul.team-picture {
+            position: relative;
             list-style-type: none;
             li.team-frame {
                 display: block;
                 position: absolute;
-                top: 5%;
+                top: 15%;
                 width: 122px;
                 height: 122px;
                 border: 10px solid #FFF;
@@ -28,10 +29,13 @@ header.aboutus-header {
                 border-radius: 50%;
             }
             li.team-frame.left {
-                left: -12vh;
+                left: -20vh;
             }
             li.team-frame.right {
-                right: -12vh;
+                right: -20vh;
+            }
+            li.mq768 {
+                display: none;
             }
             li.team-active {
                 display: block;
@@ -42,16 +46,12 @@ header.aboutus-header {
                 border-radius: 50%;
                 overflow: hidden;
                 margin: 0 auto;
-                // supprimer dessous ap mettre img
-                text-align: center;
-                padding-top: 20px;
-                font-size: 36px;
                 img {
-                    width: 100%;
-                    height: 100%;
+                    //width: 100%;
+                    //height: 100%;
                 }
             }
-            li.team-mq768 {
+            li {
                 display: none;
             }
         }
@@ -82,91 +82,11 @@ header.aboutus-header {
     }
 }
 
+@media screen and (min-width: 480px) {}
 
-/* ---
-----------------------------------------
------------------ RESPONSIVE
-----------------------------------------
--------------- */
-
-
-/* ---------------
-------------------------------------------------------------- 768 PX -----------------*/
-
-@media screen and (min-width: 768px) {
-    header.aboutus-header {
-        position: relative;
-        h2 {}
-        .aboutus-team {
-            top: 10%;
-            ul.team-picture {
-                li.team-frame {}
-                li.frame-mq768 {
-                    //display: none;
-                }
-                li.team-frame.left {
-                    left: -12vh;
-                }
-                li.team-frame.right {
-                    right: -12vh;
-                }
-                div.team-hide {
-                    margin: 20vh 0 0 0;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
-                    //margin: 28% 0 0 0;
-                    //background: orange;
-                    background: orange;
-                    li.team-mq768 {
-                        display: inline-block;
-                        min-width: 100px;
-                        background: purple;
-                        border-radius: 50%;
-                        height: 100px;
-                        // supprimer dessous ap mettre img
-                        text-align: center;
-                        padding-top: 20px;
-                        font-size: 36px;
-                    }
-                }
-                li.team-active {
-                    //position: absolute;
-                    //top: 0;
-                    //left: 44%;
-                    background: #fff;
-                    img {}
-                }
-                li {}
-            }
-            ul.team-name {
-                width: 100%;
-                position: absolute;
-                top: 30vh;
-                background: red;
-                li.name-active {
-                    h5 {
-                        font-size: 24px;
-                    }
-                    p {
-                        font-size: 16px;
-                    }
-                }
-                li {}
-            }
-        }
-    }
-}
+@media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {}
-
-
-/* ---
-----------------------------------------
--------------------fin responsive header
-----------------------------------------
--------------- */
 
 main.aboutus-main {
     font-family: 'Poppins', sans-serif;

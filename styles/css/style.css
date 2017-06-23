@@ -67,12 +67,11 @@ header.aboutus-header {
     width: 100%;
     border: 2px solid yellow; }
     header.aboutus-header .aboutus-team ul.team-picture {
-      position: relative;
       list-style-type: none; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame {
         display: block;
         position: absolute;
-        top: 15%;
+        top: 5%;
         width: 122px;
         height: 122px;
         border: 10px solid #FFF;
@@ -80,9 +79,9 @@ header.aboutus-header {
         border: 10px solid #FFF;
         border-radius: 50%; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
-        left: -22vh; }
+        left: -12vh; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
-        right: -22vh; }
+        right: -12vh; }
       header.aboutus-header .aboutus-team ul.team-picture li.team-active {
         display: block;
         width: 174px;
@@ -90,11 +89,14 @@ header.aboutus-header {
         border: 10px solid #FFF;
         border-radius: 50%;
         overflow: hidden;
-        margin: 0 auto; }
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 36px; }
         header.aboutus-header .aboutus-team ul.team-picture li.team-active img {
           width: 100%;
           height: 100%; }
-      header.aboutus-header .aboutus-team ul.team-picture li {
+      header.aboutus-header .aboutus-team ul.team-picture li.team-mq768 {
         display: none; }
     header.aboutus-header .aboutus-team ul.team-name {
       position: relative;
@@ -116,14 +118,61 @@ header.aboutus-header {
       header.aboutus-header .aboutus-team ul.team-name li {
         display: none; }
 
+/* ---
+----------------------------------------
+----------------- RESPONSIVE
+----------------------------------------
+-------------- */
+/* ---------------
+------------------------------------------------------------- 768 PX -----------------*/
+@media screen and (min-width: 768px) {
+  header.aboutus-header {
+    position: relative; }
+    header.aboutus-header .aboutus-team {
+      top: 10%; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
+        left: -12vh; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
+        right: -12vh; }
+      header.aboutus-header .aboutus-team ul.team-picture div.team-hide {
+        margin: 20vh 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background: orange; }
+        header.aboutus-header .aboutus-team ul.team-picture div.team-hide li.team-mq768 {
+          display: inline-block;
+          min-width: 100px;
+          background: purple;
+          border-radius: 50%;
+          height: 100px;
+          text-align: center;
+          padding-top: 20px;
+          font-size: 36px; }
+      header.aboutus-header .aboutus-team ul.team-picture li.team-active {
+        background: #fff; }
+      header.aboutus-header .aboutus-team ul.team-name {
+        width: 100%;
+        position: absolute;
+        top: 30vh;
+        background: red; }
+        header.aboutus-header .aboutus-team ul.team-name li.name-active h5 {
+          font-size: 24px; }
+        header.aboutus-header .aboutus-team ul.team-name li.name-active p {
+          font-size: 16px; } }
+/* ---
+----------------------------------------
+-------------------fin responsive header
+----------------------------------------
+-------------- */
 main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */ }
   main.aboutus-main div {
     position: relative;
-    margin-bottom: 58px;
-    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
+    /* ----- DIV : Aide humanitaire proximité ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -149,9 +198,9 @@ main.aboutus-main {
     main.aboutus-main div img.arabic-script {
       display: block;
       position: absolute;
-      height: 170px;
-      bottom: 25vh;
-      left: -3vh; }
+      height: 30%;
+      bottom: 30vh;
+      left: -2vh; }
     main.aboutus-main div p.content-philosophy {
       margin: 0 10% 17px 10%;
       font-size: 12px;
@@ -162,26 +211,41 @@ main.aboutus-main {
       text-align: right; }
     main.aboutus-main div p.ct-philo2 {
       width: 80%;
-      float: left; }
+      float: left;
+      margin-bottom: 10%; }
   main.aboutus-main .values .content-img-strong {
     position: relative; }
     main.aboutus-main .values .content-img-strong .ct-img {
-      width: 65%;
-      margin: 15px 0 0 0; }
+      width: 65%; }
       main.aboutus-main .values .content-img-strong .ct-img img {
         width: 100%; }
     main.aboutus-main .values .content-img-strong strong {
-      width: 65%;
       position: absolute;
       bottom: 10%;
       font-size: 14px;
       font-family: 'Rozha One', serif;
       color: #2b6847;
       background: #fff;
-      padding: 2%;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
-  main.aboutus-main .img-left strong {
-    left: 35%; }
+  main.aboutus-main .img-left {
+    margin: 0; }
+  main.aboutus-main strong.img-left-strong {
+    width: 65%;
+    left: 35%;
+    padding: 2% 10%; }
+  main.aboutus-main .img-right {
+    margin: 0 0 0 35%; }
+  main.aboutus-main strong.img-right-strong {
+    width: 65%;
+    left: 0;
+    text-align: right;
+    padding: 2% 10%; }
+  main.aboutus-main .img-centered {
+    margin: 0 auto; }
+  main.aboutus-main strong.img-centered-strong {
+    width: 100%;
+    left: 0;
+    padding: 2% 0; }
   main.aboutus-main p {
     width: 80%;
     margin: 0 auto 65px auto;
@@ -193,10 +257,12 @@ main.aboutus-main {
       text-decoration: underline; }
   main.aboutus-main p.content-left {
     text-align: left; }
-  main.aboutus-main p.content-right {
+  main.aboutus-main p.content-right,
+  main.aboutus-main p.content-right2,
+  main.aboutus-main p.content-left2 {
     text-align: right; }
 
-/* ----- DIV : Laicit├® ----- */
+/* ----- DIV : Laicité ----- */
 div.secularism {
   position: relative; }
   div.secularism .content-img2-strong .ct-img2 {
@@ -208,7 +274,7 @@ div.secularism {
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 15%;
+    bottom: 8%;
     text-align: center;
     font-family: 'Rozha One', serif;
     font-size: 14px;
@@ -223,31 +289,63 @@ div.transparency strong {
   text-align: center; }
 
 /* ----- DIV : Gif ----- */
-.gif {
-  width: 100%;
-  height: 252px;
-  background: blue; }
+div.gif {
+  background: blue;
+  height: 300px; }
 
+/* ---
+----------------------------------------
+----------------- RESPONSIVE
+----------------------------------------
+-------------- */
+/* ---------------
+------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   main.aboutus-main {
-    /* ----- MEDIA COMMUN DIV ----- */
-    /* ----- MEDIA DIV : toutes valeurs ----- */
-    /* ----- MEDIA DIV : Laicit├® ----- */
-    /* ----- MEDIA DIV : Transparence ----- */
-    /* ----- MEDIA DIV : Gif ----- */ }
+    /* ----- commun div ----- */
+    /* ----- valeurs ----- */ }
+    main.aboutus-main div h4 {
+      padding-bottom: 3%;
+      font-size: 30px; }
+    main.aboutus-main div p.catch-line {
+      margin: 0 auto 20px auto;
+      font-size: 16px;
+      line-height: 28px; }
+    main.aboutus-main div p.content-philosophy {
+      font-size: 16px;
+      line-height: 28px; }
+    main.aboutus-main div p.ct-philo2 {
+      margin-bottom: 7%; }
+    main.aboutus-main .values .content-img-strong strong {
+      font-size: 24px; }
+    main.aboutus-main div.secularism .content-img2-strong strong {
+      font-size: 24px; }
+    main.aboutus-main strong p {
+      font-size: 16px;
+      line-height: 30px; }
+    main.aboutus-main p {
+      font-size: 16px;
+      line-height: 30px; } }
+/* ---------------
+------------------------------------------------------------- 1040 PX ----------------*/
+@media screen and (min-width: 1040px) {
+  main.aboutus-main {
+    /* ----- commun div----- */
+    /* ----- toutes valeurs ----- */ }
     main.aboutus-main div {
-      /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
+      margin: 0;
+      /* ----- valeur : Aide humanitaire proximité ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
           font-size: 72px; }
       main.aboutus-main div h4 {
-        margin: 0 auto 52px auto;
-        font-size: 36px; }
+        margin: 0 auto 30px auto;
+        font-size: 24px; }
       main.aboutus-main div p.catch-line {
         width: 70%;
         margin: 0 10% 64px 20%;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 36px; }
       main.aboutus-main div img.arabic-script {
         height: 55%;
@@ -255,36 +353,88 @@ div.transparency strong {
       main.aboutus-main div p.content-philosophy {
         width: 48%;
         margin: 0 10% 60px 10%;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 36px; }
       main.aboutus-main div p.ct-philo2 {
-        margin-left: 20%; }
-    main.aboutus-main .values .ct-img {
-      width: 40%; }
-      main.aboutus-main .values .ct-img strong {
-        display: block;
+        margin-left: 25vw; }
+    main.aboutus-main .values {
+      position: relative;
+      margin-bottom: 5%; }
+      main.aboutus-main .values .content-img-strong .ct-img {
+        width: 37%; }
+        main.aboutus-main .values .content-img-strong .ct-img img {
+          width: 100%; }
+      main.aboutus-main .values .content-img-strong strong {
         width: 100%;
-        font-size: 30px;
-        padding: 5% 0;
-        text-align: center;
-        background: yellow; }
-    main.aboutus-main .values .img-left strong {
-      right: 0; }
-    main.aboutus-main .values .img-right {
-      margin: 0 0 0 60%; }
-    main.aboutus-main .values p {
-      font-size: 30px;
-      line-height: 40px; }
-    main.aboutus-main div.secularism .ct-img2 {
-      width: 60%;
-      margin: 0 0 0 40%; }
-      main.aboutus-main div.secularism .ct-img2 strong {
         display: block;
-        width: 100vh;
-        font-size: 30px;
-        text-align: right;
-        padding-right: 10%;
-        background: yellow; } }
+        bottom: 8%;
+        font-size: 30px; }
+      main.aboutus-main .values .content-img-strong strong.img-left-strong {
+        width: 100%;
+        left: 0;
+        padding: 1% 0 1% 7%; }
+      main.aboutus-main .values .content-img-strong .img-right {
+        margin: 0 0 0 60%; }
+      main.aboutus-main .values .content-img-strong .img-right-strong {
+        width: 100%;
+        margin: 0;
+        padding: 1% 10% 1% 0; }
+      main.aboutus-main .values p.content {
+        position: absolute;
+        font-size: 18px;
+        line-height: 40px; }
+      main.aboutus-main .values p.content-left {
+        top: 45%;
+        right: 8%;
+        width: 50%; }
+      main.aboutus-main .values p.content-right {
+        top: 10%;
+        left: 6%;
+        width: 47%; }
+    main.aboutus-main .content-img-strong .img-centered-strong {
+      padding: 1% 0; }
+
+  /* ----- valeur : Laicité ----- */
+  div.secularism .content-img2-strong .ct-img2 {
+    width: 60%;
+    margin: 0 0 0 40%; }
+  div.secularism .content-img2-strong strong {
+    font-size: 30px;
+    text-align: right;
+    padding: 1% 10% 1% 0; }
+  div.secularism p.content-right2 {
+    top: 0;
+    left: 5%;
+    width: 30%;
+    padding-top: 0; }
+
+  /* ----- Transparence ----- */
+  div.transparency {
+    position: relative;
+    margin-bottom: 0; }
+    div.transparency p.content-left2 {
+      width: 50%;
+      font-size: 18px;
+      line-height: 40px;
+      text-align: right; }
+
+  /* ----- div : Gif ----- */ }
+/* -------------- 
+--------------------------------------------------------------1200 PX ----------------*/
+@media screen and (min-width: 1200px) {
+  main.aboutus-main div {
+    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+    main.aboutus-main div h4 {
+      margin: 0 auto 52px auto;
+      font-size: 30px; }
+    main.aboutus-main div p.ct-philo2 {
+      margin-left: 20vw; }
+
+  .values p.content-right {
+    top: 15%; }
+
+  div.secularism p.content-right2 {
+    top: 10%; } }
 header {
   background-image: url(../../img-layout/header-fond1.jpg);
   z-index: -50;
