@@ -11,6 +11,7 @@ header {
 		}
 	}
 	nav {
+		display: none;
 		ul  {
 		}
 	}
@@ -183,32 +184,54 @@ header {
 
 /*----RESPONSIVE------*/ 
 @media screen and (min-width: 768px) {
-	header {	
+	header {
+		position: relative;
 		h1 {
 			a {
 				#logo {
-					width: 25%;
-					margin-left: 35%;
+					display:none;
+					position: absolute;
+					z-index: 22;
+					display: block;
+					position: fixe;
+					width: 150px;
+					margin: 0;
+					height: 1;
 				}
 			}
 		}
 		nav {
+			display: block;
+			float: right;
+			position: absolute;
+			z-index: 22;
+			background: blue;
 			ul  {
+				position: absolute;
+				margin: 10px 0;
+				li {
+					a {
+
+					}
+				}
 			}
 		}
 		h2 { 
 			width: 90%;
-			text-align: center;
+			height: auto;
+			font-size: 80px;
 			margin: 0 auto;
-			margin-top: 60px;
+			margin-top: 175px;
+			line-height: 80%;
 			br {
-				display: none;
+			
 			}
 		}
 		#slide-words{
+			font-size: 100px;
 		}
 		.help-us {
-			
+			display:none;
 		}
 	}
 
@@ -217,7 +240,9 @@ header {
 			.homepage-presentation {
 				position: relative;
 				h3 {
+					width: 70%;
 					font-size: 28px;
+					text-align: right;
 					#size-question {
 						font-size: 56px;
 						text-align: center;
@@ -245,6 +270,9 @@ header {
 				}
 			}
 			.homepage-newsletter {
+				width: 60%;
+				margin: 0 auto;
+				margin-top: 30px;
 				h4 { 
 					font-size: 40px;
 					
