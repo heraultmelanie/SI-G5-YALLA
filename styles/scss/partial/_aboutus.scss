@@ -1,570 +1,538 @@
-header.aboutus-header {
-    position: relative;
-    background-image: url(../../img-layout/expo_ant.jpg);
-    /* ----- HEADER ----- */
-    h2 {
-        font-family: 'Rozha One', serif;
-        font-size: 24px;
-        text-align: center;
-        height: auto;
-        margin: 0;
-    }
-    .aboutus-team {
-        position: absolute;
-        top: 20%;
-        width: 100%;
-        border: 2px solid yellow;
-        ul.team-picture {
-            list-style-type: none;
-            li.team-frame {
-                display: block;
-                position: absolute;
-                top: 5%;
-                width: 122px;
-                height: 122px;
-                border: 10px solid #FFF;
-                background: #fff;
-                border: 10px solid #FFF;
-                border-radius: 50%;
-            }
-            li.team-frame.left {
-                left: -12vh;
-            }
-            li.team-frame.right {
-                right: -12vh;
-            }
-            li.team-active {
-                display: block;
-                width: 174px;
-                height: 174px;
-                // margin: 0 25%;
-                border: 10px solid #FFF;
-                border-radius: 50%;
-                overflow: hidden;
-                margin: 0 auto;
-                // supprimer dessous ap mettre img
-                text-align: center;
-                padding-top: 20px;
-                font-size: 36px;
-                img {
-                    width: 100%;
-                    height: 100%;
+                header.aboutus-header {
+                    position: relative;
+                    background-image: url(../../img-layout/expo_ant.jpg);
+                    /* ----- HEADER ----- */
+                    h2 {
+                        //font-family: 'Rozha One', serif;
+                        //font-size: 24px;
+                        //text-align: center;
+                        //height: auto;
+                        //margin: 0;
+                    }
+                    .aboutus-team {
+                        position: absolute;
+                        top: 20%;
+                        width: 100%;
+                        ul.team-picture {
+                            list-style-type: none;
+                            li.team-frame {
+                                display: block;
+                                position: absolute;
+                                top: 5%;
+                                width: 122px;
+                                height: 122px;
+                                border-radius: 50%;
+                                border: 10px solid #FFF;
+                                background: #fff;
+                            }
+                            li.team-frame.left {
+                                left: -12vh;
+                            }
+                            li.team-frame.right {
+                                right: -12vh;
+                            }
+                            li.team-active {
+                                display: block;
+                                width: 174px;
+                                height: 174px;
+                                margin: 3% auto 0 auto;
+                                border-radius: 50%;
+                                border: 10px solid #FFF;
+                                overflow: hidden;
+                                // supprimer dessous ap mettre img
+                                text-align: center;
+                                padding-top: 20px;
+                                font-size: 36px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            li.team-mq768 {
+                                display: none;
+                            }
+                        }
+                        ul.team-name {
+                            position: relative;
+                            list-style-type: none;
+                            li.name-active {
+                                display: inline-block;
+                                width: 100%;
+                                color: #FFF;
+                                h5 {
+                                    font-size: 18px;
+                                    font-family: 'Rozha One', serif;
+                                    text-align: center;
+                                    color: #fff;
+                                }
+                                p {
+                                    font-size: 12px;
+                                    font-family: 'Poppins', sans-serif;
+                                    text-align: center;
+                                }
+                            }
+                            li {
+                                display: none;
+                            }
+                        }
+                    }
                 }
-            }
-            li.team-mq768 {
-                display: none;
-            }
-        }
-        ul.team-name {
-            position: relative;
-            list-style-type: none;
-            li.name-active {
-                display: inline-block;
-                width: 100%;
-                color: #FFF;
-                h5 {
-                    margin-top: 10px;
-                    font-family: 'Rozha One', serif;
-                    font-size: 18px;
-                    text-align: center;
-                    color: #fff;
-                }
-                p {
-                    font-family: 'Poppins', sans-serif;
-                    font-size: 12px;
-                    text-align: center;
-                }
-            }
-            li {
-                display: none;
-            }
-        }
-    }
-}
-
-
-/* ---
+                /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-
-
-/* ---------------
+                /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
-
-@media screen and (min-width: 768px) {
-    header.aboutus-header {
-        position: relative;
-        h2 {}
-        .aboutus-team {
-            top: 10%;
-            ul.team-picture {
-                li.team-frame {}
-                li.frame-mq768 {
-                    //display: none;
-                }
-                li.team-frame.left {
-                    left: -12vh;
-                }
-                li.team-frame.right {
-                    right: -12vh;
-                }
-                div.team-hide {
-                    margin: 20vh 0 0 0;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
-                    //margin: 28% 0 0 0;
-                    //background: orange;
-                    background: orange;
-                    li.team-mq768 {
-                        display: inline-block;
-                        min-width: 100px;
-                        background: purple;
-                        border-radius: 50%;
-                        height: 100px;
-                        // supprimer dessous ap mettre img
-                        text-align: center;
-                        padding-top: 20px;
-                        font-size: 36px;
+                
+                @media screen and (min-width: 768px) {
+                    header.aboutus-header {
+                        position: relative;
+                        .aboutus-team {
+                            top: 10%;
+                            ul.team-picture {
+                                li.frame-mq768 {
+                                    display: none;
+                                }
+                                div.team-hide {
+                                    margin: 14vh 0 0 0;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-wrap: nowrap;
+                                    //background: orange;
+                                    li.team-mq768 {
+                                        display: inline-block;
+                                        height: 100px;
+                                        min-width: 100px;
+                                        border-radius: 50%;
+                                        border: 2px solid $blue;
+                                        // supprimer dessous ap mettre img
+                                        background: purple;
+                                        text-align: center;
+                                        padding-top: 20px;
+                                        font-size: 36px;
+                                    }
+                                }
+                                li.team-active {
+                                    //background: #fff;
+                                    img {}
+                                }
+                            }
+                            ul.team-name {
+                                width: 100%;
+                                position: absolute;
+                                top: 34.5vh;
+                                //background: red;
+                                li.name-active {
+                                    h5 {
+                                        font-size: 18px;
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-                li.team-active {
-                    //position: absolute;
-                    //top: 0;
-                    //left: 44%;
-                    background: #fff;
-                    img {}
-                }
-                li {}
-            }
-            ul.team-name {
-                width: 100%;
-                position: absolute;
-                top: 30vh;
-                background: red;
-                li.name-active {
-                    h5 {
-                        font-size: 24px;
-                    }
-                    p {
-                        font-size: 16px;
-                    }
-                }
-                li {}
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) {}
-
-
-/* ---
+                /* ---
 ----------------------------------------
 -------------------fin responsive header
 ----------------------------------------
 -------------- */
-
-main.aboutus-main {
-    font-family: 'Poppins', sans-serif;
-    /* ----- COMMUN DIV ----- */
-    div {
-        position: relative;
-        //margin-bottom: 58px;
-        h3 {
-            width: 80%;
-            margin-top: 40px;
-            font-size: 24px;
-            color: $red;
-            text-align: right;
-            span {
-                font-size: 48px;
-                padding: 0 2%;
-            }
-        }
-        h4 {
-            width: 80%;
-            font-size: 16px;
-            font-weight: 300;
-            text-align: right;
-            color: $blue;
-        }
-        /* ----- DIV : Aide humanitaire proximité ----- */
-        p.catch-line {
-            width: 80%;
-            margin: 25px auto 47px auto;
-            color: $red;
-            font-size: 12px;
-            line-height: 18px;
-            text-align: right;
-        }
-        img.arabic-script {
-            display: block;
-            position: absolute;
-            height: 30%;
-            bottom: 30vh;
-            left: -2vh;
-        }
-        p.content-philosophy {
-            margin: 0 10% 17px 10%;
-            font-size: 12px;
-            line-height: 18px;
-        }
-        p.ct-philo1 {
-            width: 60%;
-            float: right;
-            text-align: right;
-        }
-        p.ct-philo2 {
-            width: 80%;
-            float: left;
-            margin-bottom: 10%;
-        }
-    }
-    /* ----- DIV : toutes valeurs ----- */
-    .values {
-        .content-img-strong {
-            position: relative;
-            .ct-img {
-                width: 65%;
-                img {
-                    width: 100%;
+                
+                main.aboutus-main {
+                    font-family: 'Poppins', sans-serif;
+                    /* ----- COMMUN DIV ----- */
+                    div {
+                        position: relative;
+                        //margin-bottom: 58px;
+                        h3 {
+                            width: 80%;
+                            margin-top: 40px;
+                            font-size: 24px;
+                            color: $red;
+                            text-align: right;
+                            span {
+                                font-size: 48px;
+                                padding: 0 2%;
+                            }
+                        }
+                        h4 {
+                            width: 80%;
+                            font-size: 16px;
+                            font-weight: 300;
+                            text-align: right;
+                            color: $blue;
+                        }
+                        /* ----- DIV : Aide humanitaire proximité ----- */
+                        p.catch-line {
+                            width: 80%;
+                            margin: 25px auto 47px auto;
+                            color: $red;
+                            font-size: 12px;
+                            line-height: 18px;
+                            text-align: right;
+                        }
+                        img.arabic-script {
+                            display: block;
+                            position: absolute;
+                            height: 30%;
+                            bottom: 30vh;
+                            left: -2vh;
+                        }
+                        p.content-philosophy {
+                            margin: 0 10% 17px 10%;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                        p.ct-philo1 {
+                            width: 60%;
+                            float: right;
+                            text-align: right;
+                        }
+                        p.ct-philo2 {
+                            width: 80%;
+                            float: left;
+                            margin-bottom: 10%;
+                        }
+                    }
+                    /* ----- DIV : toutes valeurs ----- */
+                    .values {
+                        .content-img-strong {
+                            position: relative;
+                            .ct-img {
+                                width: 65%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            strong {
+                                position: absolute;
+                                bottom: 10%;
+                                z-index: +1;
+                                font-size: 14px;
+                                font-family: 'Rozha One', serif;
+                                color: $green;
+                                background: #fff;
+                                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+                            }
+                        }
+                    }
+                    // droit enfant
+                    .img-left {
+                        margin: 0;
+                    }
+                    strong.img-left-strong {
+                        width: 65%;
+                        left: 35%;
+                        padding: 2% 10%;
+                    }
+                    // égalité
+                    .img-right {
+                        margin: 0 0 0 35%;
+                    }
+                    strong.img-right-strong {
+                        width: 65%;
+                        left: 0;
+                        text-align: right;
+                        padding: 2% 10%;
+                    }
+                    // transparency
+                    .img-centered {
+                        margin: 0 auto;
+                    }
+                    strong.img-centered-strong {
+                        width: 100%;
+                        left: 0;
+                        padding: 2% 0;
+                    }
+                    p {
+                        width: 80%;
+                        margin: 0 auto 65px auto;
+                        padding-top: 7px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        span.law-rights {
+                            color: $green;
+                            text-decoration: underline;
+                        }
+                    }
+                    p.content-left {
+                        text-align: left;
+                    }
+                    p.content-right,
+                    p.content-right2,
+                    p.content-left2 {
+                        text-align: right;
+                    }
+                    /* ----- DIV : Laicité ----- */
+                    div.secularism {
+                        position: relative;
+                        .content-img2-strong {
+                            .ct-img2 {
+                                width: 90%;
+                                margin: 0 0 0 10%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            strong {
+                                display: block;
+                                width: 100%;
+                                position: absolute;
+                                bottom: 8%;
+                                text-align: center;
+                                font-family: 'Rozha One', serif;
+                                font-size: 14px;
+                                padding: 2%;
+                                color: $green;
+                                background: #fff;
+                                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+                            }
+                        }
+                    }
+                    /* ----- DIV : Transparence ----- */
+                    div.transparency {
+                        strong.img-centered-strong {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        img.transparency-mq1040 {
+                            display: none;
+                            height: 450px;
+                            width: auto;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                        }
+                    }
+                    /* ----- DIV : Gif ----- */
+                    div.gif {
+                        background: blue;
+                        height: 300px;
+                    }
                 }
-            }
-            strong {
-                position: absolute;
-                bottom: 10%;
-                font-size: 14px;
-                font-family: 'Rozha One', serif;
-                color: $green;
-                background: #fff;
-                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-            }
-        }
-    }
-    // droit enfant
-    .img-left {
-        margin: 0;
-    }
-    strong.img-left-strong {
-        width: 65%;
-        left: 35%;
-        padding: 2% 10%;
-        ;
-    }
-    // égalité
-    .img-right {
-        margin: 0 0 0 35%;
-    }
-    strong.img-right-strong {
-        width: 65%;
-        left: 0;
-        text-align: right;
-        padding: 2% 10%;
-    }
-    // transparency
-    .img-centered {
-        margin: 0 auto;
-    }
-    strong.img-centered-strong {
-        width: 100%;
-        left: 0;
-        padding: 2% 0;
-    }
-    p {
-        width: 80%;
-        margin: 0 auto 65px auto;
-        padding-top: 7px;
-        font-size: 12px;
-        line-height: 18px;
-        span.law-rights {
-            color: $green;
-            text-decoration: underline;
-        }
-    }
-    p.content-left {
-        text-align: left;
-    }
-    p.content-right,
-    p.content-right2,
-    p.content-left2 {
-        text-align: right;
-    }
-}
-
-
-/* ----- DIV : Laicité ----- */
-
-div.secularism {
-    position: relative;
-    .content-img2-strong {
-        .ct-img2 {
-            width: 90%;
-            margin: 0 0 0 10%;
-            img {
-                width: 100%;
-            }
-        }
-        strong {
-            display: block;
-            width: 100%;
-            position: absolute;
-            bottom: 8%;
-            text-align: center;
-            font-family: 'Rozha One', serif;
-            font-size: 14px;
-            padding: 2%;
-            color: $green;
-            background: #fff;
-            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-        }
-    }
-}
-
-
-/* ----- DIV : Transparence ----- */
-
-div.transparency {
-    strong {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-/* ----- DIV : Gif ----- */
-
-div.gif {
-    background: blue;
-    height: 300px;
-}
-
-
-/* ---
+                /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-
-
-/* ---------------
+                /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
-
-@media screen and (min-width: 768px) {
-    main.aboutus-main {
-        /* ----- commun div ----- */
-        div {
-            h4 {
-                padding-bottom: 3%;
-                font-size: 30px;
-            }
-            p.catch-line {
-                margin: 0 auto 20px auto;
-                font-size: 16px;
-                line-height: 28px;
-            }
-            p.content-philosophy {
-                font-size: 16px;
-                line-height: 28px;
-            }
-            p.ct-philo2 {
-                margin-bottom: 7%;
-            }
-        }
-        /* ----- valeurs ----- */
-        .values {
-            .content-img-strong {
-                strong {
-                    font-size: 24px;
-                }
-            }
-        }
-        div.secularism {
-            .content-img2-strong {
-                strong {
-                    font-size: 24px;
-                }
-            }
-        }
-        strong p {
-            font-size: 16px;
-            line-height: 30px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 30px;
-        }
-    }
-}
-
-
-/* ---------------
-------------------------------------------------------------- 1040 PX ----------------*/
-
-@media screen and (min-width: 1040px) {
-    main.aboutus-main {
-        /* ----- commun div----- */
-        div {
-            margin: 0;
-            h3 {
-                font-size: 36px;
-                span {
-                    font-size: 72px;
-                }
-            }
-            h4 {
-                margin: 0 auto 30px auto;
-                font-size: 24px;
-            }
-            /* ----- valeur : Aide humanitaire proximité ----- */
-            p.catch-line {
-                width: 70%;
-                margin: 0 10% 64px 20%;
-                font-size: 18px;
-                line-height: 36px;
-            }
-            img.arabic-script {
-                height: 55%;
-                bottom: 8vh;
-            }
-            p.content-philosophy {
-                width: 48%;
-                margin: 0 10% 60px 10%;
-                font-size: 18px;
-                line-height: 36px;
-            }
-            p.ct-philo2 {
-                margin-left: 25vw;
-            }
-        }
-        /* ----- toutes valeurs ----- */
-        .values {
-            position: relative;
-            margin-bottom: 5%;
-            // toutes
-            .content-img-strong {
-                .ct-img {
-                    width: 37%;
-                    img {
-                        width: 100%;
+                
+                @media screen and (min-width: 768px) {
+                    main.aboutus-main {
+                        /* ----- commun div ----- */
+                        div {
+                            h4 {
+                                padding-bottom: 3%;
+                                font-size: 30px;
+                            }
+                            p.catch-line {
+                                margin: 0 auto 20px auto;
+                                font-size: 16px;
+                                line-height: 28px;
+                            }
+                            p.content-philosophy {
+                                font-size: 16px;
+                                line-height: 28px;
+                            }
+                            p.ct-philo2 {
+                                margin-bottom: 7%;
+                            }
+                        }
+                        /* ----- valeurs ----- */
+                        .values {
+                            .content-img-strong {
+                                strong {
+                                    font-size: 24px;
+                                }
+                            }
+                            div.secularism {
+                                .content-img2-strong {
+                                    strong {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                            strong p {
+                                font-size: 16px;
+                                line-height: 30px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 30px;
+                            }
+                        }
                     }
                 }
-                strong {
-                    width: 100%;
-                    display: block;
-                    bottom: 8%;
-                    font-size: 30px;
+                /* ---------------
+------------------------------------------------------------- 1040 PX ----------------*/
+                
+                @media screen and (min-width: 1040px) {
+                    main.aboutus-main {
+                        /* ----- commun div----- */
+                        div {
+                            margin: 0;
+                            h3 {
+                                font-size: 36px;
+                                span {
+                                    font-size: 72px;
+                                }
+                            }
+                            h4 {
+                                margin: 0 auto 30px auto;
+                                font-size: 24px;
+                            }
+                            /* ----- valeur : Aide humanitaire proximité ----- */
+                            p.catch-line {
+                                width: 70%;
+                                margin: 0 10% 64px 20%;
+                                font-size: 18px;
+                                line-height: 36px;
+                            }
+                            img.arabic-script {
+                                height: 55%;
+                                bottom: 8vh;
+                            }
+                            p.content-philosophy {
+                                width: 48%;
+                                margin: 0 10% 60px 10%;
+                                font-size: 18px;
+                                line-height: 36px;
+                            }
+                            p.ct-philo2 {
+                                margin-left: 25vw;
+                            }
+                        }
+                        /* ----- toutes valeurs ----- */
+                        .values {
+                            position: relative;
+                            margin-bottom: 5%;
+                            // toutes
+                            .content-img-strong {
+                                .ct-img {
+                                    width: 37%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                strong {
+                                    width: 100%;
+                                    display: block;
+                                    bottom: 8%;
+                                    font-size: 30px;
+                                }
+                            }
+                            // img gauche : droit enfant
+                            .content-img-strong {
+                                strong.img-left-strong {
+                                    width: 100%;
+                                    left: 0;
+                                    padding: 1% 0 1% 7%;
+                                }
+                            }
+                            //img droite: Egalité
+                            .content-img-strong {
+                                .img-right {
+                                    margin: 0 0 0 60%;
+                                }
+                                .img-right-strong {
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 1% 10% 1% 0;
+                                }
+                            }
+                            // contenu tous
+                            p.content {
+                                position: absolute;
+                                font-size: 18px;
+                                line-height: 40px;
+                            }
+                            // contenu img gauche
+                            p.content-left {
+                                top: 45%;
+                                right: 8%;
+                                width: 50%;
+                                //background: green;
+                            }
+                            p.content-right {
+                                top: 10%;
+                                left: 6%;
+                                width: 47%;
+                                //background: purple;
+                            }
+                        }
+                        // img centrée: transparence
+                        .content-img-strong .img-centered-strong {
+                            padding: 1% 0;
+                        }
+                        /* ----- valeur : Laicité ----- */
+                        div.secularism {
+                            .content-img2-strong {
+                                .ct-img2 {
+                                    width: 60%;
+                                    margin: 0 0 0 40%;
+                                }
+                                strong {
+                                    font-size: 30px;
+                                    text-align: right;
+                                    padding: 1% 10% 1% 0;
+                                }
+                            }
+                            p.content-right2 {
+                                top: 0;
+                                left: 5%;
+                                width: 30%;
+                                padding-top: 0;
+                                //margin: 1% 0;
+                                // background: orange;
+                            }
+                        }
+                        /* ----- Transparence ----- */
+                        div.transparency {
+                            position: relative;
+                            margin-bottom: 0;
+                            img.transparency-mq1040 {
+                                display: block;
+                            }
+                            p.content-left2 {
+                                width: 50%;
+                                font-size: 18px;
+                                line-height: 40px;
+                                text-align: right;
+                                //background: maroon;
+                            }
+                        }
+                        /* ----- div : Gif ----- */
+                    }
                 }
-            }
-            // img gauche : droit enfant
-            .content-img-strong {
-                strong.img-left-strong {
-                    width: 100%;
-                    left: 0;
-                    padding: 1% 0 1% 7%;
-                }
-            }
-            //img droite: Egalité
-            .content-img-strong {
-                .img-right {
-                    margin: 0 0 0 60%;
-                }
-                .img-right-strong {
-                    width: 100%;
-                    margin: 0;
-                    padding: 1% 10% 1% 0;
-                }
-            }
-            // contenu tous
-            p.content {
-                position: absolute;
-                font-size: 18px;
-                line-height: 40px;
-            }
-            // contenu img gauche
-            p.content-left {
-                top: 45%;
-                right: 8%;
-                width: 50%;
-                //background: green;
-            }
-            p.content-right {
-                top: 10%;
-                left: 6%;
-                width: 47%;
-                //background: purple;
-            }
-        }
-        // img centrée: transparence
-        .content-img-strong .img-centered-strong {
-            padding: 1% 0;
-        }
-    }
-    /* ----- valeur : Laicité ----- */
-    div.secularism {
-        .content-img2-strong {
-            .ct-img2 {
-                width: 60%;
-                margin: 0 0 0 40%;
-            }
-            strong {
-                font-size: 30px;
-                text-align: right;
-                padding: 1% 10% 1% 0;
-            }
-        }
-        p.content-right2 {
-            top: 0;
-            left: 5%;
-            width: 30%;
-            padding-top: 0;
-            //margin: 1% 0;
-            // background: orange;
-        }
-    }
-    /* ----- Transparence ----- */
-    div.transparency {
-        position: relative;
-        margin-bottom: 0;
-        p.content-left2 {
-            width: 50%;
-            font-size: 18px;
-            line-height: 40px;
-            text-align: right;
-            //background: maroon;
-        }
-    }
-    /* ----- div : Gif ----- */
-}
-
-
-/* -------------- 
+                /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
-
-@media screen and (min-width: 1200px) {
-    main.aboutus-main {
-        div {
-            h4 {
-                margin: 0 auto 52px auto;
-                font-size: 30px;
-            }
-            /* ----- MEDIA DIV : Aide humanitaire proximité ----- */
-            p.ct-philo2 {
-                margin-left: 20vw;
-            }
-        }
-    }
-    .values {
-        p.content-right {
-            top: 15%;
-        }
-    }
-    div.secularism {
-        p.content-right2 {
-            top: 10%;
-        }
-    }
-}
+                
+                @media screen and (min-width: 1200px) {
+                    main.aboutus-main {
+                        div {
+                            h4 {
+                                margin: 0 auto 52px auto;
+                                font-size: 30px;
+                            }
+                            /* ----- MEDIA DIV : Aide humanitaire proximité ----- */
+                            p.ct-philo2 {
+                                margin-left: 20vw;
+                            }
+                        }
+                    }
+                    .values {
+                        p.content-right {
+                            top: 15%;
+                        }
+                    }
+                    div.secularism {
+                        p.content-right2 {
+                            top: 10%;
+                        }
+                    }
+                }
