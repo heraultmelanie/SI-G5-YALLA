@@ -1,23 +1,136 @@
+header {
+	h1 {
+		a {
+			#logo {
+			}
+		}
+	}
+	nav {
+		ul  {
+		}
+	}
+	h2 {
+		#slide-words{
+		}
+	}
+}
+
+
 .homepage-content {
 	.homepage-section {
 		.homepage-presentation {
 			h3 {
 				color: $red;
-				font-size: 37px;
+				font-size: 24px;
 				margin-top: 32px;
+				text-align: center;
+				font-weight: 400;
+
+				#size-question {
+					font-size: 48px;
+					text-align: center;
+				}
 			}
 			p {
-				
+				width: 70%;
+				font-size: 12px;
+				line-height: 180%;
+				margin-bottom: 20px;
+				text-align: right;
+
+				.style-text {
+					color: $red;
+				}
+
+				.more-information {
+					color: $green;
+					float: right;
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+			}
+			p:last-child {
+				margin-top: 40px;
 			}
 		}
 		.homepage-newsletter {
-			h4{
-
+			overflow: hidden;
+			width: 100%;
+			margin-top: 23px;
+			background: $green;
+			h4 { 
+				text-align: center;
+				font-size: 36px;
+				font-weight: 400;
+				margin-top: 26px;
+				color: #fff;
+				font-weight: 400;
+				span {
+					color: $yellow;
+				}
 			}
 			p {
-
+				width: 70%;
+				text-align: right;
+				color:#fff;
+				padding-bottom: 10px;
+			}
+			#enter-mail {
+				width: 100%;
+				background: #fff;
+				border: none;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.btn-send {
+				border: 1px solid #fff;
+				background: $green;
+				padding: 5px 20px;
+				font-size: 14px;
+				color: #fff;
+				font-family: $rozha;
+				font-weight: 400;
+				margin:5% 40%;
 			}
 
 		}
+		.homepage-actuality {
+			h3 {
+				width: 70%;
+				font-size: 24px;
+				margin-top: 33px;
+				text-align: right;
+				color: $red;
+				font-weight: 400;
+			}
+		}
+		.homepage-partners{
+			width: 90%;
+			h5 {
+				font-size: 14px;
+				color: $red;
+				font-weight: 400;
+				margin-top: 64px;
+			}
+			.partners-row1 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 7px 0;
+				img {
+					width: 20%;
+				}
+			}
+		}
+		.partners-row2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 11px 0;
+			img {
+				width: 30%;
+			}
+		}
 	}
 }
+
