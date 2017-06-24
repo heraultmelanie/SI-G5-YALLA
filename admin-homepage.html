@@ -20,11 +20,14 @@
                 <h2 class="admin-homepage">Information de compte</h2>
 
                 <!-- email -->
-                <label for="">Changer d'adresse e-mail :</label>
-                <input id="" type="email" name="" placeholder="hello.world@gmail.com">
+                <div class="admin-input-connection">
+                    <label for="admin-email">Changer d'adresse e-mail :</label>
+                    <input id="admin-email" type="email" name="admin-email" placeholder="hello.world@gmail.com">
+                    <p>adresse e-mail</p>
+                </div>
 
                 <!-- mot de passe -->
-                <label for="">Changer de mot de passe :</label>
+                <label for="" class="changing-pwd">Changer de mot de passe :</label>
                 <input id="old-password" type="password" name="" placeholder="ancien mot de passe">
                 <input id="new-password" type="text" name="" placeholder="nouveau mot de passe">
             </div>
@@ -32,11 +35,22 @@
 
             <div class="addsupp-user">
                 <h2 class="admin-homepage">Ajouter ou supprimer un utilisateur</h2>
+                <div class="admin-input-connection">
+                    <label for="">Entrez une adresse mail existante ou à ajouter :</label>
+                    <input id="" type="email" name="admin-email" placeholder="nouvelle.tête@gmail.com">
+                    <p>adresse e-mail</p>
+                    <div class="buttons-admin-homepage">
+                        <button class="btn-supp"><a href="#">Supprimer</a></button>
+                        <button class="btn-valid"><a href="#">Ajouter</a></button>
+                    </div>
+                </div>
+
+                <!-- mot de passe -->
+                <label for="" class="member-pwd">Entrez un mot de passe pour le membre:</label>
+                <input id="" type="password" name="" placeholder="nouveau mot de passe">
+                <button class="btn-valid account-created"><a href="#">Créer le compte</a></button>
 
             </div>
-
-
-
 
         </section>
     </main>

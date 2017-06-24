@@ -53,7 +53,6 @@ ul {
     color: #fff; }
 
 .btn-valid {
-  width: 150px;
   font-family: "Rozha One", serif;
   background: #2b6847;
   border: 1px solid #2b6847;
@@ -187,12 +186,12 @@ main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */
-  /* ----- DIV : Laicit├® ----- */
+  /* ----- DIV : Laicité ----- */
   /* ----- DIV : Transparence ----- */
   /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
-    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
+    /* ----- DIV : Aide humanitaire proximité ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -354,12 +353,12 @@ main.aboutus-main {
   main.aboutus-main {
     /* ----- commun div----- */
     /* ----- toutes valeurs ----- */
-    /* ----- valeur : Laicit├® ----- */
+    /* ----- valeur : Laicité ----- */
     /* ----- Transparence ----- */
     /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
-      /* ----- valeur : Aide humanitaire proximit├® ----- */ }
+      /* ----- valeur : Aide humanitaire proximité ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -444,7 +443,7 @@ main.aboutus-main {
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
-    /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
+    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
     main.aboutus-main div h4 {
       margin: 0 auto 52px auto;
       font-size: 30px; }
@@ -818,43 +817,118 @@ main.admin-homepage {
   main.admin-homepage section.admin-content {
     float: right;
     width: 94%;
-    display: flex; }
+    display: flex;
+    /*
+    div.addsupp-user {
+        height: 100vh;
+        margin-top: 5%;
+        h2.admin-homepage {
+            margin: 50px 0;
+            font-size: 24px;
+            color: $blue;
+            font-family: "Poppins", sans-serif;
+            padding-left: 10%;
+        }
+    }*/ }
     main.admin-homepage section.admin-content div {
       width: 50%; }
     main.admin-homepage section.admin-content div.account-info {
-      border-right: 2px solid grey;
-      height: 100vh;
-      margin-top: 5%; }
-      main.admin-homepage section.admin-content div.account-info h2.admin-homepage {
-        padding-left: 10%;
-        font-size: 21px;
-        font-weight: 200;
-        color: #243160; }
-      main.admin-homepage section.admin-content div.account-info label {
-        margin: 20% 0 3% 20%;
+      border-right: 2px solid grey; }
+    main.admin-homepage section.admin-content div.account-info,
+    main.admin-homepage section.admin-content div.addsupp-user {
+      height: 90vh;
+      margin: 2%;
+      /* ---- couleur placeholder ----- */ }
+      main.admin-homepage section.admin-content div.account-info h2.admin-homepage,
+      main.admin-homepage section.admin-content div.addsupp-user h2.admin-homepage {
+        margin: 50px 0;
+        font-size: 24px;
+        color: #243160;
+        font-family: "Poppins", sans-serif;
+        padding-left: 10%; }
+      main.admin-homepage section.admin-content div.account-info label,
+      main.admin-homepage section.admin-content div.addsupp-user label {
+        margin: 10% 0 3% 20%;
         display: block;
-        font-size: 21px;
+        font-size: 18px;
         color: #902a15; }
-      main.admin-homepage section.admin-content div.account-info input {
+      main.admin-homepage section.admin-content div.account-info label.changing-pwd,
+      main.admin-homepage section.admin-content div.addsupp-user label.changing-pwd {
+        margin: 18% 0 3% 20%; }
+      main.admin-homepage section.admin-content div.account-info label.member-pwd,
+      main.admin-homepage section.admin-content div.addsupp-user label.member-pwd {
+        margin: 10% 0 3% 20%; }
+      main.admin-homepage section.admin-content div.account-info input,
+      main.admin-homepage section.admin-content div.addsupp-user input {
         display: block;
         width: 60%;
         margin: 0 auto;
         border: none;
-        border-bottom: 1px solid #243160; }
-      main.admin-homepage section.admin-content div.account-info input[placeholder] {
-        color: #243160;
+        border-bottom: 1px solid grey; }
+      main.admin-homepage section.admin-content div.account-info input[placeholder],
+      main.admin-homepage section.admin-content div.addsupp-user input[placeholder] {
         font-size: 14px;
         padding: 0 0 1% 3%; }
-      main.admin-homepage section.admin-content div.account-info input#old-password {
+      main.admin-homepage section.admin-content div.account-info div.admin-input-connection,
+      main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection {
+        width: 100%; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection input,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection input {
+          border-bottom: 1px solid #2b6847; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection ::-webkit-input-placeholder,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection ::-webkit-input-placeholder {
+          /* WebKit, Blink, Edge */
+          color: #243160; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection :-moz-placeholder,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #243160;
+          opacity: 1; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection ::-moz-placeholder,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #243160;
+          opacity: 1; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection :-ms-input-placeholder,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #243160; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection ::-ms-input-placeholder,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #243160; }
+        main.admin-homepage section.admin-content div.account-info div.admin-input-connection div.buttons-admin-homepage,
+        main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection div.buttons-admin-homepage {
+          width: 60%;
+          margin: 0 auto; }
+          main.admin-homepage section.admin-content div.account-info div.admin-input-connection div.buttons-admin-homepage .btn-supp,
+          main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection div.buttons-admin-homepage .btn-supp {
+            width: 40%;
+            font-family: "Rozha One", serif;
+            background: #902a15;
+            border: 1px solid #902a15;
+            padding: 5px 20px;
+            margin: 5px 15px 0 14%; }
+          main.admin-homepage section.admin-content div.account-info div.admin-input-connection div.buttons-admin-homepage .btn-valid,
+          main.admin-homepage section.admin-content div.addsupp-user div.admin-input-connection div.buttons-admin-homepage .btn-valid {
+            width: 40%;
+            font-family: "Rozha One", serif;
+            background: #2b6847;
+            border: 1px solid #2b6847;
+            padding: 5px 20px; }
+      main.admin-homepage section.admin-content div.account-info .account-created,
+      main.admin-homepage section.admin-content div.addsupp-user .account-created {
+        margin: 4% 0 0 45%; }
+      main.admin-homepage section.admin-content div.account-info input#old-password,
+      main.admin-homepage section.admin-content div.addsupp-user input#old-password {
         margin-bottom: 5%; }
-    main.admin-homepage section.admin-content div.addsupp-user {
-      height: 100vh;
-      margin-top: 5%; }
-      main.admin-homepage section.admin-content div.addsupp-user h2.admin-homepage {
-        padding-left: 10%;
-        font-size: 21px;
-        font-weight: 200;
-        color: #243160; }
+      main.admin-homepage section.admin-content div.account-info p,
+      main.admin-homepage section.admin-content div.addsupp-user p {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: right;
+        color: grey; }
 
 .admin-article-crea {
   width: 80%;
@@ -885,6 +959,7 @@ main.admin-homepage {
       float: right;
       margin: 20px 0 0 20px; }
     .admin-article-crea .admin-content .btn-valid {
+      width: 150px;
       float: right;
       margin: 20px 0 0 20px; }
   .admin-article-crea .part-details {
@@ -957,6 +1032,7 @@ main.admin-homepage {
         width: 5%;
         margin: 5px 10px 0; }
     .admin-back-mail .admin-mail-content .btn-valid {
+      width: 150px;
       float: right;
       margin: 30px 30px 0;
       font-size: 16px a;

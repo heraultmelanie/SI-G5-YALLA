@@ -15,45 +15,114 @@ main.admin-homepage {
         }
         div.account-info {
             border-right: 2px solid grey;
-            height: 100vh;
-            margin-top: 5%;
+        }
+        div.account-info,
+        div.addsupp-user {
+            height: 90vh;
+            margin: 2%;
             h2.admin-homepage {
-                padding-left: 10%;
-                font-size: 21px;
-                font-weight: 200;
+                margin: 50px 0;
+                font-size: 24px;
                 color: $blue;
+                font-family: "Poppins", sans-serif;
+                padding-left: 10%;
             }
             label {
-                margin: 20% 0 3% 20%;
+                margin: 10% 0 3% 20%;
                 display: block;
-                font-size: 21px;
+                font-size: 18px;
                 color: $red;
+            }
+            label.changing-pwd {
+                margin: 18% 0 3% 20%;
+            }
+            label.member-pwd {
+                margin: 10% 0 3% 20%;
             }
             input {
                 display: block;
                 width: 60%;
                 margin: 0 auto;
                 border: none;
-                border-bottom: 1px solid $blue;
+                border-bottom: 1px solid grey;
             }
             input[placeholder] {
-                color: $blue;
                 font-size: 14px;
                 padding: 0 0 1% 3%;
             }
+            div.admin-input-connection {
+                width: 100%;
+                input {
+                    border-bottom: 1px solid $green;
+                }
+                ::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    color: $blue;
+                }
+                :-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    color: $blue;
+                    opacity: 1;
+                }
+                ::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    color: $blue;
+                    opacity: 1;
+                }
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: $blue;
+                }
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: $blue;
+                }
+                div.buttons-admin-homepage {
+                    width: 60%;
+                    margin: 0 auto;
+                    .btn-supp {
+                        width: 40%;
+                        font-family: "Rozha One", serif;
+                        background: #902a15;
+                        border: 1px solid #902a15;
+                        padding: 5px 20px;
+                        margin: 5px 15px 0 14%;
+                    }
+                    .btn-valid {
+                        width: 40%;
+                        font-family: "Rozha One", serif;
+                        background: #2b6847;
+                        border: 1px solid #2b6847;
+                        padding: 5px 20px;
+                    }
+                }
+            }
+            .account-created {
+                margin: 4% 0 0 45%;
+            }
+            /* ---- couleur placeholder ----- */
             input#old-password {
                 margin-bottom: 5%;
             }
+            p {
+                width: 60%;
+                margin: 0 auto;
+                padding: 0 5%;
+                text-align: right;
+                color: grey;
+            }
         }
+        /*
         div.addsupp-user {
             height: 100vh;
             margin-top: 5%;
             h2.admin-homepage {
-                padding-left: 10%;
-                font-size: 21px;
-                font-weight: 200;
+                margin: 50px 0;
+                font-size: 24px;
                 color: $blue;
+                font-family: "Poppins", sans-serif;
+                padding-left: 10%;
             }
-        }
+        }*/
     }
 }

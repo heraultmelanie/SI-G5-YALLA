@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -39,7 +38,6 @@ ul {
         font-family: $rozha;
         border: 1px solid $blue;
     }
-  
 }
 
 .btn-view {
@@ -55,7 +53,8 @@ ul {
 }
 
 .btn-valid {
-    width: 150px;
+    // enlever la taille du commun
+    //width: 150px;
     font-family: $rozha;
     background: $green;
     border: 1px solid $green;
