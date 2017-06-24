@@ -42,3 +42,26 @@ ul {
   
 }
 
+.btn-view {
+    width: 150px;
+    font-family: $rozha;
+    background: $blue;
+    border: 1px solid $blue;
+    padding: 5px 30px;
+    a {
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+.btn-valid {
+    width: 150px;
+    font-family: $rozha;
+    background: $green;
+    border: 1px solid $green;
+    padding: 5px 30px;
+    a {
+        font-size: 18px;
+        color: #fff;
+    }
+}
