@@ -940,4 +940,49 @@ main.admin-homepage {
       font-size: 12px;
       padding-left: 20px; }
 
+.admin-back-mail {
+  width: 100%; }
+  .admin-back-mail .admin-mail-content {
+    height: 90px;
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 1px 1px 1px #cfcfcf; }
+    .admin-back-mail .admin-mail-content h2 {
+      margin-top: 30px;
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      float: left; }
+      .admin-back-mail .admin-mail-content h2 a {
+        color: #243160; }
+      .admin-back-mail .admin-mail-content h2 img {
+        width: 5%;
+        margin: 5px 10px 0; }
+    .admin-back-mail .admin-mail-content .btn-valid {
+      float: right;
+      margin: 30px 30px 0;
+      font-size: 16px a;
+        font-size-color: #fff; }
+
+.admin-back-article {
+  width: 100%; }
+  .admin-back-article .admin-article-content {
+    height: 90px;
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 1px 1px 1px #cfcfcf; }
+    .admin-back-article .admin-article-content h2 {
+      margin-top: 30px;
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      float: left; }
+      .admin-back-article .admin-article-content h2 a {
+        color: #243160; }
+      .admin-back-article .admin-article-content h2 img {
+        width: 5%;
+        margin: 5px 10px 0; }
+    .admin-back-article .admin-article-content .btn-valid {
+      width: 200px;
+      float: right;
+      margin: 30px 30px 0;
+      font-size: 16px a;
+        font-size-color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
