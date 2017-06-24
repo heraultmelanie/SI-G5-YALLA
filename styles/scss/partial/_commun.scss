@@ -65,3 +65,16 @@ ul {
         color: #fff;
     }
 }
+
+.btn-supp {
+    width: 150px;
+    font-family: $rozha;
+    background: $red;
+    border: 1px solid $red;
+    padding: 5px 30px;
+    margin-bottom: 20px;
+    a {
+        font-size: 18px;
+        color: #fff;
+    }
+}
