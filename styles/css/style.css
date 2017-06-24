@@ -985,4 +985,103 @@ main.admin-homepage {
       font-size: 16px a;
         font-size-color: #fff; }
 
+.admin-list-article {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px; }
+  .admin-list-article .btn-valid {
+    width: 300px;
+    float: left; }
+  .admin-list-article input[type=text] {
+    float: right;
+    height: 30px;
+    background-color: white;
+    background-image: url("../../img-content/loupe.png");
+    background-size: 12%;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    padding-left: 20px; }
+  .admin-list-article .list-article-content {
+    width: 100%;
+    float: left; }
+    .admin-list-article .list-article-content h2 {
+      margin: 50px 0;
+      font-size: 24px;
+      color: #243160;
+      font-family: "Poppins", sans-serif; }
+    .admin-list-article .list-article-content .list-article-array table {
+      width: 100%; }
+      .admin-list-article .list-article-content .list-article-array table .array-title {
+        width: 100%;
+        background: #243160; }
+        .admin-list-article .list-article-content .list-article-array table .array-title td {
+          width: 33.33%;
+          font-size: 16px;
+          color: #fff;
+          padding: 10px; }
+      .admin-list-article .list-article-content .list-article-array table .list-articles {
+        width: 100%; }
+        .admin-list-article .list-article-content .list-article-array table .list-articles td {
+          width: 33.33%;
+          font-size: 14px;
+          padding: 10px;
+          color: #243160; }
+      .admin-list-article .list-article-content .list-article-array table .list-articles .category {
+        text-align: center;
+        font-weight: 600; }
+      .admin-list-article .list-article-content .list-article-array table .list-articles .date {
+        text-align: right; }
+      .admin-list-article .list-article-content .list-article-array table .list-articles:nth-child(2n) {
+        background: #f4f4f4; }
+
+.admin-list-mail {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px; }
+  .admin-list-mail .btn-valid {
+    width: 300px; }
+    .admin-list-mail .btn-valid a {
+      font-size: 16px; }
+  .admin-list-mail input[type=text] {
+    float: right;
+    height: 30px;
+    background-color: white;
+    background-image: url("../../img-content/loupe.png");
+    background-size: 12%;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    padding-left: 20px; }
+  .admin-list-mail .list-mail-content {
+    width: 100%;
+    float: left; }
+    .admin-list-mail .list-mail-content h2 {
+      margin: 50px 0;
+      font-size: 24px;
+      color: #243160;
+      font-family: "Poppins", sans-serif; }
+    .admin-list-mail .list-mail-content .list-mail-array table {
+      width: 100%; }
+      .admin-list-mail .list-mail-content .list-mail-array table .array-title {
+        width: 100%;
+        background: #243160; }
+        .admin-list-mail .list-mail-content .list-mail-array table .array-title td {
+          width: 33.33%;
+          font-size: 16px;
+          color: #fff;
+          padding: 10px; }
+      .admin-list-mail .list-mail-content .list-mail-array table .list-mail {
+        width: 100%; }
+        .admin-list-mail .list-mail-content .list-mail-array table .list-mail td {
+          width: 33.33%;
+          font-size: 14px;
+          padding: 10px;
+          color: #243160; }
+      .admin-list-mail .list-mail-content .list-mail-array table .list-mail .category {
+        text-align: center;
+        font-weight: 600; }
+      .admin-list-mail .list-mail-content .list-mail-array table .list-mail .date {
+        text-align: right; }
+      .admin-list-mail .list-mail-content .list-mail-array table .list-mail:nth-child(2n) {
+        background: #f4f4f4; }
+
 /*# sourceMappingURL=style.css.map */
