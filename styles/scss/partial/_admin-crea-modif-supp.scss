@@ -1,113 +1,107 @@
 .admin-article-crea {
-	width: 80%;
-	margin: 0 auto;
-	margin-top:50px;
-	.admin-content {
-		width: 67%;	
-		float: left;
-		h2 {
-			width: 70%;
-			margin-left:0;
-			color: $blue;
-			font-size: 24px;
-			border-bottom: 1px solid $green;
-		}
-		h3 {
-			width: 70%;
-			font-family: $poppins;
-			display: inline-block;
-			text-align: right;
-			font-weight: 300;
-			color: grey;
-		}
-		.array-article {
-			width: 100%;
-			border: 1px solid #cfcfcf;
-			height:300px;
-			margin-top: 30px;
-		}
-		.btn-view {
-			float: right;
-			margin: 20px 0 0 20px;
-			a {
-			}
-		}
-		.btn-valid {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    .admin-content {
+        width: 67%;
+        float: left;
+        h2 {
+            width: 70%;
+            margin-left: 0;
+            color: $blue;
+            font-size: 24px;
+            border-bottom: 1px solid $green;
+        }
+        h3 {
+            width: 70%;
+            font-family: $poppins;
+            display: inline-block;
+            text-align: right;
+            font-weight: 300;
+            color: grey;
+        }
+        .array-article {
+            width: 100%;
+            border: 1px solid #cfcfcf;
+            height: 300px;
+            margin-top: 30px;
+        }
+        .btn-view {
+            float: right;
+            margin: 20px 0 0 20px;
+            a {}
+        }
+        .btn-valid {
             width: 150px;
-			float: right;
-			margin: 20px 0 0 20px;
-			a {
-
-			}
-		}
-	}
-	.part-details {
-		width: 30%;
-		float: right;
-		border: 1px solid #cfcfcf;
-		box-shadow: 1px 1px 1px 1px #cfcfcf;
-		border-radius: 10px;
-		.attachment-content {
-			h2 {
-				width: 70%;
-				color: $blue;
-				font-size: 24px;
-				margin: 20px 0 0  20px;
-				border-bottom: 1px solid $green;	
-			}
-			h4 {
-				padding-left: 20px;
-				font-family: $poppins;
-				color: $green;
-				font-size: 14px
-
-			}
-			h3 {
-				padding-left: 20px;
-				font-family: $poppins;
-				color: grey;
-				font-size: 12px;
-
-			}	
-			img {
-				width: 100%;
-				margin: 0;
-				padding: 0;
-				margin-top: 10px;
-			}
-			h5 {
-				padding-left: 20px;
-				font-family: $poppins;
-				font-size: 12px;
-				text-align: right;
-				padding-right: 20px;
-				a {
-					color: grey;
-				}
-			}
-		}
-		.lang-content {
-
-			h2 {
-				width: 70%;
-				margin: 20px 0 0 20px;
-				color: $blue;
-				font-size: 24px;
-				border-bottom: 1px solid $green;
-			}
-			h4 {
-				font-family: $poppins;
-				color: $green;
-				font-size: 14px;
-				padding-left: 20px;
-				margin-bottom: 10px;
-			}
-			h3 {
-				font-family: $poppins;
-				color: grey;
-				font-size: 12px;
-				padding-left: 20px;
-			}
-		}
-	}
+            float: right;
+            margin: 20px 0 0 20px;
+            a {}
+        }
+    }
+    .part-details {
+        width: 30%;
+        float: right;
+        border: 1px solid #cfcfcf;
+        box-shadow: 1px 1px 1px 1px #cfcfcf;
+        border-radius: 10px;
+        .attachment-content {
+            h2 {
+                width: 70%;
+                color: $blue;
+                font-size: 24px;
+                margin: 20px 0 0 20px;
+                border-bottom: 1px solid $green;
+            }
+            h4 {
+                padding-left: 20px;
+                font-family: $poppins;
+                color: $green;
+                font-size: 14px
+            }
+            h3 {
+                padding-left: 20px;
+                font-family: $poppins;
+                color: grey;
+                font-size: 12px;
+            }
+            img {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+            }
+            h5 {
+                padding-left: 20px;
+                font-family: $poppins;
+                font-size: 12px;
+                text-align: right;
+                padding-right: 20px;
+                a {
+                    color: grey;
+                }
+            }
+        }
+        .lang-content {
+            h2 {
+                width: 70%;
+                margin: 20px 0 0 20px;
+                color: $blue;
+                font-size: 24px;
+                border-bottom: 1px solid $green;
+            }
+            h4 {
+                font-family: $poppins;
+                color: $green;
+                font-size: 14px;
+                padding-left: 20px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: $poppins;
+                color: grey;
+                font-size: 12px;
+                padding-left: 20px;
+            }
+        }
+    }
 }
