@@ -1,0 +1,73 @@
+.admin-list-article {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 50px;
+	.btn-valid {
+		width: 300px;
+		float: left;
+		a {
+			
+		}
+	}
+	input[type=text] {
+		float: right;
+		height:30px;
+	    background-color: white;
+	    background-image: url('../../img-content/loupe.png');
+	    background-size: 12%;
+	    background-position: 2px 2px; 
+	    background-repeat: no-repeat;
+	    padding-left: 20px;
+
+}
+	.list-article-content {
+		width: 100%;
+		float: left;
+		h2 {
+			margin: 50px 0;
+			font-size: 24px;
+			color: $blue;
+			font-family: $poppins;
+		}
+		.list-article-array {
+			table {
+				width: 100%;
+				.array-title {
+					width: 100%;
+					background: $blue;
+
+					td {
+						width: 33.33%;
+						font-size: 16px;
+						color: #fff;
+						padding: 10px;
+					}
+				}
+				.list-articles {
+					width: 100%;
+					td {
+						width: 33.33%;
+						font-size: 14px;
+						padding: 10px;
+						color: $blue;
+					}
+				}
+				.list-articles {
+					.name {
+
+					}
+					.category {
+						text-align: center;
+						font-weight: 600;
+					}
+					.date {
+						text-align: right;
+					}
+				}
+				.list-articles:nth-child(2n){
+					background: #f4f4f4;
+				}
+			}
+		}
+	}
+}
