@@ -186,12 +186,12 @@ main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */
-  /* ----- DIV : Laicité ----- */
+  /* ----- DIV : Laicit├® ----- */
   /* ----- DIV : Transparence ----- */
   /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
-    /* ----- DIV : Aide humanitaire proximité ----- */ }
+    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -353,12 +353,12 @@ main.aboutus-main {
   main.aboutus-main {
     /* ----- commun div----- */
     /* ----- toutes valeurs ----- */
-    /* ----- valeur : Laicité ----- */
+    /* ----- valeur : Laicit├® ----- */
     /* ----- Transparence ----- */
     /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
-      /* ----- valeur : Aide humanitaire proximité ----- */ }
+      /* ----- valeur : Aide humanitaire proximit├® ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -443,7 +443,7 @@ main.aboutus-main {
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
-    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+    /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h4 {
       margin: 0 auto 52px auto;
       font-size: 30px; }
@@ -972,7 +972,7 @@ main.admin-homepage {
       width: 70%;
       color: #243160;
       font-size: 24px;
-      margin: 20px 0 0  20px;
+      margin: 20px 0 0 20px;
       border-bottom: 1px solid #2b6847; }
     .admin-article-crea .part-details .attachment-content h4 {
       padding-left: 20px;
