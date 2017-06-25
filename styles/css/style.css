@@ -85,6 +85,14 @@ header.aboutus-header {
   position: relative;
   background-image: url(../../img-layout/expo_ant.jpg);
   /* ----- HEADER ----- */ }
+  header.aboutus-header h1 a #logo {
+    display: none; }
+  header.aboutus-header h2 {
+    font-family: 'Rozha One', serif;
+    font-size: 24px;
+    text-align: center;
+    height: auto;
+    margin: 0; }
   header.aboutus-header .aboutus-team {
     position: absolute;
     top: 20%;
@@ -139,16 +147,18 @@ header.aboutus-header {
       header.aboutus-header .aboutus-team ul.team-name li {
         display: none; }
 
-                /* ---
+                        /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-                /* ---------------
+                        /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   header.aboutus-header {
     position: relative; }
+    header.aboutus-header h2 {
+      display: none; }
     header.aboutus-header .aboutus-team {
       top: 10%; }
       header.aboutus-header .aboutus-team ul.team-picture li.frame-mq768 {
@@ -177,7 +187,7 @@ header.aboutus-header {
           font-size: 18px; }
         header.aboutus-header .aboutus-team ul.team-name li.name-active p {
           font-size: 14px; } }
-                /* ---
+                        /* ---
 ----------------------------------------
 -------------------fin responsive header
 ----------------------------------------
@@ -218,7 +228,7 @@ main.aboutus-main {
       display: block;
       position: absolute;
       height: 30%;
-      bottom: 30vh;
+      bottom: 20vh;
       left: -2vh; }
     main.aboutus-main div p.content-philosophy {
       margin: 0 10% 17px 10%;
@@ -314,12 +324,12 @@ main.aboutus-main {
     background: blue;
     height: 300px; }
 
-                /* ---
+                        /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-                /* ---------------
+                        /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   main.aboutus-main {
@@ -347,7 +357,7 @@ main.aboutus-main {
     main.aboutus-main .values p {
       font-size: 16px;
       line-height: 30px; } }
-                /* ---------------
+                        /* ---------------
 ------------------------------------------------------------- 1040 PX ----------------*/
 @media screen and (min-width: 1040px) {
   main.aboutus-main {
@@ -439,7 +449,7 @@ main.aboutus-main {
         font-size: 18px;
         line-height: 40px;
         text-align: right; } }
-                /* -------------- 
+                        /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
