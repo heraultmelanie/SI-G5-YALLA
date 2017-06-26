@@ -1,0 +1,120 @@
+.errorpage-header {
+	display: none;
+}
+
+.errorpage-content {
+	width: 100%;
+	.errorpage-banner {
+		display: none;
+	    // float: left;
+	    // width: 10%;
+	    // height: 100vh;
+	    // background: #243160;
+
+	}
+	.errorpage-details {
+		img {
+			display: block;
+			width: 70%;
+			margin: 0 auto;
+			margin: 90px 15%;
+
+		}
+		h2 {
+			width: 80%;
+			display: block;
+			margin: 0 auto;
+			font-family: $poppins;
+			font-size : 20px;
+			text-align: center;
+
+		}
+		.btn-valid {
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+
+}
+
+
+/*-------RESPONSIVE-----------*/
+
+@media screen and (min-width: 768px) {
+	.errorpage-content {
+		.errorpage-banner {
+			display: block;
+			float: left;
+			width: 10%;
+			height: 675px;
+			background: $blue;
+			ul {
+				margin-top: 20px;
+			}
+		}
+		.errorpage-details {
+			img {
+				display: block;
+				margin: 0 auto;
+				margin-top: 90px;
+				margin-bottom: 60px;
+				
+
+			}
+			h2 {
+				width: 80%;
+				display: block;
+				margin: 0 auto;
+				font-family: $poppins;
+				font-size : 20px;
+				text-align: center;
+
+			}
+			.btn-valid {
+				display: block;
+				margin: 0 auto;
+				margin-top: 50px;
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+
+	}
+
+}
+@media screen and (min-width: 1040px) {
+	.errorpage-content {
+
+		.errorpage-banner {
+		}
+		.errorpage-details {
+			img {
+				width: 40%;
+				margin: 0 auto;
+				margin-top: 90px;
+				margin-bottom: 60px;
+			}
+			h2 {
+				width: 80%;
+				display: block;
+				margin: 0 auto;
+
+			}
+			.btn-valid {
+				display: block;
+				margin: 0 auto;
+				margin-top: 50px;
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+		
+	}
+
+}
