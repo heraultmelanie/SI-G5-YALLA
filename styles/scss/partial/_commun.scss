@@ -77,3 +77,33 @@ ul {
         color: #fff;
     }
 }
+
+.btn-don {
+    width: 100%;
+    padding: 10px 0;
+    background: $yellow;
+    border: 1px solid $yellow;
+    a {
+        font-family: $rozha;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+.admin-moderation-banner {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background: #243160;
+    ul {
+        margin-top: 20px;
+        li {
+            font-family: $poppins;
+            font-size: 16px;
+            padding-left: 25px;
+            margin-bottom: 20px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

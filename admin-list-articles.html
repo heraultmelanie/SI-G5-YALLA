@@ -1,16 +1,31 @@
 <!doctype html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img-layout/ico.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Rozha+One" rel="stylesheet">
-    <meta content="Présentation de l'association Yalla pour les enfants">
-    <link rel="stylesheet" href="styles/css/style.css">
-    <meta charset="UTF-8">
-    <title>Yalla - Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img-layout/ico.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Rozha+One" rel="stylesheet">
+	<meta content="Présentation de l'association Yalla pour les enfants">
+	<link rel="stylesheet" href="styles/css/style.css">
+	<meta charset="UTF-8">
+	<title>Yalla - Admin</title>
 </head>
 <body>
+	<div class="admin-moderation-banner">
+			<ul>
+				<li><a href="{{ path('#') }}">Mon compte</a></li>
+				<li> <a href="{{ path('partenaire_index') }}">Les partenaires</a></li>
+				<li><a href="{{ path('newsletter_index') }}">Envoyer une newsletter</a></li>
+				<li><a href="{{ path('user_index') }}">voir les utilisateurs</a></li>
+				<li><a href="{{ path('admin_article_fr_index') }}">voir les articles français</a></li>
+				<li><a href="{{ path('admin_article_en_index') }}">voir les articles anglais</a></li>
+				<li><a href="{{ path('admin_article_ar_index') }}">voir les articles arabes</a></li>
+				<li><a href="{{ path('admin_media_articles_fr_index') }}">français</a></li>
+				<li><a href="{{ path('admin_media_articles_en_index') }}">anglais</a></li>
+				<li><a href="{{ path('admin_media_articles_ar_index') }}">arabes</a></li>
+			</ul>
+		</div>
 	<main class="admin-list-article clearfix">
+
 		<button class="btn-valid"><a href="#">Écrire un nouvel article</a></button>
 		<input type="text">
 		<section class="list-article-content clearfix">
@@ -64,6 +79,6 @@
 				</table>
 			</article>
 		</section> 
-    </main>
+	</main>
 </body>
 </html>

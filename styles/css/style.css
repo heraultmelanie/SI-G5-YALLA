@@ -72,6 +72,31 @@ ul {
     font-size: 18px;
     color: #fff; }
 
+.btn-don {
+  width: 100%;
+  padding: 10px 0;
+  background: #ffca59;
+  border: 1px solid #ffca59; }
+  .btn-don a {
+    font-family: "Rozha One", serif;
+    color: #fff;
+    font-size: 24px; }
+
+.admin-moderation-banner {
+  float: left;
+  width: 20%;
+  height: 100vh;
+  background: #243160; }
+  .admin-moderation-banner ul {
+    margin-top: 20px; }
+    .admin-moderation-banner ul li {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      padding-left: 25px;
+      margin-bottom: 20px; }
+      .admin-moderation-banner ul li a {
+        color: #fff; }
+
 /* a ajouter commun */
 header {
   overflow: hidden;
@@ -208,12 +233,12 @@ main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */
-  /* ----- DIV : Laicité ----- */
+  /* ----- DIV : Laicit├® ----- */
   /* ----- DIV : Transparence ----- */
   /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
-    /* ----- DIV : Aide humanitaire proximité ----- */ }
+    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -375,12 +400,12 @@ main.aboutus-main {
   main.aboutus-main {
     /* ----- commun div----- */
     /* ----- toutes valeurs ----- */
-    /* ----- valeur : Laicité ----- */
+    /* ----- valeur : Laicit├® ----- */
     /* ----- Transparence ----- */
     /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
-      /* ----- valeur : Aide humanitaire proximité ----- */ }
+      /* ----- valeur : Aide humanitaire proximit├® ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -465,7 +490,7 @@ main.aboutus-main {
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
-    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+    /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h4 {
       margin: 0 auto 52px auto;
       font-size: 30px; }
@@ -477,43 +502,43 @@ main.aboutus-main {
 
   div.secularism p.content-right2 {
     top: 10%; } }
-header {
+.homepage-header {
   background-image: url(../../img-layout/header-fond1.jpg);
   z-index: -50;
   /*NAV*/
   /*JUSQU'ICI*/ }
-  header h1 a #logo {
+  .homepage-header h1 a #logo {
     height: 125px;
     width: 108px;
     margin-top: 108px;
-    margin-left: 35%; }
-  header nav {
+    margin-left: 41%; }
+  .homepage-header nav {
     width: 100%;
     display: none; }
-    header nav ul {
+    .homepage-header nav ul {
       text-align: center;
       display: flex;
       justify-content: start-end; }
-      header nav ul li {
+      .homepage-header nav ul li {
         width: 100%;
         padding-top: 10px; }
-        header nav ul li a {
+        .homepage-header nav ul li a {
           font-size: 18px;
           color: #fff; }
-      header nav ul .help-us-nav {
+      .homepage-header nav ul .help-us-nav {
         background: #243160;
         padding: 10px 20px; }
-  header h2 {
+  .homepage-header h2 {
     height: 102px;
     font-size: 27px;
     color: #fff;
     line-height: 36px;
     font-weight: 400;
     margin: 30px 15%; }
-  header #slide-words {
+  .homepage-header #slide-words {
     color: #243160;
     font-size: 43px; }
-  header .help-us {
+  .homepage-header .help-us {
     display: inline-block;
     background: #243160;
     width: 100%;
@@ -523,7 +548,7 @@ header {
     font-family: "Rozha One", serif;
     border: 1px solid #243160;
     text-align: center; }
-    header .help-us a {
+    .homepage-header .help-us a {
       color: #fff; }
 
 .homepage-content .homepage-section .homepage-presentation {
@@ -1124,6 +1149,7 @@ footer {
       margin-top: 15px;
       margin-bottom: 15px; }
       footer ul li a {
+        font-size: 15px;
         color: #fff; }
 
 /*----RESPONSIVE ------*/
@@ -1364,6 +1390,11 @@ main.admin-homepage {
       margin: 30px 30px 0;
       font-size: 16px a;
         font-size-color: #fff; }
+  .admin-back-mail .back-mail-form {
+    padding: 5%; }
+    .admin-back-mail .back-mail-form label {
+      display: inline-block;
+      margin-bottom: 20px; }
 
 .admin-back-article {
   width: 100%; }
@@ -1390,8 +1421,8 @@ main.admin-homepage {
 
 .admin-list-article {
   width: 70%;
-  margin: 0 auto;
-  margin-top: 50px; }
+  float: right;
+  margin: 25px 5% 0 0; }
   .admin-list-article .btn-valid {
     width: 300px;
     float: left; }
@@ -1486,5 +1517,329 @@ main.admin-homepage {
         text-align: right; }
       .admin-list-mail .list-mail-content .list-mail-array table .list-mail:nth-child(2n) {
         background: #f4f4f4; }
+
+.donationpage-content .donation-pres .donationpage-donation h2 {
+  font-size: 24px;
+  color: #243160;
+  text-align: center;
+  margin: 10px 0 34px 0; }
+.donationpage-content .donation-pres .donationpage-donation p {
+  font-size: 20px;
+  color: #902a15;
+  line-height: 180%;
+  text-align: center;
+  font-family: "Rozha One", serif;
+  margin-bottom: 48px; }
+.donationpage-content .donation-pres .donationpage-details {
+  width: 100%;
+  background-image: url(../../img-content/class-prof-green.jpg);
+  background-size: cover; }
+  .donationpage-content .donation-pres .donationpage-details h2 {
+    font-size: 24px;
+    color: #2b6847;
+    text-align: right;
+    background: #fff;
+    padding-right: 30px; }
+    .donationpage-content .donation-pres .donationpage-details h2 span {
+      font-size: 48px; }
+.donationpage-content .donation-pres p {
+  font-size: 14px;
+  text-align: right;
+  padding: 20px 30px;
+  color: #fff; }
+  .donationpage-content .donation-pres p:nth-of-type(1) {
+    margin-top: 20px; }
+  .donationpage-content .donation-pres p:nth-of-type(2) {
+    margin-bottom: 20px; }
+.donationpage-content .donationpage-sponsorship {
+  background-image: url(../../img-content/class-prof-blue.jpg);
+  background-size: cover; }
+  .donationpage-content .donationpage-sponsorship h2 {
+    width: 100%;
+    font-size: 24px;
+    color: #243160;
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 30px;
+    background: #fff; }
+  .donationpage-content .donationpage-sponsorship p {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donationpage-sponsorship p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donationpage-sponsorship p:nth-of-type(2) {
+      margin-bottom: 20px; }
+.donationpage-content .donationpage-member {
+  background-image: url(../../img-content/class-prof-red.jpg);
+  background-size: cover; }
+  .donationpage-content .donationpage-member h2 {
+    font-size: 24px;
+    color: #902a15;
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 50px;
+    background: #fff; }
+  .donationpage-content .donationpage-member p {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donationpage-member p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donationpage-member p:nth-of-type(2) {
+      margin-bottom: 20px; }
+.donationpage-content .donationpage-suggestion h2 {
+  font-size: 24px;
+  padding-right: 30px;
+  color: #243160;
+  text-align: right;
+  margin-top: 50px; }
+  .donationpage-content .donationpage-suggestion h2 span {
+    font-size: 48px; }
+.donationpage-content .donationpage-suggestion p {
+  font-size: 14px;
+  text-align: right;
+  padding: 10px 30px;
+  color: #000; }
+.donationpage-content .donationpage-suggestion input {
+  width: 100%;
+  height: 150px;
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.24);
+  border: 1px solid #cfcfcf; }
+.donationpage-content .donationpage-suggestion .btn-valid {
+  float: right;
+  background: #fff;
+  border: 2px solid #2b6847;
+  padding: 2px 30px;
+  margin: 20px 20px 50px; }
+  .donationpage-content .donationpage-suggestion .btn-valid a {
+    color: #2b6847; }
+
+/*-------------RESPONSIVE---------------*/
+@media screen and (min-width: 768px) {
+  .donationpage-header {
+    display: none; }
+
+  .donationpage-content .donation-pres .donationpage-donation {
+    width: 90%; }
+    .donationpage-content .donation-pres .donationpage-donation h2 {
+      display: none; }
+    .donationpage-content .donation-pres .donationpage-donation p {
+      font-size: 32px;
+      text-align: right;
+      margin-bottom: 0; }
+  .donationpage-content .donation-pres .donationpage-details {
+    width: 100%; }
+    .donationpage-content .donation-pres .donationpage-details h2 {
+      font-size: 32px;
+      padding-right: 60px;
+      margin-top: 30px; }
+      .donationpage-content .donation-pres .donationpage-details h2 span {
+        font-size: 60px; }
+  .donationpage-content .donation-pres p {
+    font-size: 16px;
+    text-align: right;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donation-pres p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donation-pres p:nth-of-type(2) {
+      margin-bottom: 20px; }
+  .donationpage-content .donation-pres .btn-don a {
+    font-size: 32px; }
+  .donationpage-content .donationpage-sponsorship h2 {
+    width: 100%;
+    font-size: 32px;
+    color: #243160;
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    background: #fff; }
+  .donationpage-content .donationpage-sponsorship p {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donationpage-sponsorship p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donationpage-sponsorship p:nth-of-type(2) {
+      margin-bottom: 20px; }
+  .donationpage-content .donationpage-sponsorship .btn-don a {
+    font-size: 32px; }
+  .donationpage-content .donationpage-member h2 {
+    font-size: 32px;
+    padding-right: 60px;
+    margin-top: 50px;
+    padding-bottom: 20px; }
+  .donationpage-content .donationpage-member p {
+    font-size: 16px;
+    text-align: left;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donationpage-member p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donationpage-member p:nth-of-type(2) {
+      margin-bottom: 20px; }
+  .donationpage-content .donationpage-member .btn-don a {
+    font-size: 32px; }
+  .donationpage-content .donationpage-suggestion h2 {
+    font-size: 32px;
+    padding-right: 60px;
+    color: #243160;
+    text-align: right;
+    margin-top: 50px; }
+    .donationpage-content .donationpage-suggestion h2 span {
+      font-size: 48px; }
+  .donationpage-content .donationpage-suggestion p {
+    font-size: 14px;
+    text-align: right;
+    padding: 10px 30px;
+    color: #000; }
+  .donationpage-content .donationpage-suggestion .btn-valid {
+    padding: 2px 30px;
+    margin: 30px 30px 50px 0; } }
+@media screen and (min-width: 1040px) {
+  .donationpage-header {
+    display: initial;
+    height: 0; }
+    .donationpage-header h1 #logo {
+      width: 50%; }
+    .donationpage-header nav {
+      display: block; }
+      .donationpage-header nav ul {
+        text-align: center;
+        display: flex;
+        justify-content: start-end; }
+        .donationpage-header nav ul li {
+          width: 100%;
+          padding-top: 10px; }
+          .donationpage-header nav ul li a {
+            font-size: 18px;
+            color: #243160; }
+        .donationpage-header nav ul .help-us-nav {
+          background: #243160;
+          padding: 10px 20px; }
+          .donationpage-header nav ul .help-us-nav a {
+            color: #fff; }
+
+  .donationpage-content .donation-pres .donationpage-donation h2 {
+    font-size: 24px;
+    color: #243160;
+    text-align: center;
+    margin: 10px 0 34px 0; }
+  .donationpage-content .donation-pres .donationpage-donation p {
+    font-size: 20px;
+    color: #902a15;
+    line-height: 180%;
+    text-align: center;
+    font-family: "Rozha One", serif;
+    margin-bottom: 48px; }
+  .donationpage-content .donation-pres .donationpage-details {
+    width: 100%;
+    background-image: url(../../img-content/class-prof-green.jpg);
+    background-size: cover; }
+    .donationpage-content .donation-pres .donationpage-details h2 {
+      font-size: 24px;
+      color: #2b6847;
+      text-align: right;
+      background: #fff;
+      padding-right: 30px; }
+      .donationpage-content .donation-pres .donationpage-details h2 span {
+        font-size: 48px; }
+  .donationpage-content .donation-pres p {
+    font-size: 14px;
+    text-align: right;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donation-pres p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donation-pres p:nth-of-type(2) {
+      margin-bottom: 20px; }
+  .donationpage-content .donationpage-sponsorship {
+    background-image: url(../../img-content/class-prof-blue.jpg);
+    background-size: cover; }
+    .donationpage-content .donationpage-sponsorship h2 {
+      width: 100%;
+      font-size: 24px;
+      color: #243160;
+      margin-top: 50px;
+      text-align: right;
+      padding-right: 30px;
+      background: #fff; }
+    .donationpage-content .donationpage-sponsorship p {
+      font-size: 14px;
+      text-align: center;
+      padding: 20px 30px;
+      color: #fff; }
+      .donationpage-content .donationpage-sponsorship p:nth-of-type(1) {
+        margin-top: 20px; }
+      .donationpage-content .donationpage-sponsorship p:nth-of-type(2) {
+        margin-bottom: 20px; }
+  .donationpage-content .donationpage-member {
+    background-image: url(../../img-content/class-prof-red.jpg);
+    background-size: cover; }
+    .donationpage-content .donationpage-member h2 {
+      font-size: 24px;
+      color: #902a15;
+      text-align: right;
+      padding-right: 30px;
+      margin-top: 50px;
+      background: #fff; }
+    .donationpage-content .donationpage-member p {
+      font-size: 14px;
+      text-align: left;
+      padding: 20px 30px;
+      color: #fff; }
+      .donationpage-content .donationpage-member p:nth-of-type(1) {
+        margin-top: 20px; }
+      .donationpage-content .donationpage-member p:nth-of-type(2) {
+        margin-bottom: 20px; }
+  .donationpage-content .donationpage-suggestion h2 {
+    font-size: 24px;
+    padding-right: 30px;
+    color: #243160;
+    text-align: right;
+    margin-top: 50px; }
+    .donationpage-content .donationpage-suggestion h2 span {
+      font-size: 48px; }
+  .donationpage-content .donationpage-suggestion p {
+    font-size: 14px;
+    text-align: right;
+    padding: 10px 30px;
+    color: #000; }
+  .donationpage-content .donationpage-suggestion input {
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.24);
+    border: 1px solid #cfcfcf; }
+  .donationpage-content .donationpage-suggestion .btn-valid {
+    float: right;
+    background: #fff;
+    border: 2px solid #2b6847;
+    padding: 2px 30px;
+    margin: 20px 20px 50px; }
+    .donationpage-content .donationpage-suggestion .btn-valid a {
+      color: #2b6847; } }
+main.admin-moderation .admin-content .account-info h2 {
+  font-family: "Rozha One", serif;
+  font-size: 28px;
+  color: #243160;
+  text-align: center;
+  margin-top: 150px; }
+main.admin-moderation .admin-content .account-info p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px; }
+main.admin-moderation .admin-content .account-info a {
+  float: right;
+  color: #fff;
+  font-family: "Rozha One", serif;
+  font-size: 18px;
+  margin: 200px 50px 0;
+  background: #902a15;
+  padding: 10px 30px; }
 
 /*# sourceMappingURL=style.css.map */
