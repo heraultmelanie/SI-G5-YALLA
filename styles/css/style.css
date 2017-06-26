@@ -97,7 +97,6 @@ ul {
       .admin-moderation-banner ul li a {
         color: #fff; }
 
-/* a ajouter commun */
 header {
   overflow: hidden;
   background-repeat: no-repeat;
@@ -1533,7 +1532,9 @@ main.makedonation-main {
 /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
 footer {
-  background: #4A4A4A; }
+  background: #4A4A4A;
+  position: absolute;
+  bottom: 0; }
   footer ul {
     display: flex;
     justify-content: center;
@@ -1912,13 +1913,42 @@ main.admin-homepage {
       .admin-list-mail .list-mail-content .list-mail-array table .list-mail:nth-child(2n) {
         background: #f4f4f4; }
 
+.contactpage-header {
+  position: relative; }
+  .contactpage-header h1 a #logo {
+    position: absolute;
+    z-index: 22;
+    display: block;
+    position: fixe;
+    width: 150px;
+    margin: 0;
+    height: 1; }
+  .contactpage-header nav {
+    display: inline-block;
+    width: 60%;
+    margin-left: 40%; }
+    .contactpage-header nav ul li a {
+      font-size: 24px; }
+  .contactpage-header h2 {
+    width: 90%;
+    height: auto;
+    font-size: 80px;
+    margin: 0 auto;
+    margin-top: 160px;
+    line-height: 80%; }
+  .contactpage-header #slide-words {
+    font-size: 100px; }
+  .contactpage-header .help-us {
+    display: none; }
+
 .donationpage-content .donation-pres .donationpage-donation h2 {
-  font-size: 24px;
+  font-size: 30px;
   color: #243160;
   text-align: center;
   margin: 10px 0 34px 0; }
 .donationpage-content .donation-pres .donationpage-donation p {
-  font-size: 20px;
+  width: 90%;
+  font-size: 24px;
   color: #902a15;
   line-height: 180%;
   text-align: center;
@@ -1926,89 +1956,120 @@ main.admin-homepage {
   margin-bottom: 48px; }
 .donationpage-content .donation-pres .donationpage-details {
   width: 100%;
-  background-image: url(../../img-content/class-prof-green.jpg);
-  background-size: cover; }
+  position: relative; }
   .donationpage-content .donation-pres .donationpage-details h2 {
-    font-size: 24px;
+    font-size: 30px;
     color: #2b6847;
     text-align: right;
     background: #fff;
     padding-right: 30px; }
     .donationpage-content .donation-pres .donationpage-details h2 span {
       font-size: 48px; }
-.donationpage-content .donation-pres p {
-  font-size: 14px;
-  text-align: right;
-  padding: 20px 30px;
-  color: #fff; }
-  .donationpage-content .donation-pres p:nth-of-type(1) {
-    margin-top: 20px; }
-  .donationpage-content .donation-pres p:nth-of-type(2) {
-    margin-bottom: 20px; }
-.donationpage-content .donationpage-sponsorship {
+  .donationpage-content .donation-pres .donationpage-details .donationpage-img {
+    position: relative;
+    z-index: 25; }
+    .donationpage-content .donation-pres .donationpage-details .donationpage-img img {
+      width: 100%;
+      height: 350px; }
+    .donationpage-content .donation-pres .donationpage-details .donationpage-img .btn-don {
+      position: absolute;
+      top: 330px; }
+  .donationpage-content .donation-pres .donationpage-details .donationpage-content {
+    width: 90%;
+    position: absolute;
+    z-index: 25;
+    top: 0;
+    margin: 80px 20px; }
+    .donationpage-content .donation-pres .donationpage-details .donationpage-content p {
+      font-size: 14px;
+      text-align: right;
+      padding: 20px 30px;
+      color: #fff; }
+.donationpage-content .donation-pres .donationpage-sponsorship {
+  position: relative;
+  z-index: 22;
   background-image: url(../../img-content/class-prof-blue.jpg);
-  background-size: cover; }
-  .donationpage-content .donationpage-sponsorship h2 {
+  margin: 50px 0;
+  height: 350px; }
+  .donationpage-content .donation-pres .donationpage-sponsorship h2 {
     width: 100%;
-    font-size: 24px;
+    font-size: 30px;
     color: #243160;
-    margin-top: 50px;
+    margin-top: 85px;
     text-align: right;
     padding-right: 30px;
     background: #fff; }
-  .donationpage-content .donationpage-sponsorship p {
+  .donationpage-content .donation-pres .donationpage-sponsorship p {
     font-size: 14px;
     text-align: center;
     padding: 20px 30px;
     color: #fff; }
-    .donationpage-content .donationpage-sponsorship p:nth-of-type(1) {
-      margin-top: 20px; }
-    .donationpage-content .donationpage-sponsorship p:nth-of-type(2) {
-      margin-bottom: 20px; }
-.donationpage-content .donationpage-member {
-  background-image: url(../../img-content/class-prof-red.jpg);
-  background-size: cover; }
-  .donationpage-content .donationpage-member h2 {
-    font-size: 24px;
+    .donationpage-content .donation-pres .donationpage-sponsorship p:nth-of-type(1) {
+      margin-top: 50px; }
+  .donationpage-content .donation-pres .donationpage-sponsorship .btn-don {
+    position: absolute;
+    top: 330px;
+    border: 1px solid #ffca59; }
+.donationpage-content .donation-pres .donationpage-member {
+  width: 100%;
+  position: relative; }
+  .donationpage-content .donation-pres .donationpage-member h2 {
+    font-size: 30px;
     color: #902a15;
     text-align: right;
+    background: #fff;
     padding-right: 30px;
-    margin-top: 50px;
-    background: #fff; }
-  .donationpage-content .donationpage-member p {
+    margin-bottom: 20px; }
+    .donationpage-content .donation-pres .donationpage-member h2 span {
+      font-size: 48px; }
+  .donationpage-content .donation-pres .donationpage-member .donationpage-img {
+    position: relative;
+    z-index: 25; }
+    .donationpage-content .donation-pres .donationpage-member .donationpage-img img {
+      width: 100%;
+      height: 350px; }
+    .donationpage-content .donation-pres .donationpage-member .donationpage-img .btn-don {
+      position: absolute;
+      top: 330px; }
+.donationpage-content .donation-pres .donationpage-content {
+  position: absolute;
+  z-index: 25;
+  top: 0;
+  margin: 110px 20px; }
+  .donationpage-content .donation-pres .donationpage-content p {
     font-size: 14px;
-    text-align: left;
+    text-align: right;
     padding: 20px 30px;
     color: #fff; }
-    .donationpage-content .donationpage-member p:nth-of-type(1) {
+    .donationpage-content .donation-pres .donationpage-content p:nth-of-type(1) {
       margin-top: 20px; }
-    .donationpage-content .donationpage-member p:nth-of-type(2) {
+    .donationpage-content .donation-pres .donationpage-content p:nth-of-type(2) {
       margin-bottom: 20px; }
-.donationpage-content .donationpage-suggestion h2 {
+.donationpage-content .donation-pres .donationpage-suggestion h2 {
   font-size: 24px;
   padding-right: 30px;
   color: #243160;
   text-align: right;
   margin-top: 50px; }
-  .donationpage-content .donationpage-suggestion h2 span {
+  .donationpage-content .donation-pres .donationpage-suggestion h2 span {
     font-size: 48px; }
-.donationpage-content .donationpage-suggestion p {
+.donationpage-content .donation-pres .donationpage-suggestion p {
   font-size: 14px;
   text-align: right;
   padding: 10px 30px;
   color: #000; }
-.donationpage-content .donationpage-suggestion input {
+.donationpage-content .donation-pres .donationpage-suggestion input {
   width: 100%;
   height: 150px;
   box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.24);
   border: 1px solid #cfcfcf; }
-.donationpage-content .donationpage-suggestion .btn-valid {
+.donationpage-content .donation-pres .donationpage-suggestion .btn-valid {
   float: right;
   background: #fff;
   border: 2px solid #2b6847;
   padding: 2px 30px;
   margin: 20px 20px 50px; }
-  .donationpage-content .donationpage-suggestion .btn-valid a {
+  .donationpage-content .donation-pres .donationpage-suggestion .btn-valid a {
     color: #2b6847; }
 
 /*-------------RESPONSIVE---------------*/
@@ -2099,8 +2160,8 @@ main.admin-homepage {
   .donationpage-header {
     display: initial;
     height: 0; }
-    .donationpage-header h1 #logo {
-      width: 50%; }
+    .donationpage-header h1 a #logo {
+      width: 100%; }
     .donationpage-header nav {
       display: block; }
       .donationpage-header nav ul {
@@ -2119,45 +2180,43 @@ main.admin-homepage {
           .donationpage-header nav ul .help-us-nav a {
             color: #fff; }
 
-  .donationpage-content .donation-pres .donationpage-donation h2 {
-    font-size: 24px;
-    color: #243160;
-    text-align: center;
-    margin: 10px 0 34px 0; }
-  .donationpage-content .donation-pres .donationpage-donation p {
-    font-size: 20px;
-    color: #902a15;
-    line-height: 180%;
-    text-align: center;
-    font-family: "Rozha One", serif;
-    margin-bottom: 48px; }
+  .donationpage-content .donation-pres .donationpage-donation {
+    width: 80%; }
+    .donationpage-content .donation-pres .donationpage-donation h2 {
+      font-size: 24px;
+      color: #243160;
+      text-align: center;
+      margin: 10px 0 34px 0; }
+    .donationpage-content .donation-pres .donationpage-donation p {
+      font-size: 50px;
+      text-align: right; }
   .donationpage-content .donation-pres .donationpage-details {
     width: 100%;
     background-image: url(../../img-content/class-prof-green.jpg);
     background-size: cover; }
     .donationpage-content .donation-pres .donationpage-details h2 {
-      font-size: 24px;
+      font-size: 50px;
       color: #2b6847;
       text-align: right;
       background: #fff;
       padding-right: 30px; }
       .donationpage-content .donation-pres .donationpage-details h2 span {
         font-size: 48px; }
-  .donationpage-content .donation-pres p {
-    font-size: 14px;
-    text-align: right;
-    padding: 20px 30px;
-    color: #fff; }
-    .donationpage-content .donation-pres p:nth-of-type(1) {
-      margin-top: 20px; }
-    .donationpage-content .donation-pres p:nth-of-type(2) {
-      margin-bottom: 20px; }
+    .donationpage-content .donation-pres .donationpage-details p {
+      font-size: 14px;
+      text-align: right;
+      padding: 20px 30px;
+      color: #fff; }
+      .donationpage-content .donation-pres .donationpage-details p:nth-of-type(1) {
+        margin-top: 20px; }
+      .donationpage-content .donation-pres .donationpage-details p:nth-of-type(2) {
+        margin-bottom: 20px; }
   .donationpage-content .donationpage-sponsorship {
     background-image: url(../../img-content/class-prof-blue.jpg);
     background-size: cover; }
     .donationpage-content .donationpage-sponsorship h2 {
       width: 100%;
-      font-size: 24px;
+      font-size: 50px;
       color: #243160;
       margin-top: 50px;
       text-align: right;
@@ -2176,7 +2235,7 @@ main.admin-homepage {
     background-image: url(../../img-content/class-prof-red.jpg);
     background-size: cover; }
     .donationpage-content .donationpage-member h2 {
-      font-size: 24px;
+      font-size: 50px;
       color: #902a15;
       text-align: right;
       padding-right: 30px;
@@ -2192,7 +2251,7 @@ main.admin-homepage {
       .donationpage-content .donationpage-member p:nth-of-type(2) {
         margin-bottom: 20px; }
   .donationpage-content .donationpage-suggestion h2 {
-    font-size: 24px;
+    font-size: 50px;
     padding-right: 30px;
     color: #243160;
     text-align: right;
@@ -2235,5 +2294,152 @@ main.admin-moderation .admin-content .account-info a {
   margin: 200px 50px 0;
   background: #902a15;
   padding: 10px 30px; }
+
+.contactpage-header {
+  display: none; }
+
+.contactpage-content {
+  width: 100%; }
+  .contactpage-content h2 {
+    font-size: 34px;
+    color: #243160;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contactpage-content .contactpage-container {
+    width: 80%;
+    margin: 0 auto; }
+    .contactpage-content .contactpage-container .contactpage-details h3 {
+      color: #243160;
+      font-size: 34px; }
+    .contactpage-content .contactpage-container .contactpage-details p {
+      font-size: 19px;
+      margin-bottom: 20px; }
+    .contactpage-content .contactpage-container .contactpage-form form div label {
+      font-size: 20px;
+      font-family: "Rozha One", serif;
+      color: #902a15; }
+    .contactpage-content .contactpage-container .contactpage-form form div input {
+      width: 100%;
+      box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+      border: 1px solid #cfcfcf;
+      height: 34px;
+      margin-bottom: 20px; }
+    .contactpage-content .contactpage-container .contactpage-form form div textarea {
+      width: 100%;
+      box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+      height: 90px; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+
+/*-----------RESPONSIVE -----------*/
+@media screen and (min-width: 768px) {
+  .contactpage-content {
+    width: 70%; }
+    .contactpage-content h2 {
+      font-size: 34px;
+      color: #243160;
+      text-align: center;
+      margin-bottom: 20px; }
+    .contactpage-content .contactpage-container .contactpage-details {
+      width: 50%;
+      margin: 0 auto;
+      float: left; }
+      .contactpage-content .contactpage-container .contactpage-details h3 {
+        color: #243160;
+        font-size: 34px; }
+      .contactpage-content .contactpage-container .contactpage-details p {
+        font-size: 19px;
+        margin-bottom: 20px; }
+    .contactpage-content .contactpage-container .contactpage-form {
+      width: 40%;
+      float: right;
+      margin-top: 120px; }
+      .contactpage-content .contactpage-container .contactpage-form form div label {
+        font-size: 20px;
+        font-family: "Rozha One", serif;
+        color: #902a15; }
+      .contactpage-content .contactpage-container .contactpage-form form div input {
+        width: 100%;
+        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid #cfcfcf;
+        height: 34px;
+        margin-bottom: 20px; }
+      .contactpage-content .contactpage-container .contactpage-form form div textarea {
+        width: 100%;
+        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+        height: 90px; } }
+.errorpage-header {
+  display: none; }
+
+.errorpage-content {
+  width: 100%; }
+  .errorpage-content .errorpage-banner {
+    display: none; }
+  .errorpage-content .errorpage-details img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin: 90px 15%; }
+  .errorpage-content .errorpage-details h2 {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .errorpage-content .errorpage-details .btn-valid {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .errorpage-content .errorpage-details .btn-valid a {
+      font-size: 16px; }
+
+/*-------RESPONSIVE-----------*/
+@media screen and (min-width: 768px) {
+  .errorpage-content .errorpage-banner {
+    display: block;
+    float: left;
+    width: 10%;
+    height: 675px;
+    background: #243160; }
+    .errorpage-content .errorpage-banner ul {
+      margin-top: 20px; }
+  .errorpage-content .errorpage-details img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 60px; }
+  .errorpage-content .errorpage-details h2 {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .errorpage-content .errorpage-details .btn-valid {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .errorpage-content .errorpage-details .btn-valid a {
+      font-size: 16px; } }
+@media screen and (min-width: 1040px) {
+  .errorpage-content .errorpage-details img {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 60px; }
+  .errorpage-content .errorpage-details h2 {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
+  .errorpage-content .errorpage-details .btn-valid {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .errorpage-content .errorpage-details .btn-valid a {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
