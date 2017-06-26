@@ -145,6 +145,45 @@ main.missionpage-main {
             }
         }
     }
+    section.functionning {
+        div.action1 {
+            div {
+                z-index: 1;
+                h3.action-h3 {
+                    text-align: left;
+                    margin: 10% 0 0 15%;
+                    padding-top: 5%;
+                }
+            }
+            img.action-mobile-1 {
+                width: 200px;
+                bottom: 0;
+                right: 0;
+                z-index: 4;
+            }
+            img.action-mobile-2 {
+                width: 200px;
+                top: 0;
+                left: 0;
+                //z-index: -1;
+            }
+            img.action-mq768-1,
+            img.action-mq768-2 {
+                display: none;
+                width: 592px;
+            }
+            img.action-mq768-1 {
+                top: 0;
+                left: 0;
+                //z-index: -1;
+            }
+            img.action-mq768-2 {
+                bottom: 0;
+                right: 0;
+                z-index: 4;
+            }
+        }
+    }
 }
 
 
@@ -289,8 +328,8 @@ main.missionpage-main {
                 h3.missionpage-h3-2 {
                     font-size: 36px;
                     width: 30%;
+                    margin: 3% 10% 0 15%;
                     text-align: right;
-                    background: blue;
                 }
             }
         }
