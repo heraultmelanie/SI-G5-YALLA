@@ -1346,6 +1346,192 @@ main.missionpage-main {
     left: 20%;
     width: 40%;
     margin: 5% auto; } }
+header.missionpage-header {
+  position: relative;
+  background-image: none;
+  height: auto;
+  margin: 0 0 5% 0;
+  /* ----- HEADER ----- */ }
+  header.missionpage-header h1 a #logo {
+    display: none;
+    position: absolute;
+    z-index: 22;
+    position: fixe;
+    width: 150px;
+    margin: 0;
+    height: 1; }
+
+/* ----- 
+--------------------------------------------------------
+------------- WORLD WIDE WEB 
+----- */
+main.makedonation-main {
+  font-family: "Poppins", sans-serif; }
+  main.makedonation-main h3.makedonation {
+    font-size: 56px;
+    text-align: right;
+    font-family: "Rozha One", serif;
+    color: #2b6847; }
+  main.makedonation-main p.donation-type {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 14px;
+    color: #902a15; }
+  main.makedonation-main div.donation-www {
+    margin-top: 5%;
+    position: relative;
+    font-size: 14px; }
+    main.makedonation-main div.donation-www div.www-left {
+      height: 350px;
+      overflow: hidden;
+      background: purple; }
+      main.makedonation-main div.donation-www div.www-left img {
+        width: 100%; }
+      main.makedonation-main div.donation-www div.www-left img.make-a-donation {
+        display: block; }
+      main.makedonation-main div.donation-www div.www-left img.make-a-donation-mq1040 {
+        display: none; }
+      main.makedonation-main div.donation-www div.www-left p {
+        position: absolute;
+        top: 5%;
+        font-size: 24px;
+        text-align: center;
+        color: #fff; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      width: 80%;
+      margin: 0 auto 5% auto;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-www div.www-right p {
+      width: 80%;
+      margin: 5% auto; }
+  main.makedonation-main div.donation-cheque {
+    font-size: 14px; }
+    main.makedonation-main div.donation-cheque div.cheque-right {
+      float: right;
+      width: 235px;
+      height: 280px;
+      overflow: hidden;
+      background: yellow; }
+      main.makedonation-main div.donation-cheque div.cheque-right img {
+        width: 100%; }
+    main.makedonation-main div.donation-cheque div.cheque-left h4 {
+      width: 80%;
+      margin: 0 0 5% 40%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-cheque div.cheque-left p {
+      width: 90%;
+      margin: 5% auto;
+      text-align: right; }
+      main.makedonation-main div.donation-cheque div.cheque-left p span.cheque-adress {
+        color: #902a15; }
+  main.makedonation-main div.donation-virement {
+    font-size: 14px; }
+    main.makedonation-main div.donation-virement div.virement-center {
+      overflow: hidden; }
+      main.makedonation-main div.donation-virement div.virement-center img {
+        width: 100%; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-virement div.virement-info p {
+      width: 90%;
+      margin: 5% auto; }
+      main.makedonation-main div.donation-virement div.virement-info p span.credit {
+        font-weight: 700; }
+
+/* ----- 
+--------------------------------------------------------
+------------- fonctionnement 
+----- */
+/* ---
+----------------------------------------
+----------------- RESPONSIVE
+----------------------------------------
+-------------- */
+/* ---------------
+------------------------------------------------------------- 768 PX -----------------*/
+/* ---------------
+------------------------------------------------------------- 950 PX ----------------*/
+/* ---------------
+------------------------------------------------------------- 1040 PX ----------------*/
+@media screen and (min-width: 1040px) {
+  main.makedonation-main h3.makedonation {
+    margin-right: 10%;
+    font-size: 72px; }
+  main.makedonation-main p.donation-type {
+    font-size: 18px; }
+  main.makedonation-main div.donation-www .www-left {
+    float: left;
+    width: 50%;
+    background: purple; }
+    main.makedonation-main div.donation-www .www-left img {
+      width: 100%; }
+    main.makedonation-main div.donation-www .www-left img.make-a-donation {
+      display: none; }
+    main.makedonation-main div.donation-www .www-left img.make-a-donation-mq1040 {
+      display: none; }
+    main.makedonation-main div.donation-www .www-left p {
+      width: 40%;
+      font-size: 36px; }
+  main.makedonation-main div.donation-www .www-right {
+    float: right;
+    width: 50%;
+    background: pink; }
+    main.makedonation-main div.donation-www .www-right h4 {
+      font-size: 36px; }
+    main.makedonation-main div.donation-www .www-right p {
+      font-size: 16px; }
+  main.makedonation-main div.donation-cheque {
+    font-size: 16px;
+    margin-top: -5%;
+    background: red; }
+    main.makedonation-main div.donation-cheque div.cheque-right {
+      width: 40%;
+      background: yellow; }
+    main.makedonation-main div.donation-cheque div.cheque-left {
+      float: left;
+      width: 60%;
+      margin: 5% 0;
+      background: blue; }
+      main.makedonation-main div.donation-cheque div.cheque-left h4 {
+        width: 80%;
+        margin: 0 0 5% 40%;
+        font-size: 36px;
+        color: #243160; }
+      main.makedonation-main div.donation-cheque div.cheque-left p {
+        width: 60%;
+        margin: 5% 0 5% 30%;
+        text-align: right; }
+        main.makedonation-main div.donation-cheque div.cheque-left p span.cheque-adress {
+          color: #902a15; }
+  main.makedonation-main div.donation-virement {
+    font-size: 16px; }
+    main.makedonation-main div.donation-virement div.virement-center {
+      overflow: hidden;
+      height: 350px; }
+      main.makedonation-main div.donation-virement div.virement-center img {
+        width: 100%; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      font-size: 36px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-virement div.virement-info p {
+      width: 90%;
+      margin: 1% auto; }
+      main.makedonation-main div.donation-virement div.virement-info p span.credit {
+        font-weight: 700; } }
+/* -------------- 
+--------------------------------------------------------------1200 PX ----------------*/
 footer {
   background: #4A4A4A; }
   footer ul {
