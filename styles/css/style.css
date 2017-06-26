@@ -72,6 +72,16 @@ ul {
     font-size: 18px;
     color: #fff; }
 
+.btn-don {
+  width: 100%;
+  padding: 10px 0;
+  background: #ffca59;
+  border: 1px solid #ffca59; }
+  .btn-don a {
+    font-family: "Rozha One", serif;
+    color: #fff;
+    font-size: 24px; }
+
 /* a ajouter commun */
 header {
   overflow: hidden;
@@ -208,12 +218,12 @@ main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */
-  /* ----- DIV : Laicité ----- */
+  /* ----- DIV : Laicit├® ----- */
   /* ----- DIV : Transparence ----- */
   /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
-    /* ----- DIV : Aide humanitaire proximité ----- */ }
+    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -375,12 +385,12 @@ main.aboutus-main {
   main.aboutus-main {
     /* ----- commun div----- */
     /* ----- toutes valeurs ----- */
-    /* ----- valeur : Laicité ----- */
+    /* ----- valeur : Laicit├® ----- */
     /* ----- Transparence ----- */
     /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
-      /* ----- valeur : Aide humanitaire proximité ----- */ }
+      /* ----- valeur : Aide humanitaire proximit├® ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -465,7 +475,7 @@ main.aboutus-main {
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
-    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+    /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h4 {
       margin: 0 auto 52px auto;
       font-size: 30px; }
@@ -1420,5 +1430,95 @@ main.admin-homepage {
         text-align: right; }
       .admin-list-mail .list-mail-content .list-mail-array table .list-mail:nth-child(2n) {
         background: #f4f4f4; }
+
+.donationpage-content .donation-pres .donationpage-donation h2 {
+  font-size: 24px;
+  color: #243160;
+  text-align: center;
+  margin: 10px 0 34px 0; }
+.donationpage-content .donation-pres .donationpage-donation p {
+  font-size: 20px;
+  color: #902a15;
+  text-align: center;
+  font-family: "Rozha One", serif;
+  margin-bottom: 48px; }
+.donationpage-content .donation-pres .donationpage-details {
+  width: 100%;
+  background: #2b6847; }
+  .donationpage-content .donation-pres .donationpage-details h2 {
+    font-size: 24px;
+    color: #2b6847;
+    text-align: right;
+    background: #fff; }
+    .donationpage-content .donation-pres .donationpage-details h2 span {
+      font-size: 48px; }
+  .donationpage-content .donation-pres .donationpage-details p {
+    font-size: 14px;
+    text-align: right;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donation-pres .donationpage-details p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donation-pres .donationpage-details p:nth-of-type(2) {
+      margin-bottom: 20px; }
+.donationpage-content .donation-pres .donationpage-sponsorship {
+  background: #243160; }
+  .donationpage-content .donation-pres .donationpage-sponsorship h2 {
+    font-size: 24px;
+    color: #243160;
+    margin-top: 50px;
+    text-align: center;
+    background: #fff; }
+  .donationpage-content .donation-pres .donationpage-sponsorship p {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #fff; }
+    .donationpage-content .donation-pres .donationpage-sponsorship p:nth-of-type(1) {
+      margin-top: 20px; }
+    .donationpage-content .donation-pres .donationpage-sponsorship p:nth-of-type(2) {
+      margin-bottom: 20px; }
+.donationpage-content .donation-pres .donationpage-member h2 {
+  font-size: 24px;
+  color: #902a15;
+  text-align: right; }
+.donationpage-content .donation-pres .donationpage-suggestion h2 {
+  font-size: 24px;
+  color: #243160; }
+  .donationpage-content .donation-pres .donationpage-suggestion h2 span {
+    font-size: 48px; }
+
+main.admin-moderation .admin-moderation-banner {
+  float: left;
+  width: 20%;
+  height: 100vh;
+  background: #243160; }
+  main.admin-moderation .admin-moderation-banner ul {
+    margin-top: 20px; }
+    main.admin-moderation .admin-moderation-banner ul li {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      padding-left: 25px;
+      margin-bottom: 20px; }
+      main.admin-moderation .admin-moderation-banner ul li a {
+        color: #fff; }
+main.admin-moderation .admin-content .account-info h2 {
+  font-family: "Rozha One", serif;
+  font-size: 28px;
+  color: #243160;
+  text-align: center;
+  margin-top: 150px; }
+main.admin-moderation .admin-content .account-info p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px; }
+main.admin-moderation .admin-content .account-info a {
+  float: right;
+  color: #fff;
+  font-family: "Rozha One", serif;
+  font-size: 18px;
+  margin: 200px 50px 0;
+  background: #902a15;
+  padding: 10px 30px; }
 
 /*# sourceMappingURL=style.css.map */
