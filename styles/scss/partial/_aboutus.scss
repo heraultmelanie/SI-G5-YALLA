@@ -16,7 +16,7 @@ header.aboutus-header {
     }
     /* ----- HEADER ----- */
     h2 {
-        font-family: 'Rozha One', serif;
+        font-family: $rozha;
         font-size: 24px;
         text-align: center;
         height: auto;
@@ -74,13 +74,13 @@ header.aboutus-header {
                 color: #FFF;
                 h5 {
                     font-size: 18px;
-                    font-family: 'Rozha One', serif;
+                    font-family: $rozha;
                     text-align: center;
                     color: #fff;
                 }
                 p {
                     font-size: 12px;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: $poppins;
                     text-align: center;
                 }
             }
@@ -254,7 +254,7 @@ main.aboutus-main {
                 bottom: 10%;
                 z-index: +1;
                 font-size: 14px;
-                font-family: 'Rozha One', serif;
+                font-family: $rozha;
                 color: $green;
                 background: #fff;
                 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
