@@ -233,12 +233,12 @@ main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */
-  /* ----- DIV : Laicit├® ----- */
+  /* ----- DIV : Laicité ----- */
   /* ----- DIV : Transparence ----- */
   /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
-    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
+    /* ----- DIV : Aide humanitaire proximité ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -400,12 +400,12 @@ main.aboutus-main {
   main.aboutus-main {
     /* ----- commun div----- */
     /* ----- toutes valeurs ----- */
-    /* ----- valeur : Laicit├® ----- */
+    /* ----- valeur : Laicité ----- */
     /* ----- Transparence ----- */
     /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
-      /* ----- valeur : Aide humanitaire proximit├® ----- */ }
+      /* ----- valeur : Aide humanitaire proximité ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -490,7 +490,7 @@ main.aboutus-main {
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
-    /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
+    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
     main.aboutus-main div h4 {
       margin: 0 auto 52px auto;
       font-size: 30px; }
@@ -855,9 +855,33 @@ header.missionpage-header {
     margin: 0;
     color: #243160; }
 
+                    /* ----- 
+--------------------------------------------------------
+------------- MAIN 
+----- */
 main.missionpage-main {
   font-size: 12px;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+                        /* ----- 
+--------------------------------------------------------
+------------- fonctionnement 
+----- */
+                        /* ----- 
+--------------------------------------------------------
+------------- strategie 
+----- */
+                        /* ----- 
+--------------------------------------------------------
+------------- actions 
+----- */
+                        /* ----- 
+--------------------------------------------------------
+------------- objectifs 
+----- */
+                        /* ----- 
+--------------------------------------------------------
+------------- budget 
+----- */ }
   main.missionpage-main section.functionning div.functionning em {
     font-style: normal;
     color: #902a15; }
@@ -965,13 +989,110 @@ main.missionpage-main {
   main.missionpage-main section.function-action div.a-part2,
   main.missionpage-main section.function-action div.a-part4 {
     text-align: right; }
+  main.missionpage-main section.strategy div.o-part1 {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 6px solid #902a15;
+    border-top: 6px solid #902a15; }
+    main.missionpage-main section.strategy div.o-part1 div.wrap-goal-img {
+      height: 170px;
+      float: right; }
+      main.missionpage-main section.strategy div.o-part1 div.wrap-goal-img img.goal-img1 {
+        height: 100%;
+        top: 0;
+        right: 0; }
+      main.missionpage-main section.strategy div.o-part1 div.wrap-goal-img img.goal-img1-mq950 {
+        display: none;
+        height: 100%;
+        top: 0;
+        right: 0; }
+    main.missionpage-main section.strategy div.o-part1 img.goal-imgscript {
+      position: absolute;
+      height: 100%;
+      top: -3%;
+      left: 15%;
+      z-index: -1; }
+    main.missionpage-main section.strategy div.o-part1 h3.missionpage-h3-inv {
+      float: left;
+      width: 30%;
+      margin: 7% 0 0 15%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      text-align: right;
+      color: #243160; }
+  main.missionpage-main section.strategy div.our-goals {
+    position: relative; }
+    main.missionpage-main section.strategy div.our-goals h4.goal {
+      width: 80%;
+      margin: 0 auto 10% auto;
+      font-size: 18px;
+      font-family: "Rozha One", serif;
+      color: #902a15; }
+    main.missionpage-main section.strategy div.our-goals img.goal-script-img {
+      position: absolute;
+      width: 170px;
+      right: 5%;
+      top: -8%;
+      z-index: -1; }
+    main.missionpage-main section.strategy div.our-goals ul {
+      width: 70%;
+      list-style-type: circle; }
+      main.missionpage-main section.strategy div.our-goals ul li {
+        padding: 1% 0; }
+    main.missionpage-main section.strategy div.our-goals p.thatwhy {
+      width: 85%;
+      margin: 5% auto;
+      font-size: 14px;
+      text-align: center;
+      font-family: "Rozha One", serif;
+      color: #2b6847; }
+  main.missionpage-main section.function-action-budget div.f-part1 div {
+    z-index: -1; }
+    main.missionpage-main section.function-action-budget div.f-part1 div h3.missionpage-h3 {
+      text-align: center;
+      width: 58%;
+      margin: 12% auto 0 auto; }
+  main.missionpage-main section.function-action-budget img {
+    position: absolute; }
+  main.missionpage-main section.function-action-budget img.goal-mobile-right {
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    z-index: 10; }
+  main.missionpage-main section.function-action-budget img.goal-mobile-left {
+    width: 200px;
+    top: 0;
+    left: 0;
+    z-index: 10; }
+  main.missionpage-main section.function-action-budget img.goal-mq768-left,
+  main.missionpage-main section.function-action-budget img.goal-mq768-right {
+    display: none;
+    width: 592px; }
+  main.missionpage-main section.function-action-budget img.goal-mq768-left {
+    top: 0;
+    left: 0;
+    z-index: 10; }
+  main.missionpage-main section.function-action-budget img.goal-mq768-right {
+    bottom: 0;
+    right: 0;
+    z-index: 10; }
+  main.missionpage-main section.function-action-budget div.b-part2 {
+    width: 80%;
+    margin: 5% auto;
+    color: #2b6847; }
+  main.missionpage-main section.function-action-budget div.b-part3 {
+    width: 80%;
+    margin: 5% auto;
+    text-align: left; }
 
-    /* ---
+                    /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-    /* ---------------
+                    /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   main.missionpage-main section.functionning div.f-part1 div h3.missionpage-h3 {
@@ -990,7 +1111,7 @@ main.missionpage-main {
   main.missionpage-main section.strategy div.s-part3,
   main.missionpage-main section.strategy div.s-part4 {
     margin: 5% auto; } }
-    /* ---------------
+                    /* ---------------
 ------------------------------------------------------------- 950 PX ----------------*/
 @media screen and (min-width: 950px) {
   header.missionpage-header {
@@ -1005,7 +1126,9 @@ main.missionpage-main {
 
   main.missionpage-main {
     font-size: 16px;
-    /* --- actions ----- */ }
+    /* --- actions ----- */
+    /* --- objectifs ----- */
+    /* --- budget ----- */ }
     main.missionpage-main section.functionning div.f-part1 {
       height: 392px; }
       main.missionpage-main section.functionning div.f-part1 img {
@@ -1060,8 +1183,31 @@ main.missionpage-main {
         margin: -8% 0 0 10%; }
       main.missionpage-main section.function-action div.a-part4 {
         width: 55%;
-        margin: 3% 10% 5% 35%; } }
-    /* ---------------
+        margin: 3% 10% 5% 35%; }
+    main.missionpage-main section.strategy div.our-goals h4.goal {
+      font-size: 36px; }
+    main.missionpage-main section.strategy div.our-goals img.goal-script-img {
+      width: 250px;
+      right: 5%;
+      top: -5%; }
+    main.missionpage-main section.strategy div.our-goals ul li {
+      padding: 1% 0; }
+    main.missionpage-main section.strategy div.our-goals p.thatwhy {
+      font-size: 28px; }
+    main.missionpage-main section.function-action-budget {
+      position: relative; }
+      main.missionpage-main section.function-action-budget div.f-part1 div h3.missionpage-h3 {
+        font-size: 36px;
+        margin: 5% 0 0 60%; }
+      main.missionpage-main section.function-action-budget div.b-part2bis {
+        position: absolute;
+        top: 35vh;
+        left: 25%;
+        width: 40%;
+        margin: 5% auto; }
+      main.missionpage-main section.function-action-budget div.b-part3 {
+        margin: 0 auto 5% auto; } }
+                    /* ---------------
 ------------------------------------------------------------- 1040 PX ----------------*/
 @media screen and (min-width: 1040px) {
   font-size: 18px;
@@ -1075,41 +1221,46 @@ main.missionpage-main {
     header.missionpage-header h2 {
       display: none; }
 
-  main.missionpage-main section.functionning {
-    position: relative; }
-    main.missionpage-main section.functionning div.functionning {
+  main.missionpage-main {
+    /* -- fonctionnement -- */
+    /* -- ||| stratégie ||| -- */
+    /* -- actions -- */
+    /* -- ||| objectifs ||| -- */ }
+    main.missionpage-main section.functionning {
+      position: relative; }
+      main.missionpage-main section.functionning div.functionning {
+        font-size: 18px; }
+      main.missionpage-main section.functionning div.f-part1 div {
+        position: absolute;
+        background: #243160; }
+        main.missionpage-main section.functionning div.f-part1 div h3.missionpage-h3 {
+          width: 100%;
+          margin: 0;
+          padding: 3% 5% 5% 70%;
+          font-size: 36px; }
+      main.missionpage-main section.functionning div.f-part2 {
+        top: 22%;
+        left: 14%;
+        width: 48%; }
+    main.missionpage-main section.strategy div.strategies {
+      margin: 5% auto;
       font-size: 18px; }
-    main.missionpage-main section.functionning div.f-part1 div {
-      position: absolute;
-      background: #243160; }
-      main.missionpage-main section.functionning div.f-part1 div h3.missionpage-h3 {
-        width: 100%;
-        margin: 0;
-        padding: 3% 5% 5% 70%;
-        font-size: 36px; }
-    main.missionpage-main section.functionning div.f-part2 {
-      top: 22%;
-      left: 14%;
-      width: 48%; }
-  main.missionpage-main section.strategy div.strategies {
-    margin: 5% auto;
-    font-size: 18px; }
-  main.missionpage-main section.strategy div.s-part1 div.wrap-strat-img img.strat-img1 {
-    display: none;
-    width: 45%; }
-  main.missionpage-main section.strategy div.s-part1 h3.missionpage-h3-inv {
-    margin: 3% 0 0 15%; }
-  main.missionpage-main section.function-action div.a-part2 {
-    top: 28vh;
-    left: 22%;
-    width: 45%;
-    margin: 5% auto 7% auto; }
-  main.missionpage-main section.function-action div.a-part3 {
-    width: 50%;
-    margin: -7% 0 0 10%; }
-  main.missionpage-main section.function-action div.a-part4 {
-    margin: 3% 10% 5% 35%; } }
-    /* -------------- 
+    main.missionpage-main section.strategy div.s-part1 div.wrap-strat-img img.strat-img1 {
+      display: none;
+      width: 45%; }
+    main.missionpage-main section.strategy div.s-part1 h3.missionpage-h3-inv {
+      margin: 3% 0 0 15%; }
+    main.missionpage-main section.function-action div.a-part2 {
+      top: 25vh;
+      left: 22%;
+      width: 45%;
+      margin: 5% auto 7% auto; }
+    main.missionpage-main section.function-action div.a-part3 {
+      width: 50%;
+      margin: -7% 0 0 10%; }
+    main.missionpage-main section.function-action div.a-part4 {
+      margin: 3% 10% 5% 35%; } }
+                    /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.missionpage-main section.functionning div.functionning {
