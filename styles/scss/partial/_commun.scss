@@ -77,3 +77,15 @@ ul {
         color: #fff;
     }
 }
+
+.btn-don {
+    width: 100%;
+    padding: 10px 0;
+    background: $yellow;
+    border: 1px solid $yellow;
+    a {
+        font-family: $rozha;
+        color: #fff;
+        font-size: 24px;
+    }
+}
