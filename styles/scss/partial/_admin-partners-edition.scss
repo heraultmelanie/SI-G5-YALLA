@@ -1,0 +1,26 @@
+.admin-partners-details {
+	width: 40%;
+	h2 {
+		font-size: 48px;
+    	margin-top: 150px;
+    	color: $red;
+	}
+	h3{
+		font-size: 30px;
+    	margin-top:70px;
+    	color: $red;
+    	margin-bottom: 20px;
+	}
+	input {
+		border: none;
+		border-bottom: 1px solid #9B9B9B;
+		font-size: 19px;
+		color: #9B9B9B;
+		margin-bottom: 22px;
+		display: inline-block;
+		width: 70%;
+	}
+	.btn-valid {
+		float: right;
+	}
+}
