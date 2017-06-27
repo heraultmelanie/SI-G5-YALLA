@@ -458,10 +458,10 @@ main.missionpage-main {
             }
             div.f-part2 {
                 position: absolute;
-                top: 53vh;
-                left: 22%;
+                top: 50vh;
+                left: 19%;
                 width: 38%;
-                margin: 5% auto;
+                margin: 0 auto 5%;
                 text-align: right;
             }
             div.f-part3,
@@ -510,7 +510,7 @@ main.missionpage-main {
             }
             div.a-part2 {
                 position: absolute;
-                top: 30vh;
+                top: 28vh;
                 left: 25%;
                 width: 40%;
                 margin: 5% auto;
@@ -629,8 +629,8 @@ main.missionpage-main {
                 }
             }
             div.f-part2 {
-                top: 22%;
-                left: 14%;
+                top: 27%;
+                left: 18%;
                 width: 48%;
             }
         }
@@ -727,7 +727,10 @@ main.missionpage-main {
             }
             div.a-part3 {
                 width: 35%;
-                margin: -17% 0 5% 19%;
+                margin: -13% 0 5% 19%;
+            }
+            div.a-part4 {
+                margin: 7% 10% 5% 35%;
             }
         }
         section.function-action-budget {
