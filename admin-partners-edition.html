@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="img-layout/ico.png">
-	<meta content="Présentation de l'association Yalla pour les enfants">
-	<link href="https://fonts.googleapis.com/css?family=Poppins|Rozha+One" rel="stylesheet">
-	<link rel="stylesheet" href="styles/css/style.css">
-	<meta charset="UTF-8">
-	<title>Yalla - Pour les enfants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img-layout/ico.png">
+    <meta name="description" content="Association Yalla pour les enfants syriens">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Rozha+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <meta charset="UTF-8">
+    <title>Yalla - Admin</title>
 </head>
+
 <body>
-	
-	<main class="admin-partners-content clearfix">
-		<div class="admin-moderation-banner">
+
+    <main class="admin-partners-content clearfix">
+        <div class="admin-moderation-banner">
             <ul>
                 <li><a href="{{ path('#') }}">Mon compte</a></li>
                 <li> <a href="{{ path('partenaire_index') }}">Les partenaires</a></li>
@@ -26,12 +28,14 @@
                 <li><a href="{{ path('admin_media_articles_ar_index') }}">arabes</a></li>
             </ul>
         </div>
-		<div class="admin-partners-details">
-			<h2>Modifier l'URL de CALAM</h2>
-			<h3>Entrez le lien du site de CALAM</h3>
-			<input type="text" placeholder="lien du site Internet"><br>
-			<button class="btn-valid"><a href="#">Enregistrer les modifications</a></button>
-		</div>
-	</main>	
+        <div class="admin-partners-details">
+            <h2>Modifier l'URL de CALAM</h2>
+            <h3>Entrez le lien du site de CALAM</h3>
+            <input type="text" placeholder="lien du site Internet">
+            <br>
+            <button class="btn-valid"><a href="#">Enregistrer les modifications</a></button>
+        </div>
+    </main>
 </body>
+
 </html>
