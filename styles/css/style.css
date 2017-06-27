@@ -2510,4 +2510,138 @@ footer {
   .admin-partners-details .btn-valid {
     float: right; }
 
+.contextpage-header {
+  display: none; }
+
+.contextpage-content {
+  width: 100%; }
+  .contextpage-content .context {
+    width: 100%; }
+    .contextpage-content .context h2 {
+      color: #243160;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 50px; }
+    .contextpage-content .context .context-history {
+      width: 80%;
+      text-align: right; }
+      .contextpage-content .context .context-history .context-explain1 {
+        overflow: hidden; }
+        .contextpage-content .context .context-history .context-explain1 h3 {
+          position: absolute;
+          z-index: -5;
+          margin: 0 auto;
+          top: 0px;
+          right: 0;
+          text-align: right;
+          color: #EDEDED;
+          font-size: 141px; }
+        .contextpage-content .context .context-history .context-explain1 p {
+          font-size: 12px;
+          line-height: 180%;
+          margin-bottom: 50px; }
+        .contextpage-content .context .context-history .context-explain1 .context-wrap {
+          width: 100%;
+          height: 40px; }
+          .contextpage-content .context .context-history .context-explain1 .context-wrap .context-img {
+            width: 24px;
+            float: right; }
+            .contextpage-content .context .context-history .context-explain1 .context-wrap .context-img img {
+              margin: 10px 0; }
+          .contextpage-content .context .context-history .context-explain1 .context-wrap p {
+            width: 90%;
+            padding-top: 30px;
+            display: block;
+            float: left; }
+            .contextpage-content .context .context-history .context-explain1 .context-wrap p .style-sentence {
+              background: #902a15;
+              color: #fff; }
+            .contextpage-content .context .context-history .context-explain1 .context-wrap p .style-sentence1 {
+              color: #2b6847;
+              text-decoration: underline; }
+      .contextpage-content .context .context-history .context-explain2 h3 {
+        position: absolute;
+        z-index: -5;
+        margin: 0 auto;
+        top: 600px;
+        right: 0;
+        color: #EDEDED;
+        font-size: 141px; }
+      .contextpage-content .context .context-history .context-explain2 p {
+        font-size: 12px;
+        line-height: 180%;
+        margin-bottom: 50px; }
+        .contextpage-content .context .context-history .context-explain2 p .style-sentence {
+          background: #2b6847;
+          color: #fff; }
+    .contextpage-content .context .contextpage-objectif {
+      width: 100%; }
+      .contextpage-content .context .contextpage-objectif h4 {
+        width: 60%;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #2b6847;
+        margin-bottom: 60px; }
+      .contextpage-content .context .contextpage-objectif .context-img {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 50px; }
+      .contextpage-content .context .contextpage-objectif .btn-view {
+        width: 100%;
+        margin: 0;
+        height: 57px; }
+        .contextpage-content .context .contextpage-objectif .btn-view a {
+          font-size: 24px; }
+      .contextpage-content .context .contextpage-objectif h5 {
+        width: 80%;
+        font-size: 34px;
+        text-align: right;
+        color: #902a15; }
+        .contextpage-content .context .contextpage-objectif h5 #style-point {
+          font-size: 68px;
+          color: #902a15; }
+        .contextpage-content .context .contextpage-objectif h5 #style-word {
+          color: #fff;
+          background: #902a15; }
+      .contextpage-content .context .contextpage-objectif .context-img #symb-fond {
+        width: 50%;
+        position: absolute;
+        z-index: -5;
+        left: 0; }
+      .contextpage-content .context .contextpage-objectif .context-explain {
+        width: 80%; }
+        .contextpage-content .context .contextpage-objectif .context-explain p {
+          font-size: 12px;
+          margin-bottom: 30px; }
+          .contextpage-content .context .contextpage-objectif .context-explain p .style-sentence {
+            background: #ffca59; }
+    .contextpage-content .context .context-juridiction h5 {
+      width: 80%;
+      font-size: 34px;
+      color: #2b6847; }
+      .contextpage-content .context .context-juridiction h5 .style-word {
+        background: #2b6847;
+        color: #fff; }
+    .contextpage-content .context .context-juridiction .context-img {
+      width: 100%;
+      position: absolute;
+      z-index: -5;
+      left: -135px; }
+      .contextpage-content .context .context-juridiction .context-img #symb-fond {
+        width: 50%;
+        left: 0;
+        position: fixed; }
+    .contextpage-content .context .context-juridiction .context-explain {
+      width: 80%; }
+      .contextpage-content .context .context-juridiction .context-explain p {
+        text-align: right;
+        margin-top: 50px;
+        font-size: 12px;
+        margin-bottom: 30px; }
+    .contextpage-content .context .context-condition {
+      width: 100%; }
+      .contextpage-content .context .context-condition .context-img img {
+        width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
