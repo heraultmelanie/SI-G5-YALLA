@@ -165,17 +165,18 @@
 				#symb-fond {
 					width: 50%;
 					left: 0;
-					position: fixed;
 				}
 			}
 			.context-explain {
 				width: 80%;
 				p {
 					text-align: right;
-					margin-top: 50px;					font-size: 12px;
+					margin-top: 50px;					
+					font-size: 12px;
 					margin-bottom: 30px;
 					.style-sentence {
-
+						background: $blue;
+						color: #fff;
 					}
 				}
 			}
@@ -183,26 +184,58 @@
 		.context-condition {
 			width: 100%;
 			h5 {
-
+				width: 80%;
+				padding-top: 10px;
+				position: absolute;
+				padding-left: 45px;
+				
+				font-size: 34px;
+				.style-condi {
+					color: #fff;
+					border-bottom: 6px dotted $red;
+				}
+				.style-life {
+					color: $green;
+					border-bottom: 6px dotted $red;
+				}
 			}
 			.context-img {
-				
+				width: 100%;
+				z-index: -5;
+				margin-bottom: 100px;
 				img {
 					width: 100%;
 				}
 			}
 			.context-explain  {
+				width: 80%;
+				margin-bottom: 50px;
 				p {
+					font-size: 12px;
+					text-align: right;
 					.style-sentence {
-
+						background: $green;
+						color: #fff;
 					}
 				}
 			}
 		}
 		h6 {
-
+			width: 80%;
+			color: $red;
+			text-align: center;
+			font-size: 14px;
+			margin-bottom: 50px;
 		}
 
 	}
 
+}
+
+footer {
+	ul {
+		li {
+
+		}
+	}
 }

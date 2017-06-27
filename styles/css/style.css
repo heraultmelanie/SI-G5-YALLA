@@ -232,12 +232,12 @@ main.aboutus-main {
   font-family: 'Poppins', sans-serif;
   /* ----- COMMUN DIV ----- */
   /* ----- DIV : toutes valeurs ----- */
-  /* ----- DIV : Laicité ----- */
+  /* ----- DIV : Laicit├® ----- */
   /* ----- DIV : Transparence ----- */
   /* ----- DIV : Gif ----- */ }
   main.aboutus-main div {
     position: relative;
-    /* ----- DIV : Aide humanitaire proximité ----- */ }
+    /* ----- DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h3 {
       width: 80%;
       margin-top: 40px;
@@ -399,12 +399,12 @@ main.aboutus-main {
   main.aboutus-main {
     /* ----- commun div----- */
     /* ----- toutes valeurs ----- */
-    /* ----- valeur : Laicité ----- */
+    /* ----- valeur : Laicit├® ----- */
     /* ----- Transparence ----- */
     /* ----- div : Gif ----- */ }
     main.aboutus-main div {
       margin: 0;
-      /* ----- valeur : Aide humanitaire proximité ----- */ }
+      /* ----- valeur : Aide humanitaire proximit├® ----- */ }
       main.aboutus-main div h3 {
         font-size: 36px; }
         main.aboutus-main div h3 span {
@@ -489,7 +489,7 @@ main.aboutus-main {
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
-    /* ----- MEDIA DIV : Aide humanitaire proximité ----- */ }
+    /* ----- MEDIA DIV : Aide humanitaire proximit├® ----- */ }
     main.aboutus-main div h4 {
       margin: 0 auto 52px auto;
       font-size: 30px; }
@@ -1266,7 +1266,7 @@ main.missionpage-main {
 
   main.missionpage-main {
     /* -- fonctionnement -- */
-    /* -- ||| stratégie ||| -- */
+    /* -- ||| strat├®gie ||| -- */
     /* -- actions -- */
     /* -- ||| objectifs ||| -- */ }
     main.missionpage-main section.functionning {
@@ -1579,9 +1579,7 @@ main.makedonation-main {
 /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
 footer {
-  background: #4A4A4A;
-  position: absolute;
-  bottom: 0; }
+  background: #4A4A4A; }
   footer ul {
     display: flex;
     justify-content: center;
@@ -2630,8 +2628,7 @@ footer {
       left: -135px; }
       .contextpage-content .context .context-juridiction .context-img #symb-fond {
         width: 50%;
-        left: 0;
-        position: fixed; }
+        left: 0; }
     .contextpage-content .context .context-juridiction .context-explain {
       width: 80%; }
       .contextpage-content .context .context-juridiction .context-explain p {
@@ -2639,9 +2636,211 @@ footer {
         margin-top: 50px;
         font-size: 12px;
         margin-bottom: 30px; }
+        .contextpage-content .context .context-juridiction .context-explain p .style-sentence {
+          background: #243160;
+          color: #fff; }
     .contextpage-content .context .context-condition {
       width: 100%; }
-      .contextpage-content .context .context-condition .context-img img {
-        width: 100%; }
+      .contextpage-content .context .context-condition h5 {
+        width: 80%;
+        padding-top: 10px;
+        position: absolute;
+        padding-left: 45px;
+        font-size: 34px; }
+        .contextpage-content .context .context-condition h5 .style-condi {
+          color: #fff;
+          border-bottom: 6px dotted #902a15; }
+        .contextpage-content .context .context-condition h5 .style-life {
+          color: #2b6847;
+          border-bottom: 6px dotted #902a15; }
+      .contextpage-content .context .context-condition .context-img {
+        width: 100%;
+        z-index: -5;
+        margin-bottom: 100px; }
+        .contextpage-content .context .context-condition .context-img img {
+          width: 100%; }
+      .contextpage-content .context .context-condition .context-explain {
+        width: 80%;
+        margin-bottom: 50px; }
+        .contextpage-content .context .context-condition .context-explain p {
+          font-size: 12px;
+          text-align: right; }
+          .contextpage-content .context .context-condition .context-explain p .style-sentence {
+            background: #2b6847;
+            color: #fff; }
+    .contextpage-content .context h6 {
+      width: 80%;
+      color: #902a15;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 50px; }
+
+header {
+  display: none; }
+
+.articlepage .articlepage-article {
+  width: 100%; }
+  .articlepage .articlepage-article .articlepage-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; }
+    .articlepage .articlepage-article .articlepage-content .article-title {
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      z-index: 22;
+      top: 200px;
+      height: 47px; }
+      .articlepage .articlepage-article .articlepage-content .article-title h3 {
+        width: 80%;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #243160;
+        text-align: right;
+        font-weight: 400; }
+      .articlepage .articlepage-article .articlepage-content .article-title h4 {
+        width: 80%;
+        font-family: "Poppins", sans-serif;
+        color: #9B9B9B;
+        font-size: 7px;
+        text-align: right;
+        font-weight: 400; }
+    .articlepage .articlepage-article .articlepage-content h2 {
+      position: absolute;
+      color: #fff;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      margin: 0 35%;
+      margin-top: 10px;
+      font-weight: 400; }
+    .articlepage .articlepage-article .articlepage-content .article-img img {
+      width: 100%; }
+    .articlepage .articlepage-article .articlepage-content .articles-content {
+      width: 80%; }
+      .articlepage .articlepage-article .articlepage-content .articles-content .content1 p {
+        line-height: 19px;
+        margin: 30px 0;
+        text-align: center; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content1 p #style-point {
+          color: #902a15; }
+      .articlepage .articlepage-article .articlepage-content .articles-content #img-deco img {
+        width: 100%;
+        height: 320px; }
+      .articlepage .articlepage-article .articlepage-content .articles-content .content2 p {
+        line-height: 19px;
+        margin: 50px 0;
+        text-align: center; }
+
+@media screen and (min-width: 768px) {
+  h2 {
+    display: none; }
+
+  .articlepage .articlepage-article {
+    width: 100%; }
+    .articlepage .articlepage-article .articlepage-content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto; }
+      .articlepage .articlepage-article .articlepage-content .article-title {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        height: auto; }
+        .articlepage .articlepage-article .articlepage-content .article-title h3 {
+          margin-top: 30px;
+          font-size: 24px;
+          color: #243160;
+          text-align: left; }
+        .articlepage .articlepage-article .articlepage-content .article-title h4 {
+          font-size: 12px;
+          text-align: left;
+          margin-bottom: 30px; }
+      .articlepage .articlepage-article .articlepage-content h2 {
+        position: absolute;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        margin: 0 35%;
+        margin-top: 10px;
+        font-weight: 400; }
+      .articlepage .articlepage-article .articlepage-content .article-img img {
+        width: 50%;
+        float: left; }
+      .articlepage .articlepage-article .articlepage-content .articles-content {
+        width: 45%;
+        float: left;
+        margin-left: 20px; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content1 p {
+          line-height: 19px;
+          margin: 30px 0;
+          text-align: left; }
+          .articlepage .articlepage-article .articlepage-content .articles-content .content1 p:first-child {
+            margin-top: 0; }
+          .articlepage .articlepage-article .articlepage-content .articles-content .content1 p #style-point {
+            color: #902a15; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content1 .btn-overflow {
+          overflow: auto;
+          height: 320px; }
+        .articlepage .articlepage-article .articlepage-content .articles-content #img-deco img {
+          width: 100%;
+          height: 320px; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content2 p {
+          line-height: 19px;
+          margin: 50px 0;
+          text-align: center; } }
+header {
+  display: none; }
+
+.memberpage-content .memberpage-details {
+  width: 80%; }
+  .memberpage-content .memberpage-details h2 {
+    color: #243160;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .memberpage-content .memberpage-details h3 {
+    text-align: right;
+    color: #902a15;
+    font-size: 24px; }
+  .memberpage-content .memberpage-details form div label {
+    text-align: right;
+    color: #902a15;
+    font-size: 14px;
+    font-family: "Rozha One", serif; }
+  .memberpage-content .memberpage-details form div input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px; }
+  .memberpage-content .memberpage-details form div textarea {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px; }
+  .memberpage-content .memberpage-details form div select {
+    width: 50%;
+    height: 30px;
+    font-family: "Rozha One", serif;
+    color: #243160;
+    font-size: 14px; }
+  .memberpage-content .memberpage-details form .input-content {
+    width: 100%; }
+    .memberpage-content .memberpage-details form .input-content .input1 {
+      width: 45%;
+      float: left; }
+    .memberpage-content .memberpage-details form .input-content .input2 {
+      width: 45%;
+      float: right; }
+    .memberpage-content .memberpage-details form .input-content .choice {
+      width: 100%; }
+      .memberpage-content .memberpage-details form .input-content .choice .choice1 input {
+        width: 50%;
+        float: left;
+        display: block; }
+      .memberpage-content .memberpage-details form .input-content .choice .choice2 input {
+        width: 50%;
+        float: left;
+        display: block; }
 
 /*# sourceMappingURL=style.css.map */
