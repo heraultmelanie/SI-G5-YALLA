@@ -2441,5 +2441,26 @@ footer {
     margin-top: 50px; }
     .errorpage-content .errorpage-details .btn-valid a {
       font-size: 16px; } }
+.admin-partners-details {
+  width: 40%; }
+  .admin-partners-details h2 {
+    font-size: 48px;
+    margin-top: 150px;
+    color: #902a15; }
+  .admin-partners-details h3 {
+    font-size: 30px;
+    margin-top: 70px;
+    color: #902a15;
+    margin-bottom: 20px; }
+  .admin-partners-details input {
+    border: none;
+    border-bottom: 1px solid #9B9B9B;
+    font-size: 19px;
+    color: #9B9B9B;
+    margin-bottom: 22px;
+    display: inline-block;
+    width: 70%; }
+  .admin-partners-details .btn-valid {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
