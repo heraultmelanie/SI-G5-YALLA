@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img-layout/ico.png">
+	<meta content="Faites un don à l'association Yalla pour aider les enfants syriens">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Rozha+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/css/style.css">
+	<meta charset="UTF-8">
+	<title>Yalla - Devenir membre</title>
+</head>
+<body>
+	<header class="missionpage-header">
+		<!-- prévoir burger menu au clic avec logo -->
+		<h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1>
+
+		<nav>
+			<!-- burger menu caché -->
+			<ul>
+				<li>
+					<a href="#">Contexte</a>
+				</li>
+				<li>
+					<a href="#">Missions</a>
+				</li>
+				<li>
+					<a href="#">Nous connaître</a>
+				</li>
+				<li class="help-us">
+					<a href="#">Aidez-nous !</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="memberpage-content">
+		<section class="memberpage-details clearfix">
+			<h2>Dons</h2>
+			<h3>Merci <span id="style-point">!</span></h3>
+			<form>
+				<div>
+					<label for="nom">Nom Prénom</label><br>
+					<input type="text" id="nom" />
+				</div>
+				<div>
+					<label for="courriel">E-mail</label><br>
+					<input type="email" id="courriel" />
+				</div>
+				<div>
+					<label for="message">Adresse</label><br>
+					<textarea id="message"></textarea>
+				</div>
+				<div class="input-content">
+					<div class="input1">
+						<label for="ville">Ville</label><br>
+						<input id="ville">
+					</div>
+					<div class="input2">
+						<label for="code-postal">Code Postal</label><br>
+						<input id="code-postal">
+					</div>
+				</div>
+				<div>
+					<label for="langue">Langue</label><br>
+					<form>
+						<select name="langue" id="langue">
+							<option value="français">Français</option>
+							<option value="anglais">Anglais</option>
+						</select>
+					</form>
+				</div>
+				<form class="choice clearfix">
+					<div class="choice1">
+						<input type="checkbox" name="choix1" value="1"> Newsletter
+					</div>
+					<div class="choice2"> 
+						<input type="checkbox" name="choix2" value="2"> Bénévolat
+					</div>
+				</form>
+		</section>
+	</main>
+</body>
+</html>

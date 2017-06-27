@@ -1,0 +1,172 @@
+header {
+	display: none;
+}
+
+.articlepage {
+	.articlepage-article {
+		width: 100%;
+		.articlepage-content {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			.article-title {
+				position: absolute;
+				width: 100%;
+				background: #fff;
+				z-index: 22;
+				top: 200px;
+				height: 47px;
+				h3 {
+					width: 80%;
+					margin-top: 10px;
+					font-size: 14px;
+					color: $blue;
+					text-align: right;
+					font-weight: 400;
+				}
+				h4 {
+					width: 80%;
+					font-family: $poppins;
+					color: #9B9B9B;
+					font-size: 7px;
+					text-align: right;
+					font-weight: 400;
+				}
+			}
+			h2 {
+				position: absolute;
+				color: #fff;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 24px;
+				margin: 0 35%;
+				margin-top: 10px;
+				font-weight: 400;
+			}
+			.article-img {
+				img {
+					width: 100%;
+				}
+			}
+			.articles-content {
+				width: 80%;
+				.content1 {
+					p {
+						line-height: 19px;
+						margin: 30px 0;
+						text-align: center;
+						#style-point {
+							color: $red;
+						}
+					}
+					.btn-overflow {
+
+					}
+				}
+				#img-deco {
+					img {
+						width: 100%;
+						height: 320px;
+					}
+				}
+				.content2 {
+					p {
+						line-height: 19px;
+						margin: 50px 0;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	h2 {
+		display: none;
+	}
+
+	.articlepage {
+		.articlepage-article {
+			width: 100%;
+			.articlepage-content {
+				position: relative;
+				width: 100%;
+				margin: 0 auto;
+				.article-title {
+					width: 80%;
+					margin: 0 auto;
+					position: relative;
+					top: 0;
+					height: auto;
+					h3 {
+						margin-top: 30px ;
+						font-size: 24px;
+						color: $blue;
+						text-align: left;
+					}
+					h4 {
+						font-size: 12px;
+						text-align: left;
+						margin-bottom: 30px;
+					}
+				}
+				h2 {
+					position: absolute;
+					color: #fff;
+					margin: 0 auto;
+					text-align: center;
+					font-size: 24px;
+					margin: 0 35%;
+					margin-top: 10px;
+					font-weight: 400;
+				}
+				.article-img {
+					img {
+						width: 50%;
+						float: left;
+					}
+				}
+				.articles-content {
+					width: 45%;
+					float: left;
+					margin-left: 20px;
+					.content1 {
+						p {
+							line-height: 19px;
+							margin: 30px 0;
+							text-align: left;
+							&:first-child {
+								margin-top: 0;
+							}
+							#style-point {
+								color: $red;
+							}
+						}
+						.btn-overflow {
+							overflow: auto;
+							height: 320px;
+
+						}
+					}
+
+					#img-deco {
+						img {
+							width: 100%;
+							height: 320px;
+						}
+					}
+					.content2 {
+						p {
+							line-height: 19px;
+							margin: 50px 0;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
