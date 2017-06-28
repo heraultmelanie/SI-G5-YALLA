@@ -1,0 +1,12 @@
+/* line 1, /Applications/MAMP/htdocs/SI-G5-YALLA/styles/scss/partial/_reset.scss */
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+/* line 6, /Applications/MAMP/htdocs/SI-G5-YALLA/styles/scss/partial/_reset.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=_reset.css.map */
