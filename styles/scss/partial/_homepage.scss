@@ -1,348 +1,494 @@
-header.missionpage-header {
-    /*
-    position: relative;
-    background-image: none;
-    height: auto;
-    margin: 0 0 5% 0;
-    h1 {
-        a {
-            #logo {
-                display: none;
-                position: absolute;
-                z-index: 22;
-                position: fixe;
-                width: 150px;
-                margin: 0;
-                height: 1;
-            }
-        }
-    }
-    */
-    /* ----- HEADER ----- */
+.mask-nav-home {
+    width: 100%;
+    height: 60px;
+    //background: maroon;
 }
 
-
-/* ----- 
---------------------------------------------------------
-------------- WORLD WIDE WEB 
------ */
-
-main.makedonation-main {
-    font-family: $poppins;
-    h3.makedonation {
-        font-size: 56px;
-        text-align: right;
-        font-family: $rozha;
-        color: $green;
+.img-content-home {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    img {
+        width: 100%;
     }
-    p.donation-type {
+    div.logo-homepage-title {
+        position: absolute;
         width: 80%;
-        margin: 0 auto;
-        text-align: right;
-        font-size: 14px;
-        color: $red;
+        left: 10%;
+        top: 0;
+        img {
+            display: inline-block; 
+            width: 20%;
+            margin: 2% 40% 0;
+        }
+        h2 {
+            height: 102px;
+            width: 80%;
+            font-size: 27px;
+            color: #fff;
+            line-height: 36px;
+            font-weight: 400;
+            margin: 50px 15% 30px;
+            font-family: $rozha;
+            span.slide-words{
+                font-size: 48px;
+                color: $blue;
+                text-transform: uppercase;
+            }
+        }
     }
-    div.donation-www {
-        margin-top: 5%;
-        position: relative;
-        font-size: 14px;
-        div.www-left {
-            height: 350px;
-            overflow: hidden;
+    a.help-us{
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding-top: 2%;
+        text-align: center;
+        font-size: 24px; 
+        font-family: $rozha;
+        color: #fff;
+        background: $blue;
+    }
+}
+
+.homepage-content {
+    .homepage-section {
+        .homepage-presentation {
             position: relative;
-            img {
-                width: 100%;
-            }
-            img.make-a-donation-www {
-                display: block;
-            }
-            p {
-                position: absolute;
-                top: 34%;
-                left: 28%;
+            h3 {
+                color: $red;
                 font-size: 24px;
-                font-family: $rozha;
+                margin-top: 32px;
                 text-align: center;
-                color: #fff;
-                z-index: 11;
+                font-weight: 400;
+                #size-question {
+                    font-size: 48px;
+                    text-align: center;
+                }
             }
-            div.block-deco-img {
+            .img-deco {
                 position: absolute;
-                top: 40%;
-                left: 0;
-                width: 100%;
-                height: 65px;
-                background: $yellow;
-                z-index: 10;
+                display: block;
+                z-index: -20;
+                width: 120px;
+                height: 120px;
             }
-        }
-        div.www-right {
-            h4 {
-                width: 80%;
-                margin: 0 auto 5% auto;
-                font-size: 24px;
-                font-family: $rozha;
-                color: $blue;
+            .deco2 {
+                position: absolute;
+                display: block;
+                right: 0;
             }
             p {
-                width: 80%;
-                margin: 5% auto;
-            }
-        }
-    }
-    div.donation-cheque {
-        font-size: 14px;
-        div.cheque-right {
-            float: right;
-            width: 235px;
-            height: 280px;
-            overflow: hidden;
-            img {
-                width: 100%;
-            }
-        }
-        div.cheque-left {
-            margin-bottom: 10%;
-            h4 {
-                width: 80%;
-                margin: 0 0 5% 40%;
-                font-size: 24px;
-                font-family: $rozha;
-                color: $blue;
-            }
-            p {
-                width: 90%;
-                margin: 2% auto;
+                width: 70%;
+                font-size: 12px;
+                line-height: 180%;
+                margin-bottom: 20px;
                 text-align: right;
-                span.cheque-adress {
+                .style-text {
                     color: $red;
                 }
+                .more-information {
+                    float: right;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                    background: #fff;
+                    border: none;
+                    a {
+                        color: $green;
+                    }
+                }
+            }
+            p:last-child {
+                margin-top: 60px;
             }
         }
-    }
-    div.donation-virement {
-        font-size: 14px;
-        div.virement-center {
+        .homepage-newsletter {
             overflow: hidden;
-            img {
-                width: 100%;
-            }
-            img.make-a-donation {
-                display: block;
-            }
-            img.make-a-donation-mq1040 {
-                display: none;
-            }
-        }
-        div.virement-info {
+            width: 100%;
+            margin-top: 23px;
+            background: $green;
             h4 {
-                width: 80%;
-                margin: 0 0 5% 5%;
-                font-size: 24px;
-                font-family: $rozha;
-                color: $blue;
+                text-align: center;
+                font-size: 36px;
+                font-weight: 400;
+                margin-top: 26px;
+                color: #fff;
+                font-weight: 400;
+                span {
+                    color: $yellow;
+                }
             }
             p {
-                width: 90%;
-                margin: 5% auto;
-                span.credit {
-                    font-weight: 700;
+                width: 70%;
+                text-align: right;
+                color: #fff;
+                padding-bottom: 10px;
+            }
+            #enter-mail {
+                width: 100%;
+                background: #fff;
+                border: none;
+                padding: 8px 0;
+                text-align: center;
+            }
+            .btn-send {
+                border: 1px solid #fff;
+                background: $green;
+                padding: 5px 20px;
+                font-size: 14px;
+                font-family: $rozha;
+                font-weight: 400;
+                margin: 5% 40%;
+                a {
+                    color: #fff;
                 }
+            }
+        }
+        .homepage-actuality {
+            width: 100%;
+            h3 {
+                width: 80%;
+                font-size: 24px;
+                margin: 33px;
+                text-align: right;
+                color: $red;
+                font-weight: 400;
+            }
+            .actuality-slider {}
+            .actuality-articles {
+                width: 100%;
+                .article {
+                    width: 100%;
+                    .article-details {
+                        width: 60%;
+                        float: left;
+                        p {
+                            padding: 0 30px;
+                            text-align: right;
+                            font-size: 14px;
+                            margin-top: 20px;
+                            .more-information {
+                                float: right;
+                                font-weight: bold;
+                                margin: 20px 0;
+                                background: #fff;
+                                border: none;
+                                a {
+                                    font-size: 14px;
+                                    color: $green;
+                                    margin-top: 30px;
+                                }
+                            }
+                        }
+                    }
+                    .article-img {
+                        width: 40%;
+                        float: right;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .article-pres {
+                    width: 100%;
+                    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.24);
+                    h5 {
+                        font-size: 24px;
+                        color: $blue;
+                        margin-top: 30px;
+                        text-align: right;
+                        padding: 10px 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                        text-align: right;
+                        color: #9B9B9B;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+        .homepage-partners {
+            width: 90%;
+            h5 {
+                font-size: 14px;
+                color: $red;
+                font-weight: 400;
+                margin-top: 64px;
+            }
+            .partners-row1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 7px 0;
+                img {
+                    width: 20%;
+                }
+            }
+        }
+        .partners-row2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 11px 0;
+            img {
+                width: 30%;
             }
         }
     }
 }
 
 
-/* ---
-----------------------------------------
------------------ RESPONSIVE
-----------------------------------------
--------------- */
-
-
-/* ---------------
-------------------------------------------------------------- 768 PX -----------------*/
+/*----RESPONSIVE------*/
 
 @media screen and (min-width: 768px) {
-    main.makedonation-main {
-        div.donation-www {
-            div.www-left {
-                p {
-                    top: 40%;
-                    left: 35%;
-                }
-                div.block-deco-img {
-                    top: 50%;
-                    left: 0;
+    header {
+        position: relative;
+        h1 {
+            a {
+                #logo {
+                    display: none;
+                    position: absolute;
+                    z-index: 22;
+                    display: block;
+                    position: fixe;
+                    width: 150px;
+                    margin: 0;
+                    height: 1;
                 }
             }
+        }
+        nav {
+            display: inline-block;
+            width: 80%;
+            margin-left: 20%;
+            ul {
+                li {
+                    a {}
+                }
+            }
+        }
+        h2 {
+            width: 90%;
+            height: auto;
+            font-size: 80px;
+            margin: 0 auto;
+            margin-top: 160px;
+            line-height: 80%;
+            br {}
+        }
+        #slide-words {
+            font-size: 100px;
+        }
+        .help-us {
+            display: none;
         }
     }
-}
-
-
-/* ---------------
-------------------------------------------------------------- 950 PX ----------------*/
-
-@media screen and (min-width: 950px) {
-    main.makedonation-main {
-        h3.makedonation {
-            margin-right: 10%;
-            font-size: 72px;
-        }
-        p.donation-type {
-            font-size: 18px;
-        }
-        div.donation-www {
-            div.www-left {
-                float: left;
-                width: 50%;
-                img {
-                    width: 100%;
+    .homepage-content {
+        .homepage-section {
+            .homepage-presentation {
+                position: relative;
+                h3 {
+                    width: 70%;
+                    font-size: 34px;
+                    text-align: right;
+                    #size-question {
+                        font-size: 56px;
+                        text-align: center;
+                    }
                 }
-                img.make-a-donation-www {
-                    display: block;
+                .img-deco {
+                    width: 200px;
+                    height: 200px;
                 }
-                img.make-a-donation {
-                    display: none;
-                }
-                img.make-a-donation-mq1040 {
-                    display: block;
-                }
+                .deco2 {}
                 p {
-                    top: 30%;
-                    left: 30%;
-                    width: 40%;
-                    font-size: 24px;
+                    font-size: 16px;
+                    .style-text {}
+                    .more-information {
+                        font-size: 16px;
+                        a {}
+                    }
                 }
-                div.block-deco-img {
-                    width: 60%;
-                    margin: 0 20%;
-                    top: 40%;
-                    left: 0;
-                }
+                p:last-child {}
             }
-            div.www-right {
-                float: right;
-                width: 50%;
+            .homepage-newsletter {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 30px;
                 h4 {
-                    font-size: 24px;
+                    font-size: 40px;
+                    span {}
                 }
                 p {
                     font-size: 16px;
                 }
-            }
-        }
-        div.donation-cheque {
-            margin: -10% 5% 0 2%;
-            font-size: 16px;
-            div.cheque-right {
-                float: right;
-                width: 350px;
-                height: 500px;
-                overflow: hidden;
-                margin: 5% 0 1% 0;
-                img {
-                    width: 100%;
+                #enter-mail {
+                    font-size: 16px;
+                }
+                .btn-send {
+                    font-size: 18px;
+                    a {}
                 }
             }
-            div.cheque-left {
-                float: left;
-                width: 55%;
-                margin: 5% 5% 5% 0;
-                h4 {
-                    text-align: right;
-                    width: 100%;
-                    margin: 10% 0 5% 0;
+            .homepage-actuality {
+                h3 {
+                    font-size: 34px;
+                }
+            }
+            .homepage-partners {
+                h5 {
                     font-size: 24px;
-                    color: $blue;
                 }
-                p {
-                    width: 100%;
-                    margin: 2% 0 2% 0;
-                    text-align: right;
-                    span.cheque-adress {
-                        color: $red;
-                    }
+                .partners-row1 {
+                    img {}
                 }
             }
-        }
-        div.donation-virement {
-            font-size: 16px;
-            div.virement-center {
-                img.make-a-donation {
-                    display: none;
-                }
-                img.make-a-donation-mq1040 {
-                    display: block;
-                }
-            }
-            div.virement-info {
-                h4 {
-                    width: 80%;
-                    margin: 0 0 5% 5%;
-                    font-size: 24px;
-                    font-family: $rozha;
-                    color: $blue;
-                }
-                p {
-                    width: 90%;
-                    margin: 1% auto;
-                    span.credit {
-                        font-weight: 700;
-                    }
-                }
+            .partners-row2 {
+                img {}
             }
         }
     }
 }
-
-
-/* ---------------
-------------------------------------------------------------- 1040 PX ----------------*/
 
 @media screen and (min-width: 1040px) {
-    main.makedonation-main {
-        p.donation-type {
-            font-size: 20px;
+    header {
+        position: relative;
+        h1 {
+            a {
+                #logo {
+                    display: none;
+                    position: absolute;
+                    z-index: 22;
+                    display: block;
+                    position: fixe;
+                    width: 150px;
+                    margin: 0;
+                    height: 1;
+                }
+            }
         }
-        div.donation-www {
-            font-size: 18px;
-            div.www-left {
+        nav {
+            display: inline-block;
+            width: 60%;
+            margin-left: 40%;
+            ul {
+                li {
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        h2 {
+            width: 90%;
+            height: auto;
+            font-size: 80px;
+            margin: 0 auto;
+            margin-top: 160px;
+            line-height: 80%;
+            br {}
+        }
+        #slide-words {
+            font-size: 100px;
+        }
+        .help-us {
+            display: none;
+        }
+    }
+    .homepage-content {
+        .homepage-section {
+            .homepage-presentation {
+                position: relative;
+                h3 {
+                    width: 70%;
+                    font-size: 60px;
+                    text-align: right;
+                    #size-question {
+                        font-size: 95px;
+                        text-align: center;
+                    }
+                }
+                .img-deco {
+                    width: 200px;
+                    height: 200px;
+                }
+                .deco2 {}
                 p {
-                    width: 50%;
-                    left: 25%;
-                    font-size: 28px;
+                    font-size: 24px;
+                    .style-text {}
+                    .more-information {
+                        font-size: 24px;
+                        margin-top: 50px;
+                        a {}
+                    }
+                }
+                p:last-child {}
+            }
+            .homepage-newsletter {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 30px;
+                h4 {
+                    font-size: 40px;
+                    span {}
+                }
+                p {
+                    font-size: 24px;
+                }
+                #enter-mail {
+                    font-size: 24px;
+                }
+                .btn-send {
+                    font-size: 24px;
+                    a {}
                 }
             }
-            div.www-right {
-                h4 {
-                    font-size: 36px;
+            .homepage-actuality {
+                h3 {
+                    font-size: 60px;
+                }
+                .actuality-articles {
+                    .article {
+                        .article-details {
+                            p {
+                                font-size: 18px;
+                                .more-information {
+                                    a {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                        .article-img {
+                            img {}
+                        }
+                    }
+                    .article-pres {
+                        h5 {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
-        }
-        div.donation-cheque {
-            font-size: 18px;
-            div.cheque-left {
-                h4 {
-                    font-size: 36px;
+            .homepage-partners {
+                h5 {
+                    font-size: 40px;
+                }
+                .partners-row1 {
+                    img {
+                        width: 10%;
+                    }
                 }
             }
-        }
-        div.donation-virement {
-            font-size: 18px;
-            div.virement-info {
-                h4 {
-                    font-size: 36px;
+            .partners-row2 {
+                img {
+                    width: 20%;
                 }
             }
         }
     }
 }
-
-
-/* -------------- 
---------------------------------------------------------------1200 PX ----------------*/
-
-@media screen and (min-width: 1200px) {}

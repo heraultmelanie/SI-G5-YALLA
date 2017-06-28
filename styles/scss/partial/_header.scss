@@ -1,9 +1,12 @@
+//////////////// BUG NAV FIXE 
+
 header.for-each {
     position: fixed;
+    top:0;
+    left:0;
+    z-index:999;
     display: block;
     width: 100%;
-    top: 0;
-    z-index: 50;
     border-bottom: 1px solid $blue;
     background: #FFF;
     div.nav-mobtab {
@@ -14,9 +17,7 @@ header.for-each {
             margin: 2% 0 0 2%;
             width: 28px;
         }
-        div.show-burger {
-            display: none;
-        }
+        
         h2 {
             display: inline-block;
             width: 75%;
@@ -28,6 +29,7 @@ header.for-each {
             letter-spacing: 5px;
         }
     }
+    
     div.nav-desktop {
         display: none;
         h1 {
@@ -55,6 +57,58 @@ div.mask-nav {
     width: 100%;
     height: 55px;
     //background: maroon;
+}
+
+
+
+//////////////// BUG NAV FIXE 
+div.show-burger {
+    display: none;
+    position:fixed;
+    top:10%;
+    z-index:99;
+    width: 98%; 
+    margin-left: 0;
+    background: #fff;
+    box-shadow: 4px 6px 4px #aaa; 
+    div.hello-burger{
+        float: left;
+        width: 93%;
+        margin: 0 0 3% 0;
+        display: flex; 
+        justify-content: space-around;
+        color: $red;
+        div{
+            display: inline-block;
+            width: 20%;
+            font-size: 14px;
+            text-align: center;
+            font-family: $rozha;
+        }
+
+    }
+    img{
+        float: right;
+        width: 3%;
+        margin: 2% 2% 0 0;
+        }
+    nav{
+        ul{
+            width: 70%; 
+            margin : 0 auto 3%;;
+            li{
+                a{
+                    font-size: 24px;
+                    color: $blue;
+                }
+            }
+        }
+    }
+    h1{
+        display: block;
+        width: 28px;
+        margin: 0 auto;
+    }
 }
 /* ---
 ----------------------------------------------------------------------
