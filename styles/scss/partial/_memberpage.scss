@@ -24,7 +24,7 @@ header {
 				label {
 					text-align: right;
 					color: $red;
-					font-size: 14px;
+					font-size: 16px;
 					font-family: $rozha;
 
 				}
@@ -32,28 +32,137 @@ header {
 					width: 100%;
 					margin-bottom: 20px;
 					height: 30px;
+					border: none;
+					box-shadow: inset 1px 1px 1px 1px #cfcfcf;
+					
 				}
 				textarea {
 					width: 100%;
 					height: 50px;
 					margin-bottom: 20px;
+					border: none;
+					box-shadow: inset 1px 1px 1px 1px #cfcfcf;
 				}
-				
-				select {
-					width: 50%;
-					height: 30px;
-					font-family: $rozha;
-					color: $blue;
-					font-size: 14px;
-					option {
+			}
+		}
+		.input-content {
+			width: 100%;
+			.input1 {
+				width: 45%;
+				float: left;
+				label {
+
+				}
+				input {
+
+				}
+			}
+			.input2 {
+				width: 45%;
+				float: right;
+				label {
+
+				}
+				input {
+
+				}
+			}
+		}
+		.input-select-lang {
+			select {
+				width: 50%;
+				height: 30px;
+				font-family: $rozha;
+				color: $blue;
+				font-size: 16px;
+				margin-bottom: 20px;
+				border:none;
+				box-shadow: inset 1px 1px 1px 1px #cfcfcf;
+				option {
+				}
+			}
+		}
+		.choix1 {
+			width: 50%;
+			float: left;
+			color: $green;
+			font-family: $rozha;
+			font-size: 16px;
+			input[type=checkbox] {
+				padding-left:35px;
+				height:30px; 
+				display:inline-block;
+				line-height:30px;
+				background-repeat:no-repeat;
+				background-position: 0 0;
+				font-size:30px;
+				vertical-align:middle;
+				cursor:pointer;
+			}
+		}
+		.choix2{
+			width: 50%;
+			float: right;
+			color: $green;
+			font-family: $rozha;
+			font-size: 16px;
+			input[type=checkbox] {
+				padding-left:35px;
+				height:30px; 
+				display:inline-block;
+				line-height:30px;
+				background-repeat:no-repeat;
+				background-position: 0 0;
+				font-size:30px;
+				vertical-align:middle;
+				cursor:pointer;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.memberpage-content {
+		.memberpage-details {
+			width: 100%;
+			margin-top: 50px;
+
+			h3{
+				width: 45%;
+				float: right;
+				font-size: 70px;
+				margin-top: 150px;
+				padding-right: 50px;
+				#style-point {
+
+				}
+			}
+
+			article {
+				width: 50%;
+				float: right;
+				posiion: absolute;
+				padding-left: 30px;
+
+				form {			
+				div {
+					label {
+
+
+					}
+					input {
+
+
+					}
+					textarea {
+
 					}
 				}
 			}
+		}
+			
 			.input-content {
-				width: 100%;
 				.input1 {
-					width: 45%;
-					float: left;
 					label {
 
 					}
@@ -62,8 +171,6 @@ header {
 					}
 				}
 				.input2 {
-					width: 45%;
-					float: right;
 					label {
 
 					}
@@ -71,24 +178,96 @@ header {
 
 					}
 				}
-				.choice {
-					width: 100%;
-					.choice1 {
-							
-						input {
-							width: 50%;
-							float: left;
-							display: block;
-						}
+			}
+			.input-select-lang {
+				select {
+					option {
 					}
-					.choice2 {
+				}
+			}
+			.choix1 {
+				input[type=checkbox] {
+				}
+			}
+			.choix2{
+				input[type=checkbox] {
+				}
+			}
+		}
+	}
+}
 
-						input {
-						width: 50%;
-						float: left;
-						display: block;
-						}
+@media screen and (min-width: 1040px) {
+	.memberpage-content {
+		.memberpage-details {
+			width: 100%;
+			margin-top: 50px;
+
+			h3{
+				width: 45%;
+				margin: 0 auto;
+				float: right;
+				font-size: 120px;
+				margin-top: 120px;
+				padding-right: 80px;
+				#style-point {
+
+				}
+			}
+
+			article {
+				width: 30%;
+				float: left;
+				posiion: static;
+				margin-left: 120px;
+
+				form {			
+				div {
+					label {
+
+
 					}
+					input {
+
+
+					}
+					textarea {
+
+					}
+				}
+			}
+		}
+			
+			.input-content {
+				.input1 {
+					label {
+
+					}
+					input {
+
+					}
+				}
+				.input2 {
+					label {
+
+					}
+					input {
+
+					}
+				}
+			}
+			.input-select-lang {
+				select {
+					option {
+					}
+				}
+			}
+			.choix1 {
+				input[type=checkbox] {
+				}
+			}
+			.choix2{
+				input[type=checkbox] {
 				}
 			}
 		}
