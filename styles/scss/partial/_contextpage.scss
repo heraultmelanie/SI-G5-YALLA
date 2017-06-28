@@ -1,13 +1,12 @@
 .contextpage-header {
-	display: none;
-	h1 {
-		a {
-			#logo {
-
-			}
-		}
-	}
+    //display: none;
+    h1 {
+        a {
+            #logo {}
+        }
+    }
 }
+<<<<<<< Updated upstream
 
 .contextpage-content {
 	width: 100%;
@@ -509,4 +508,189 @@
 }
 
 
+=======
+
+.contextpage-content {
+    width: 100%;
+    .context {
+        width: 100%;
+        h2 {
+            color: $blue;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .context-history {
+            width: 80%;
+            text-align: right;
+            .context-explain1 {
+                overflow: hidden;
+                h3 {
+                    position: absolute;
+                    z-index: -5;
+                    margin: 0 auto;
+                    top: 0px;
+                    right: 0;
+                    text-align: right;
+                    color: #EDEDED;
+                    font-size: 141px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 180%;
+                    margin-bottom: 50px;
+                }
+                .context-wrap {
+                    width: 100%;
+                    height: 40px;
+                    .context-img {
+                        width: 24px;
+                        float: right;
+                        img {
+                            margin: 10px 0;
+                        }
+                    }
+                    p {
+                        width: 90%;
+                        padding-top: 30px;
+                        display: block;
+                        float: left;
+                        .style-sentence {
+                            background: $red;
+                            color: #fff;
+                        }
+                        .style-sentence1 {
+                            color: $green;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .context-explain2 {
+                h3 {
+                    position: absolute;
+                    z-index: -5;
+                    margin: 0 auto;
+                    top: 600px;
+                    right: 0;
+                    color: #EDEDED;
+                    font-size: 141px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 180%;
+                    margin-bottom: 50px;
+                    .style-sentence {
+                        background: $green;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .contextpage-objectif {
+            width: 100%;
+            h4 {
+                width: 60%;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: $green;
+                margin-bottom: 60px;
+            }
+            .context-img {
+                width: 50%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                img {}
+            }
+            .btn-view {
+                width: 100%;
+                margin: 0;
+                height: 57px;
+                a {
+                    font-size: 24px;
+                }
+            }
+            h5 {
+                width: 80%;
+                font-size: 34px;
+                text-align: right;
+                color: $red;
+                #style-point {
+                    font-size: 68px;
+                    color: $red;
+                }
+                #style-word {
+                    color: #fff;
+                    background: $red;
+                }
+            }
+            .context-img {
+                #symb-fond {
+                    width: 50%;
+                    position: absolute;
+                    z-index: -5;
+                    left: 0;
+                }
+            }
+            .context-explain {
+                width: 80%;
+                p {
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                    .style-sentence {
+                        background: $yellow;
+                    }
+                }
+            }
+        }
+        .context-juridiction {
+            h5 {
+                width: 80%;
+                font-size: 34px;
+                color: $green;
+                .style-word {
+                    background: $green;
+                    color: #fff;
+                }
+            }
+            .context-img {
+                width: 100%;
+                position: absolute;
+                z-index: -5;
+                left: -135px;
+                #symb-fond {
+                    width: 50%;
+                    left: 0;
+                    position: fixed;
+                }
+            }
+            .context-explain {
+                width: 80%;
+                p {
+                    text-align: right;
+                    margin-top: 50px;
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                    .style-sentence {}
+                }
+            }
+        }
+        .context-condition {
+            width: 100%;
+            h5 {}
+            .context-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .context-explain {
+                p {
+                    .style-sentence {}
+                }
+            }
+        }
+        h6 {}
+    }
+>>>>>>> Stashed changes
 }

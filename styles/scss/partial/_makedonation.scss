@@ -1,4 +1,5 @@
 header.missionpage-header {
+    /*
     position: relative;
     background-image: none;
     height: auto;
@@ -16,6 +17,7 @@ header.missionpage-header {
             }
         }
     }
+    */
     /* ----- HEADER ----- */
 }
 
@@ -59,6 +61,7 @@ main.makedonation-main {
                 top: 34%;
                 left: 28%;
                 font-size: 24px;
+                font-family: $rozha;
                 text-align: center;
                 color: #fff;
                 z-index: 11;

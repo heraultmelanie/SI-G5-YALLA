@@ -32,15 +32,6 @@ a {
 
 ul {
   list-style-type: none; }
-  ul .help-us {
-    background: #243160;
-    color: #fff;
-    width: 473.5px;
-    height: 57px;
-    padding: 10px 5%;
-    font-size: 27px;
-    font-family: "Rozha One", serif;
-    border: 1px solid #243160; }
 
 .btn-view {
   width: 150px;
@@ -97,92 +88,350 @@ ul {
       .admin-moderation-banner ul li a {
         color: #fff; }
 
-header {
-  overflow: hidden;
-  background-repeat: no-repeat;
-  height: 465px;
-  background-size: cover; }
-  header nav {
+header.for-each {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid #243160;
+  background: #fff; }
+  header.for-each div.nav-mobtab {
+    height: 8vh; }
+    header.for-each div.nav-mobtab img.menu-picto {
+      display: inline-block;
+      margin: 2% 0 0 2%;
+      width: 28px; }
+    header.for-each div.nav-mobtab div.show-burger {
+      display: none; }
+    header.for-each div.nav-mobtab h2 {
+      display: inline-block;
+      width: 75%;
+      margin-right: 5%;
+      font-family: "Rozha One", serif;
+      font-size: 30px;
+      color: #243160;
+      text-align: center;
+      letter-spacing: 5px; }
+  header.for-each div.nav-desktop {
     display: none; }
+    header.for-each div.nav-desktop h1 {
+      float: left; }
+      header.for-each div.nav-desktop h1 a #logo {
+        width: 100%; }
+    header.for-each div.nav-desktop nav {
+      float: right;
+      display: inline-block;
+      width: 80%; }
+      header.for-each div.nav-desktop nav ul {
+        display: none;
+        list-style-type: none; }
 
-header.aboutus-header {
-  position: relative;
-  background-image: url(../../img-layout/expo_ant.jpg);
-  /* ----- HEADER ----- */ }
-  header.aboutus-header h1 a #logo {
-    display: none;
-    position: absolute;
-    z-index: 22;
-    position: fixe;
-    width: 150px;
-    margin: 0;
-    height: 1; }
-  header.aboutus-header h2 {
-    font-family: "Rozha One", serif;
-    font-size: 24px;
-    text-align: center;
-    height: auto;
-    margin: 0; }
-  header.aboutus-header .aboutus-team {
-    position: absolute;
-    top: 20%;
-    width: 100%; }
-    header.aboutus-header .aboutus-team ul.team-picture {
-      list-style-type: none; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-frame {
-        display: block;
-        position: absolute;
-        top: 5%;
-        width: 122px;
-        height: 122px;
-        border-radius: 50%;
-        border: 10px solid #FFF;
-        background: #fff; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.left {
-        left: -12vh; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-frame.right {
-        right: -12vh; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-active {
-        display: block;
-        width: 174px;
-        height: 174px;
-        margin: 3% auto 0 auto;
-        border-radius: 50%;
-        border: 10px solid #FFF;
-        overflow: hidden;
-        text-align: center;
-        padding-top: 20px;
-        font-size: 36px; }
-        header.aboutus-header .aboutus-team ul.team-picture li.team-active img {
-          width: 100%;
-          height: 100%; }
-      header.aboutus-header .aboutus-team ul.team-picture li.team-mq768 {
-        display: none; }
-    header.aboutus-header .aboutus-team ul.team-name {
-      position: relative;
-      list-style-type: none; }
-      header.aboutus-header .aboutus-team ul.team-name li.name-active {
-        display: inline-block;
-        width: 100%;
-        color: #FFF; }
-        header.aboutus-header .aboutus-team ul.team-name li.name-active h5 {
-          font-size: 18px;
-          font-family: "Rozha One", serif;
-          text-align: center;
-          color: #fff; }
-        header.aboutus-header .aboutus-team ul.team-name li.name-active p {
-          font-size: 12px;
-          font-family: "Poppins", sans-serif;
-          text-align: center; }
-      header.aboutus-header .aboutus-team ul.team-name li {
-        display: none; }
+div.mask-nav {
+  width: 100%;
+  height: 95px; }
 
 /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-/* ---------------
+@media screen and (min-width: 768px) {
+  header.for-each {
+    /*div.nav-desktop {
+        display: none;
+        h1 {
+            float: left;
+            a {
+                #logo {
+                    width: 100%;
+                }
+            }
+        }
+        nav {
+            float: right;
+            display: inline-block;
+            width: 80%;
+            ul {
+                display: none;
+                list-style-type: none;
+            }
+        }
+    }*/ }
+    header.for-each div.nav-mobtab {
+      padding: 2% 0; }
+      header.for-each div.nav-mobtab img.menu-picto {
+        display: inline-block;
+        margin: 2% 0 0 2%;
+        width: 40px; }
+      header.for-each div.nav-mobtab div.show-burger {
+        display: none; }
+      header.for-each div.nav-mobtab h2 {
+        display: inline-block;
+        width: 75%;
+        margin-right: 5%;
+        font-family: "Rozha One", serif;
+        font-size: 36px;
+        color: #243160;
+        text-align: center;
+        letter-spacing: 5px; }
+
+  div.mask-nav {
+    height: 150px; } }
+@media screen and (min-width: 950px) {
+  header.for-each {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    border: 1px solid #243160;
+    background: #fff; }
+    header.for-each div.nav-desktop {
+      display: block; }
+      header.for-each div.nav-desktop h1 {
+        float: left; }
+        header.for-each div.nav-desktop h1 a #logo {
+          width: 100%; }
+      header.for-each div.nav-desktop nav {
+        float: right;
+        display: inline-block;
+        width: 80%; }
+        header.for-each div.nav-desktop nav ul {
+          display: flex;
+          justify-content: space-between;
+          padding: 6% 0; }
+          header.for-each div.nav-desktop nav ul li {
+            display: inline-block;
+            padding: 1% 2%; }
+            header.for-each div.nav-desktop nav ul li a {
+              font-size: 20px;
+              color: #243160; }
+            header.for-each div.nav-desktop nav ul li a:hover {
+              border-bottom: 3px dashed #243160;
+              transition: 2s; }
+            header.for-each div.nav-desktop nav ul li a.active {
+              color: #902a15;
+              border-bottom: 4px dashed #ffca59;
+              border-top: 4px dashed #ffca59; }
+          header.for-each div.nav-desktop nav ul li.help-us {
+            background: #243160; }
+            header.for-each div.nav-desktop nav ul li.help-us a {
+              color: #fff; }
+    header.for-each div.nav-mobtab {
+      display: none; }
+
+  div.mask-nav {
+    height: 170px;
+    background: maroon; } }
+@media screen and (min-width: 1100px) {
+  header nav {
+            /* ---
+----------------------------------------
+----------------- RESPONSIVE
+----------------------------------------
+-------------- */ }
+    header nav header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 50;
+      border: 1px solid #243160;
+      background: #fff;
+      /* ----- HEADER ----- */ }
+      header nav header div.nav-desktop h1 {
+        float: left; }
+        header nav header div.nav-desktop h1 a #logo {
+          width: 100%; }
+      header nav header div.nav-desktop nav {
+        float: right;
+        display: inline-block;
+        width: 80%; }
+        header nav header div.nav-desktop nav ul {
+          display: flex;
+          justify-content: space-between;
+          padding: 5% 0;
+          list-style-type: none; }
+          header nav header div.nav-desktop nav ul li {
+            display: inline-block;
+            padding: 1% 2%; }
+            header nav header div.nav-desktop nav ul li a {
+              font-size: 24px;
+              color: #243160; }
+            header nav header div.nav-desktop nav ul li a:hover {
+              border-bottom: 3px dashed #243160;
+              transition: 2s; }
+            header nav header div.nav-desktop nav ul li a.active {
+              color: #902a15;
+              border-bottom: 4px dashed #ffca59;
+              border-top: 4px dashed #ffca59; }
+          header nav header div.nav-desktop nav ul li.help-us {
+            background: #243160; }
+            header nav header div.nav-desktop nav ul li.help-us a {
+              color: #fff; }
+      header nav header h2 {
+        font-family: "Rozha One", serif;
+        font-size: 24px;
+        text-align: center;
+        height: auto;
+        margin: 0;
+        color: #243160;
+        background: purple; }
+    header nav div.mask-nav {
+      height: 170px;
+      background: maroon; } }
+  @media screen and (min-width: 1100px) and (min-width: 950px) {
+    header nav header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 50;
+      border: 1px solid #243160;
+      background: #fff;
+      /* ----- HEADER ----- */ }
+      header nav header div.nav-desktop h1 {
+        float: left; }
+        header nav header div.nav-desktop h1 a #logo {
+          width: 100%; }
+      header nav header div.nav-desktop nav {
+        float: right;
+        display: inline-block;
+        width: 80%; }
+        header nav header div.nav-desktop nav ul {
+          display: flex;
+          justify-content: space-between;
+          padding: 6% 0;
+          list-style-type: none; }
+          header nav header div.nav-desktop nav ul li {
+            display: inline-block;
+            padding: 1% 2%; }
+            header nav header div.nav-desktop nav ul li a {
+              font-size: 20px;
+              color: #243160; }
+            header nav header div.nav-desktop nav ul li a:hover {
+              border-bottom: 3px dashed #243160;
+              transition: 2s; }
+            header nav header div.nav-desktop nav ul li a.active {
+              color: #902a15;
+              border-bottom: 4px dashed #ffca59;
+              border-top: 4px dashed #ffca59; }
+          header nav header div.nav-desktop nav ul li.help-us {
+            background: #243160; }
+            header nav header div.nav-desktop nav ul li.help-us a {
+              color: #fff; }
+      header nav header h2 {
+        display: none; }
+    header nav div.mask-nav {
+      height: 170px;
+      background: maroon; } }
+  @media screen and (min-width: 1100px) and (min-width: 1040px) {
+    header nav header nav ul {
+      padding: 5% 0; }
+      header nav header nav ul li a {
+        font-size: 24px; } }
+@media screen and (min-width: 1100px) {
+    header nav ul {
+      padding: 5% 0; }
+      header nav ul li a {
+        font-size: 24px; } }
+/*header.aboutus-header {
+
+position: relative;
+background-image: url(../../img-layout/expo_ant.jpg);
+h1 {
+    a {
+        #logo {
+            display: none;
+            position: absolute;
+            z-index: 22;
+            position: fixe;
+            width: 150px;
+            margin: 0;
+            height: 1;
+        }
+    }
+}*/
+/* ----- HEADER ----- */
+    /* h2 {
+        font-family: $rozha;
+        font-size: 24px;
+        text-align: center;
+        height: auto;
+        margin: 0;
+    }
+    .aboutus-team {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        ul.team-picture {
+            list-style-type: none;
+            li.team-frame {
+                display: block;
+                position: absolute;
+                top: 5%;
+                width: 122px;
+                height: 122px;
+                border-radius: 50%;
+                border: 10px solid #FFF;
+                background: #fff;
+            }
+            li.team-frame.left {
+                left: -12vh;
+            }
+            li.team-frame.right {
+                right: -12vh;
+            }
+            li.team-active {
+                display: block;
+                width: 174px;
+                height: 174px;
+                margin: 3% auto 0 auto;
+                border-radius: 50%;
+                border: 10px solid #FFF;
+                overflow: hidden;
+                // supprimer dessous ap mettre img
+                text-align: center;
+                padding-top: 20px;
+                font-size: 36px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            li.team-mq768 {
+                display: none;
+            }
+        }
+        ul.team-name {
+            position: relative;
+            list-style-type: none;
+            li.name-active {
+                display: inline-block;
+                width: 100%;
+                color: #FFF;
+                h5 {
+                    font-size: 18px;
+                    font-family: $rozha;
+                    text-align: center;
+                    color: #fff;
+                }
+                p {
+                    font-size: 12px;
+                    font-family: $poppins;
+                    text-align: center;
+                }
+            }
+            li {
+                display: none;
+            }
+        }
+    }
+}
+*/
+    /* ---
+----------------------------------------
+----------------- RESPONSIVE HEADER
+----------------------------------------
+-------------- */
+    /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   header.aboutus-header {
@@ -223,9 +472,13 @@ header.aboutus-header {
 @media screen and (min-width: 1040px) {
   header.aboutus-header .aboutus-team ul.team-name {
     top: 35vh; } }
-/* ---
-----------------------------------------
+    /* ---
 -------------------fin responsive header
+----------------------------------------
+-------------- */
+    /* ---
+----------------------------------------
+------------------- MOBILE MAIN
 ----------------------------------------
 -------------- */
 main.aboutus-main {
@@ -358,14 +611,15 @@ main.aboutus-main {
     bottom: 0; }
   main.aboutus-main div.gif {
     background: blue;
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 10%; }
 
-/* ---
+    /* ---
 ----------------------------------------
 ----------------- RESPONSIVE
 ----------------------------------------
 -------------- */
-/* ---------------
+    /* ---------------
 ------------------------------------------------------------- 768 PX -----------------*/
 @media screen and (min-width: 768px) {
   main.aboutus-main {
@@ -393,7 +647,7 @@ main.aboutus-main {
     main.aboutus-main .values p {
       font-size: 16px;
       line-height: 30px; } }
-/* ---------------
+    /* ---------------
 ------------------------------------------------------------- 1040 PX ----------------*/
 @media screen and (min-width: 1040px) {
   main.aboutus-main {
@@ -485,7 +739,7 @@ main.aboutus-main {
         font-size: 18px;
         line-height: 40px;
         text-align: right; } }
-/* -------------- 
+    /* -------------- 
 --------------------------------------------------------------1200 PX ----------------*/
 @media screen and (min-width: 1200px) {
   main.aboutus-main div {
@@ -501,358 +755,274 @@ main.aboutus-main {
 
   div.secularism p.content-right2 {
     top: 10%; } }
-.homepage-header {
-  background-image: url(../../img-layout/header-fond1.jpg);
-  z-index: -50;
-  /*NAV*/
-  /*JUSQU'ICI*/ }
-  .homepage-header h1 a #logo {
-    height: 125px;
-    width: 108px;
-    margin-top: 108px;
-    margin-left: 41%; }
-  .homepage-header nav {
-    width: 100%;
-    display: none; }
-    .homepage-header nav ul {
-      text-align: center;
-      display: flex;
-      justify-content: start-end; }
-      .homepage-header nav ul li {
-        width: 100%;
-        padding-top: 10px; }
-        .homepage-header nav ul li a {
-          font-size: 18px;
-          color: #fff; }
-      .homepage-header nav ul .help-us-nav {
-        background: #243160;
-        padding: 10px 20px; }
-  .homepage-header h2 {
-    height: 102px;
-    font-size: 27px;
-    color: #fff;
-    line-height: 36px;
-    font-weight: 400;
-    margin: 30px 15%; }
-  .homepage-header #slide-words {
-    color: #243160;
-    font-size: 43px; }
-  .homepage-header .help-us {
-    display: inline-block;
-    background: #243160;
-    width: 100%;
-    height: 57px;
-    padding: 10px 5%;
-    font-size: 27px;
-    font-family: "Rozha One", serif;
-    border: 1px solid #243160;
-    text-align: center; }
-    .homepage-header .help-us a {
-      color: #fff; }
-
-.homepage-content .homepage-section .homepage-presentation {
-  position: relative; }
-  .homepage-content .homepage-section .homepage-presentation h3 {
-    color: #902a15;
-    font-size: 24px;
-    margin-top: 32px;
-    text-align: center;
-    font-weight: 400; }
-    .homepage-content .homepage-section .homepage-presentation h3 #size-question {
-      font-size: 48px;
-      text-align: center; }
-  .homepage-content .homepage-section .homepage-presentation .img-deco {
-    position: absolute;
-    display: block;
-    z-index: -20;
-    width: 120px;
-    height: 120px; }
-  .homepage-content .homepage-section .homepage-presentation .deco2 {
-    position: absolute;
-    display: block;
-    right: 0; }
-  .homepage-content .homepage-section .homepage-presentation p {
-    width: 70%;
-    font-size: 12px;
-    line-height: 180%;
-    margin-bottom: 20px;
-    text-align: right; }
-    .homepage-content .homepage-section .homepage-presentation p .style-text {
-      color: #902a15; }
-    .homepage-content .homepage-section .homepage-presentation p .more-information {
-      float: right;
-      font-weight: bold;
-      margin-bottom: 30px;
-      background: #fff;
-      border: none; }
-      .homepage-content .homepage-section .homepage-presentation p .more-information a {
-        color: #2b6847; }
-  .homepage-content .homepage-section .homepage-presentation p:last-child {
-    margin-top: 60px; }
-.homepage-content .homepage-section .homepage-newsletter {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 23px;
-  background: #2b6847; }
-  .homepage-content .homepage-section .homepage-newsletter h4 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 400;
-    margin-top: 26px;
-    color: #fff;
-    font-weight: 400; }
-    .homepage-content .homepage-section .homepage-newsletter h4 span {
-      color: #ffca59; }
-  .homepage-content .homepage-section .homepage-newsletter p {
-    width: 70%;
-    text-align: right;
-    color: #fff;
-    padding-bottom: 10px; }
-  .homepage-content .homepage-section .homepage-newsletter #enter-mail {
-    width: 100%;
-    background: #fff;
-    border: none;
-    padding: 8px 0;
-    text-align: center; }
-  .homepage-content .homepage-section .homepage-newsletter .btn-send {
-    border: 1px solid #fff;
-    background: #2b6847;
-    padding: 5px 20px;
-    font-size: 14px;
-    font-family: "Rozha One", serif;
-    font-weight: 400;
-    margin: 5% 40%; }
-    .homepage-content .homepage-section .homepage-newsletter .btn-send a {
-      color: #fff; }
-.homepage-content .homepage-section .homepage-actuality {
-  width: 100%; }
-  .homepage-content .homepage-section .homepage-actuality h3 {
-    width: 80%;
-    font-size: 24px;
-    margin: 33px;
-    text-align: right;
-    color: #902a15;
-    font-weight: 400; }
-  .homepage-content .homepage-section .homepage-actuality .actuality-articles {
-    width: 100%; }
-    .homepage-content .homepage-section .homepage-actuality .actuality-articles .article {
-      width: 100%; }
-      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details {
-        width: 60%;
-        float: left; }
-        .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p {
-          padding: 0 30px;
-          text-align: right;
-          font-size: 14px;
-          margin-top: 20px; }
-          .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p .more-information {
-            float: right;
-            font-weight: bold;
-            margin: 20px 0;
-            background: #fff;
-            border: none; }
-            .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p .more-information a {
-              font-size: 14px;
-              color: #2b6847;
-              margin-top: 30px; }
-      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-img {
-        width: 40%;
-        float: right; }
-        .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-img img {
-          width: 100%; }
-    .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres {
-      width: 100%;
-      box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.24); }
-      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres h5 {
-        font-size: 24px;
-        color: #243160;
-        margin-top: 30px;
-        text-align: right;
-        padding: 10px 30px; }
-      .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres p {
-        font-size: 16px;
-        text-align: right;
-        color: #9B9B9B;
-        padding: 10px 30px; }
-.homepage-content .homepage-section .homepage-partners {
-  width: 90%; }
-  .homepage-content .homepage-section .homepage-partners h5 {
-    font-size: 14px;
-    color: #902a15;
-    font-weight: 400;
-    margin-top: 64px; }
-  .homepage-content .homepage-section .homepage-partners .partners-row1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 7px 0; }
-    .homepage-content .homepage-section .homepage-partners .partners-row1 img {
-      width: 20%; }
-.homepage-content .homepage-section .partners-row2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 11px 0; }
-  .homepage-content .homepage-section .partners-row2 img {
-    width: 30%; }
-
-/*----RESPONSIVE------*/
-@media screen and (min-width: 768px) {
-  header {
-    position: relative; }
-    header h1 a #logo {
-      display: none;
-      position: absolute;
-      z-index: 22;
-      display: block;
-      position: fixe;
-      width: 150px;
-      margin: 0;
-      height: 1; }
-    header nav {
-      display: inline-block;
-      width: 80%;
-      margin-left: 20%; }
-    header h2 {
-      width: 90%;
-      height: auto;
-      font-size: 80px;
-      margin: 0 auto;
-      margin-top: 160px;
-      line-height: 80%; }
-    header #slide-words {
-      font-size: 100px; }
-    header .help-us {
-      display: none; }
-
-  .homepage-content .homepage-section .homepage-presentation {
-    position: relative; }
-    .homepage-content .homepage-section .homepage-presentation h3 {
-      width: 70%;
-      font-size: 34px;
-      text-align: right; }
-      .homepage-content .homepage-section .homepage-presentation h3 #size-question {
-        font-size: 56px;
-        text-align: center; }
-    .homepage-content .homepage-section .homepage-presentation .img-deco {
-      width: 200px;
-      height: 200px; }
-    .homepage-content .homepage-section .homepage-presentation p {
-      font-size: 16px; }
-      .homepage-content .homepage-section .homepage-presentation p .more-information {
-        font-size: 16px; }
-  .homepage-content .homepage-section .homepage-newsletter {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 30px; }
-    .homepage-content .homepage-section .homepage-newsletter h4 {
-      font-size: 40px; }
-    .homepage-content .homepage-section .homepage-newsletter p {
-      font-size: 16px; }
-    .homepage-content .homepage-section .homepage-newsletter #enter-mail {
-      font-size: 16px; }
-    .homepage-content .homepage-section .homepage-newsletter .btn-send {
-      font-size: 18px; }
-  .homepage-content .homepage-section .homepage-actuality h3 {
-    font-size: 34px; }
-  .homepage-content .homepage-section .homepage-partners h5 {
-    font-size: 24px; } }
-@media screen and (min-width: 1040px) {
-  header {
-    position: relative; }
-    header h1 a #logo {
-      display: none;
-      position: absolute;
-      z-index: 22;
-      display: block;
-      position: fixe;
-      width: 150px;
-      margin: 0;
-      height: 1; }
-    header nav {
-      display: inline-block;
-      width: 60%;
-      margin-left: 40%; }
-      header nav ul li a {
-        font-size: 24px; }
-    header h2 {
-      width: 90%;
-      height: auto;
-      font-size: 80px;
-      margin: 0 auto;
-      margin-top: 160px;
-      line-height: 80%; }
-    header #slide-words {
-      font-size: 100px; }
-    header .help-us {
-      display: none; }
-
-  .homepage-content .homepage-section .homepage-presentation {
-    position: relative; }
-    .homepage-content .homepage-section .homepage-presentation h3 {
-      width: 70%;
-      font-size: 60px;
-      text-align: right; }
-      .homepage-content .homepage-section .homepage-presentation h3 #size-question {
-        font-size: 95px;
-        text-align: center; }
-    .homepage-content .homepage-section .homepage-presentation .img-deco {
-      width: 200px;
-      height: 200px; }
-    .homepage-content .homepage-section .homepage-presentation p {
-      font-size: 24px; }
-      .homepage-content .homepage-section .homepage-presentation p .more-information {
-        font-size: 24px;
-        margin-top: 50px; }
-  .homepage-content .homepage-section .homepage-newsletter {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 30px; }
-    .homepage-content .homepage-section .homepage-newsletter h4 {
-      font-size: 40px; }
-    .homepage-content .homepage-section .homepage-newsletter p {
-      font-size: 24px; }
-    .homepage-content .homepage-section .homepage-newsletter #enter-mail {
-      font-size: 24px; }
-    .homepage-content .homepage-section .homepage-newsletter .btn-send {
-      font-size: 24px; }
-  .homepage-content .homepage-section .homepage-actuality h3 {
-    font-size: 60px; }
-  .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p {
-    font-size: 18px; }
-    .homepage-content .homepage-section .homepage-actuality .actuality-articles .article .article-details p .more-information a {
-      font-size: 24px; }
-  .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres h5 {
-    font-size: 24px; }
-  .homepage-content .homepage-section .homepage-actuality .actuality-articles .article-pres p {
-    font-size: 18px; }
-  .homepage-content .homepage-section .homepage-partners h5 {
-    font-size: 40px; }
-  .homepage-content .homepage-section .homepage-partners .partners-row1 img {
-    width: 10%; }
-  .homepage-content .homepage-section .partners-row2 img {
-    width: 20%; } }
 header.missionpage-header {
+  /*
   position: relative;
   background-image: none;
   height: auto;
   margin: 0 0 5% 0;
+  h1 {
+      a {
+          #logo {
+              display: none;
+              position: absolute;
+              z-index: 22;
+              position: fixe;
+              width: 150px;
+              margin: 0;
+              height: 1;
+          }
+      }
+  }
+  */
   /* ----- HEADER ----- */ }
-  header.missionpage-header h1 a #logo {
-    display: none;
-    position: absolute;
-    z-index: 22;
-    position: fixe;
-    width: 150px;
-    margin: 0;
-    height: 1; }
-  header.missionpage-header h2 {
+
+/* ----- 
+--------------------------------------------------------
+------------- WORLD WIDE WEB 
+----- */
+main.makedonation-main {
+  font-family: "Poppins", sans-serif; }
+  main.makedonation-main h3.makedonation {
+    font-size: 56px;
+    text-align: right;
     font-family: "Rozha One", serif;
-    font-size: 24px;
-    text-align: center;
-    height: auto;
-    margin: 0;
-    color: #243160; }
+    color: #2b6847; }
+  main.makedonation-main p.donation-type {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 14px;
+    color: #902a15; }
+  main.makedonation-main div.donation-www {
+    margin-top: 5%;
+    position: relative;
+    font-size: 14px; }
+    main.makedonation-main div.donation-www div.www-left {
+      height: 350px;
+      overflow: hidden;
+      position: relative; }
+      main.makedonation-main div.donation-www div.www-left img {
+        width: 100%; }
+      main.makedonation-main div.donation-www div.www-left img.make-a-donation-www {
+        display: block; }
+      main.makedonation-main div.donation-www div.www-left p {
+        position: absolute;
+        top: 34%;
+        left: 28%;
+        font-size: 24px;
+        font-family: "Rozha One", serif;
+        text-align: center;
+        color: #fff;
+        z-index: 11; }
+      main.makedonation-main div.donation-www div.www-left div.block-deco-img {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: #ffca59;
+        z-index: 10; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      width: 80%;
+      margin: 0 auto 5% auto;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-www div.www-right p {
+      width: 80%;
+      margin: 5% auto; }
+  main.makedonation-main div.donation-cheque {
+    font-size: 14px; }
+    main.makedonation-main div.donation-cheque div.cheque-right {
+      float: right;
+      width: 235px;
+      height: 280px;
+      overflow: hidden; }
+      main.makedonation-main div.donation-cheque div.cheque-right img {
+        width: 100%; }
+    main.makedonation-main div.donation-cheque div.cheque-left {
+      margin-bottom: 10%; }
+      main.makedonation-main div.donation-cheque div.cheque-left h4 {
+        width: 80%;
+        margin: 0 0 5% 40%;
+        font-size: 24px;
+        font-family: "Rozha One", serif;
+        color: #243160; }
+      main.makedonation-main div.donation-cheque div.cheque-left p {
+        width: 90%;
+        margin: 2% auto;
+        text-align: right; }
+        main.makedonation-main div.donation-cheque div.cheque-left p span.cheque-adress {
+          color: #902a15; }
+  main.makedonation-main div.donation-virement {
+    font-size: 14px; }
+    main.makedonation-main div.donation-virement div.virement-center {
+      overflow: hidden; }
+      main.makedonation-main div.donation-virement div.virement-center img {
+        width: 100%; }
+      main.makedonation-main div.donation-virement div.virement-center img.make-a-donation {
+        display: block; }
+      main.makedonation-main div.donation-virement div.virement-center img.make-a-donation-mq1040 {
+        display: none; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-virement div.virement-info p {
+      width: 90%;
+      margin: 5% auto; }
+      main.makedonation-main div.donation-virement div.virement-info p span.credit {
+        font-weight: 700; }
+
+/* ---
+----------------------------------------
+----------------- RESPONSIVE
+----------------------------------------
+-------------- */
+/* ---------------
+------------------------------------------------------------- 768 PX -----------------*/
+@media screen and (min-width: 768px) {
+  main.makedonation-main div.donation-www div.www-left p {
+    top: 40%;
+    left: 35%; }
+  main.makedonation-main div.donation-www div.www-left div.block-deco-img {
+    top: 50%;
+    left: 0; } }
+/* ---------------
+------------------------------------------------------------- 950 PX ----------------*/
+@media screen and (min-width: 950px) {
+  main.makedonation-main h3.makedonation {
+    margin-right: 10%;
+    font-size: 72px; }
+  main.makedonation-main p.donation-type {
+    font-size: 18px; }
+  main.makedonation-main div.donation-www div.www-left {
+    float: left;
+    width: 50%; }
+    main.makedonation-main div.donation-www div.www-left img {
+      width: 100%; }
+    main.makedonation-main div.donation-www div.www-left img.make-a-donation-www {
+      display: block; }
+    main.makedonation-main div.donation-www div.www-left img.make-a-donation {
+      display: none; }
+    main.makedonation-main div.donation-www div.www-left img.make-a-donation-mq1040 {
+      display: block; }
+    main.makedonation-main div.donation-www div.www-left p {
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      font-size: 24px; }
+    main.makedonation-main div.donation-www div.www-left div.block-deco-img {
+      width: 60%;
+      margin: 0 20%;
+      top: 40%;
+      left: 0; }
+  main.makedonation-main div.donation-www div.www-right {
+    float: right;
+    width: 50%; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      font-size: 24px; }
+    main.makedonation-main div.donation-www div.www-right p {
+      font-size: 16px; }
+  main.makedonation-main div.donation-cheque {
+    margin: -10% 5% 0 2%;
+    font-size: 16px; }
+    main.makedonation-main div.donation-cheque div.cheque-right {
+      float: right;
+      width: 350px;
+      height: 500px;
+      overflow: hidden;
+      margin: 5% 0 1% 0; }
+      main.makedonation-main div.donation-cheque div.cheque-right img {
+        width: 100%; }
+    main.makedonation-main div.donation-cheque div.cheque-left {
+      float: left;
+      width: 55%;
+      margin: 5% 5% 5% 0; }
+      main.makedonation-main div.donation-cheque div.cheque-left h4 {
+        text-align: right;
+        width: 100%;
+        margin: 10% 0 5% 0;
+        font-size: 24px;
+        color: #243160; }
+      main.makedonation-main div.donation-cheque div.cheque-left p {
+        width: 100%;
+        margin: 2% 0 2% 0;
+        text-align: right; }
+        main.makedonation-main div.donation-cheque div.cheque-left p span.cheque-adress {
+          color: #902a15; }
+  main.makedonation-main div.donation-virement {
+    font-size: 16px; }
+    main.makedonation-main div.donation-virement div.virement-center img.make-a-donation {
+      display: none; }
+    main.makedonation-main div.donation-virement div.virement-center img.make-a-donation-mq1040 {
+      display: block; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-virement div.virement-info p {
+      width: 90%;
+      margin: 1% auto; }
+      main.makedonation-main div.donation-virement div.virement-info p span.credit {
+        font-weight: 700; } }
+/* ---------------
+------------------------------------------------------------- 1040 PX ----------------*/
+@media screen and (min-width: 1040px) {
+  main.makedonation-main p.donation-type {
+    font-size: 20px; }
+  main.makedonation-main div.donation-www {
+    font-size: 18px; }
+    main.makedonation-main div.donation-www div.www-left p {
+      width: 50%;
+      left: 25%;
+      font-size: 28px; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      font-size: 36px; }
+  main.makedonation-main div.donation-cheque {
+    font-size: 18px; }
+    main.makedonation-main div.donation-cheque div.cheque-left h4 {
+      font-size: 36px; }
+  main.makedonation-main div.donation-virement {
+    font-size: 18px; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      font-size: 36px; } }
+/* -------------- 
+--------------------------------------------------------------1200 PX ----------------*/
+header.missionpage-header {
+  /*
+  position: relative;
+  background-image: none;
+  height: auto;
+  margin: 0 0 5% 0;
+  h1 {
+      a {
+          #logo {
+              display: none;
+              position: absolute;
+              z-index: 22;
+              position: fixe;
+              width: 150px;
+              margin: 0;
+              height: 1;
+          }
+      }
+  }*/
+  /* ----- HEADER ----- */
+  /*h2 {
+      font-family: $rozha;
+      font-size: 24px;
+      text-align: center;
+      height: auto;
+      margin: 0;
+      color: $blue;
+  }
+  */ }
 
 /* ----- 
 --------------------------------------------------------
@@ -1091,6 +1261,7 @@ main.missionpage-main {
     text-align: left; }
   main.missionpage-main section.function-action-budget div.percentage-topic {
     height: 470px;
+    margin-bottom: 10%;
     font-size: 14px;
     color: #FFF;
     text-align: center; }
@@ -1140,16 +1311,22 @@ main.missionpage-main {
 /* ---------------
 ------------------------------------------------------------- 950 PX ----------------*/
 @media screen and (min-width: 950px) {
-  header.missionpage-header {
-    position: relative;
-    height: 150px;
-    z-index: -50;
-    margin: 0 0 2% 0; }
-    header.missionpage-header h1 a #logo {
-      display: block; }
-    header.missionpage-header h2 {
-      display: none; }
-
+  /*header.missionpage-header {
+      position: relative;
+      height: 150px;
+      z-index: -50;
+      margin: 0 0 2% 0;
+      h1 {
+          a {
+              #logo {
+                  display: block;
+              }
+          }
+      }
+      h2 {
+          display: none;
+      }
+  }*/
   main.missionpage-main {
     font-size: 18px;
     /* --- actions ----- */
@@ -1266,7 +1443,7 @@ main.missionpage-main {
 
   main.missionpage-main {
     /* -- fonctionnement -- */
-    /* -- ||| strat├®gie ||| -- */
+    /* -- ||| stratégie ||| -- */
     /* -- actions -- */
     /* -- ||| objectifs ||| -- */ }
     main.missionpage-main section.functionning {
@@ -1348,19 +1525,26 @@ main.missionpage-main {
     width: 40%;
     margin: 5% auto; } }
 header.missionpage-header {
+  /*
   position: relative;
   background-image: none;
   height: auto;
   margin: 0 0 5% 0;
+  h1 {
+      a {
+          #logo {
+              display: none;
+              position: absolute;
+              z-index: 22;
+              position: fixe;
+              width: 150px;
+              margin: 0;
+              height: 1;
+          }
+      }
+  }
+  */
   /* ----- HEADER ----- */ }
-  header.missionpage-header h1 a #logo {
-    display: none;
-    position: absolute;
-    z-index: 22;
-    position: fixe;
-    width: 150px;
-    margin: 0;
-    height: 1; }
 
 /* ----- 
 --------------------------------------------------------
@@ -1396,6 +1580,296 @@ main.makedonation-main {
         top: 34%;
         left: 28%;
         font-size: 24px;
+        font-family: "Rozha One", serif;
+        text-align: center;
+        color: #fff;
+        z-index: 11; }
+      main.makedonation-main div.donation-www div.www-left div.block-deco-img {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: #ffca59;
+        z-index: 10; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      width: 80%;
+      margin: 0 auto 5% auto;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-www div.www-right p {
+      width: 80%;
+      margin: 5% auto; }
+  main.makedonation-main div.donation-cheque {
+    font-size: 14px; }
+    main.makedonation-main div.donation-cheque div.cheque-right {
+      float: right;
+      width: 235px;
+      height: 280px;
+      overflow: hidden; }
+      main.makedonation-main div.donation-cheque div.cheque-right img {
+        width: 100%; }
+    main.makedonation-main div.donation-cheque div.cheque-left {
+      margin-bottom: 10%; }
+      main.makedonation-main div.donation-cheque div.cheque-left h4 {
+        width: 80%;
+        margin: 0 0 5% 40%;
+        font-size: 24px;
+        font-family: "Rozha One", serif;
+        color: #243160; }
+      main.makedonation-main div.donation-cheque div.cheque-left p {
+        width: 90%;
+        margin: 2% auto;
+        text-align: right; }
+        main.makedonation-main div.donation-cheque div.cheque-left p span.cheque-adress {
+          color: #902a15; }
+  main.makedonation-main div.donation-virement {
+    font-size: 14px; }
+    main.makedonation-main div.donation-virement div.virement-center {
+      overflow: hidden; }
+      main.makedonation-main div.donation-virement div.virement-center img {
+        width: 100%; }
+      main.makedonation-main div.donation-virement div.virement-center img.make-a-donation {
+        display: block; }
+      main.makedonation-main div.donation-virement div.virement-center img.make-a-donation-mq1040 {
+        display: none; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-virement div.virement-info p {
+      width: 90%;
+      margin: 5% auto; }
+      main.makedonation-main div.donation-virement div.virement-info p span.credit {
+        font-weight: 700; }
+
+/* ---
+----------------------------------------
+----------------- RESPONSIVE
+----------------------------------------
+-------------- */
+/* ---------------
+------------------------------------------------------------- 768 PX -----------------*/
+@media screen and (min-width: 768px) {
+  main.makedonation-main div.donation-www div.www-left p {
+    top: 40%;
+    left: 35%; }
+  main.makedonation-main div.donation-www div.www-left div.block-deco-img {
+    top: 50%;
+    left: 0; } }
+/* ---------------
+------------------------------------------------------------- 950 PX ----------------*/
+@media screen and (min-width: 950px) {
+  main.makedonation-main h3.makedonation {
+    margin-right: 10%;
+    font-size: 72px; }
+  main.makedonation-main p.donation-type {
+    font-size: 18px; }
+  main.makedonation-main div.donation-www div.www-left {
+    float: left;
+    width: 50%; }
+    main.makedonation-main div.donation-www div.www-left img {
+      width: 100%; }
+    main.makedonation-main div.donation-www div.www-left img.make-a-donation-www {
+      display: block; }
+    main.makedonation-main div.donation-www div.www-left img.make-a-donation {
+      display: none; }
+    main.makedonation-main div.donation-www div.www-left img.make-a-donation-mq1040 {
+      display: block; }
+    main.makedonation-main div.donation-www div.www-left p {
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      font-size: 24px; }
+    main.makedonation-main div.donation-www div.www-left div.block-deco-img {
+      width: 60%;
+      margin: 0 20%;
+      top: 40%;
+      left: 0; }
+  main.makedonation-main div.donation-www div.www-right {
+    float: right;
+    width: 50%; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      font-size: 24px; }
+    main.makedonation-main div.donation-www div.www-right p {
+      font-size: 16px; }
+  main.makedonation-main div.donation-cheque {
+    margin: -10% 5% 0 2%;
+    font-size: 16px; }
+    main.makedonation-main div.donation-cheque div.cheque-right {
+      float: right;
+      width: 350px;
+      height: 500px;
+      overflow: hidden;
+      margin: 5% 0 1% 0; }
+      main.makedonation-main div.donation-cheque div.cheque-right img {
+        width: 100%; }
+    main.makedonation-main div.donation-cheque div.cheque-left {
+      float: left;
+      width: 55%;
+      margin: 5% 5% 5% 0; }
+      main.makedonation-main div.donation-cheque div.cheque-left h4 {
+        text-align: right;
+        width: 100%;
+        margin: 10% 0 5% 0;
+        font-size: 24px;
+        color: #243160; }
+      main.makedonation-main div.donation-cheque div.cheque-left p {
+        width: 100%;
+        margin: 2% 0 2% 0;
+        text-align: right; }
+        main.makedonation-main div.donation-cheque div.cheque-left p span.cheque-adress {
+          color: #902a15; }
+  main.makedonation-main div.donation-virement {
+    font-size: 16px; }
+    main.makedonation-main div.donation-virement div.virement-center img.make-a-donation {
+      display: none; }
+    main.makedonation-main div.donation-virement div.virement-center img.make-a-donation-mq1040 {
+      display: block; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      width: 80%;
+      margin: 0 0 5% 5%;
+      font-size: 24px;
+      font-family: "Rozha One", serif;
+      color: #243160; }
+    main.makedonation-main div.donation-virement div.virement-info p {
+      width: 90%;
+      margin: 1% auto; }
+      main.makedonation-main div.donation-virement div.virement-info p span.credit {
+        font-weight: 700; } }
+/* ---------------
+------------------------------------------------------------- 1040 PX ----------------*/
+@media screen and (min-width: 1040px) {
+<<<<<<< Updated upstream
+  font-size: 18px;
+  header.missionpage-header {
+    position: relative;
+    height: 150px;
+    z-index: -50;
+    margin: 0 0 2% 0; }
+    header.missionpage-header h1 a #logo {
+      display: block; }
+    header.missionpage-header h2 {
+      display: none; }
+
+  main.missionpage-main {
+    /* -- fonctionnement -- */
+    /* -- ||| strat├®gie ||| -- */
+    /* -- actions -- */
+    /* -- ||| objectifs ||| -- */ }
+    main.missionpage-main section.functionning {
+      position: relative; }
+      main.missionpage-main section.functionning div.functionning {
+        font-size: 18px; }
+      main.missionpage-main section.functionning div.f-part1 div {
+        position: absolute;
+        background: #243160; }
+        main.missionpage-main section.functionning div.f-part1 div h3.missionpage-h3 {
+          width: 100%;
+          margin: 0;
+          padding: 3% 5% 5% 55%;
+          font-size: 36px; }
+      main.missionpage-main section.functionning div.f-part2 {
+        top: 27%;
+        left: 18%;
+        width: 48%; }
+    main.missionpage-main section.strategy div.strategies {
+      margin: 5% auto;
+      font-size: 18px; }
+    main.missionpage-main section.strategy div.s-part1 div.wrap-strat-img img.strat-img1 {
+      display: none;
+      width: 45%; }
+    main.missionpage-main section.strategy div.s-part1 h3.missionpage-h3-inv {
+      font-size: 36px;
+      padding: 0 10% 0 0; }
+    main.missionpage-main section.function-action div.a-part2 {
+      top: 25vh;
+      left: 22%;
+      width: 45%;
+      margin: 5% auto 7% auto; }
+    main.missionpage-main section.function-action div.a-part3 {
+=======
+  main.makedonation-main p.donation-type {
+    font-size: 20px; }
+  main.makedonation-main div.donation-www {
+    font-size: 18px; }
+    main.makedonation-main div.donation-www div.www-left p {
+>>>>>>> Stashed changes
+      width: 50%;
+      left: 25%;
+      font-size: 28px; }
+    main.makedonation-main div.donation-www div.www-right h4 {
+      font-size: 36px; }
+  main.makedonation-main div.donation-cheque {
+    font-size: 18px; }
+    main.makedonation-main div.donation-cheque div.cheque-left h4 {
+      font-size: 36px; }
+  main.makedonation-main div.donation-virement {
+    font-size: 18px; }
+    main.makedonation-main div.donation-virement div.virement-info h4 {
+      font-size: 36px; } }
+/* -------------- 
+--------------------------------------------------------------1200 PX ----------------*/
+header.missionpage-header {
+  /*
+  position: relative;
+  background-image: none;
+  height: auto;
+  margin: 0 0 5% 0;
+  h1 {
+      a {
+          #logo {
+              display: none;
+              position: absolute;
+              z-index: 22;
+              position: fixe;
+              width: 150px;
+              margin: 0;
+              height: 1;
+          }
+      }
+  }
+  */
+  /* ----- HEADER ----- */ }
+
+/* ----- 
+--------------------------------------------------------
+------------- WORLD WIDE WEB 
+----- */
+main.makedonation-main {
+  font-family: "Poppins", sans-serif; }
+  main.makedonation-main h3.makedonation {
+    font-size: 56px;
+    text-align: right;
+    font-family: "Rozha One", serif;
+    color: #2b6847; }
+  main.makedonation-main p.donation-type {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 14px;
+    color: #902a15; }
+  main.makedonation-main div.donation-www {
+    margin-top: 5%;
+    position: relative;
+    font-size: 14px; }
+    main.makedonation-main div.donation-www div.www-left {
+      height: 350px;
+      overflow: hidden;
+      position: relative; }
+      main.makedonation-main div.donation-www div.www-left img {
+        width: 100%; }
+      main.makedonation-main div.donation-www div.www-left img.make-a-donation-www {
+        display: block; }
+      main.makedonation-main div.donation-www div.www-left p {
+        position: absolute;
+        top: 34%;
+        left: 28%;
+        font-size: 24px;
+        font-family: "Rozha One", serif;
         text-align: center;
         color: #fff;
         z-index: 11; }
@@ -1958,34 +2432,49 @@ main.admin-homepage {
       .admin-list-mail .list-mail-content .list-mail-array table .list-mail:nth-child(2n) {
         background: #f4f4f4; }
 
-.contactpage-header {
-  position: relative; }
-  .contactpage-header h1 a #logo {
-    position: absolute;
-    z-index: 22;
-    display: block;
-    position: fixe;
-    width: 150px;
-    margin: 0;
-    height: 1; }
-  .contactpage-header nav {
-    display: inline-block;
-    width: 60%;
-    margin-left: 40%; }
-    .contactpage-header nav ul li a {
-      font-size: 24px; }
-  .contactpage-header h2 {
-    width: 90%;
-    height: auto;
-    font-size: 80px;
-    margin: 0 auto;
-    margin-top: 160px;
-    line-height: 80%; }
-  .contactpage-header #slide-words {
-    font-size: 100px; }
-  .contactpage-header .help-us {
-    display: none; }
-
+/*.contactpage-header {
+    position: relative;
+    h1 {
+        a {
+            #logo {
+                position: absolute;
+                z-index: 22;
+                display: block;
+                position: fixe;
+                width: 150px;
+                margin: 0;
+                height: 1;
+            }
+        }
+    }
+    nav {
+        display: inline-block;
+        width: 60%;
+        margin-left: 40%;
+        ul {
+            li {
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    h2 {
+        width: 90%;
+        height: auto;
+        font-size: 80px;
+        margin: 0 auto;
+        margin-top: 160px;
+        line-height: 80%;
+        br {}
+    }
+    #slide-words {
+        font-size: 100px;
+    }
+    .help-us {
+        display: none;
+    }
+}*/
 .donationpage-content .donation-pres .donationpage-donation h2 {
   font-size: 30px;
   color: #243160;
@@ -2119,9 +2608,6 @@ main.admin-homepage {
 
 /*-------------RESPONSIVE---------------*/
 @media screen and (min-width: 768px) {
-  .donationpage-header {
-    display: none; }
-
   .donationpage-content .donation-pres .donationpage-donation {
     width: 90%; }
     .donationpage-content .donation-pres .donationpage-donation h2 {
@@ -2340,9 +2826,6 @@ main.admin-moderation .admin-content .account-info a {
   background: #902a15;
   padding: 10px 30px; }
 
-.contactpage-header {
-  display: none; }
-
 .contactpage-content {
   width: 100%; }
   .contactpage-content h2 {
@@ -2374,11 +2857,6 @@ main.admin-moderation .admin-content .account-info a {
       box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
       height: 90px; }
 
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0; }
-
 /*-----------RESPONSIVE -----------*/
 @media screen and (min-width: 768px) {
   .contactpage-content {
@@ -2388,34 +2866,36 @@ footer {
       color: #243160;
       text-align: center;
       margin-bottom: 20px; }
-    .contactpage-content .contactpage-container .contactpage-details {
-      width: 50%;
-      margin: 0 auto;
-      float: left; }
-      .contactpage-content .contactpage-container .contactpage-details h3 {
-        color: #243160;
-        font-size: 34px; }
-      .contactpage-content .contactpage-container .contactpage-details p {
-        font-size: 19px;
-        margin-bottom: 20px; }
-    .contactpage-content .contactpage-container .contactpage-form {
-      width: 40%;
-      float: right;
-      margin-top: 120px; }
-      .contactpage-content .contactpage-container .contactpage-form form div label {
-        font-size: 20px;
-        font-family: "Rozha One", serif;
-        color: #902a15; }
-      .contactpage-content .contactpage-container .contactpage-form form div input {
-        width: 100%;
-        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-        border: 1px solid #cfcfcf;
-        height: 34px;
-        margin-bottom: 20px; }
-      .contactpage-content .contactpage-container .contactpage-form form div textarea {
-        width: 100%;
-        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-        height: 90px; } }
+    .contactpage-content .contactpage-container {
+      margin-bottom: 10%; }
+      .contactpage-content .contactpage-container .contactpage-details {
+        width: 50%;
+        margin: 0 auto;
+        float: left; }
+        .contactpage-content .contactpage-container .contactpage-details h3 {
+          color: #243160;
+          font-size: 34px; }
+        .contactpage-content .contactpage-container .contactpage-details p {
+          font-size: 19px;
+          margin-bottom: 20px; }
+      .contactpage-content .contactpage-container .contactpage-form {
+        width: 40%;
+        float: right;
+        margin-top: 120px; }
+        .contactpage-content .contactpage-container .contactpage-form form div label {
+          font-size: 20px;
+          font-family: "Rozha One", serif;
+          color: #902a15; }
+        .contactpage-content .contactpage-container .contactpage-form form div input {
+          width: 100%;
+          box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+          border: 1px solid #cfcfcf;
+          height: 34px;
+          margin-bottom: 20px; }
+        .contactpage-content .contactpage-container .contactpage-form form div textarea {
+          width: 100%;
+          box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+          height: 90px; } }
 .errorpage-header {
   display: none; }
 
@@ -2437,8 +2917,7 @@ footer {
     text-align: center; }
   .errorpage-content .errorpage-details .btn-valid {
     display: block;
-    margin: 0 auto;
-    margin-top: 50px; }
+    margin: 50px auto 0 auto; }
     .errorpage-content .errorpage-details .btn-valid a {
       font-size: 16px; }
 
@@ -2448,7 +2927,7 @@ footer {
     display: block;
     float: left;
     width: 10%;
-    height: 675px;
+    height: 600px;
     background: #243160; }
     .errorpage-content .errorpage-banner ul {
       margin-top: 20px; }
@@ -2507,9 +2986,6 @@ footer {
     width: 70%; }
   .admin-partners-details .btn-valid {
     float: right; }
-
-.contextpage-header {
-  display: none; }
 
 .contextpage-content {
   width: 100%; }

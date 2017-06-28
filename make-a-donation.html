@@ -9,41 +9,80 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Rozha+One" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/style.css">
     <meta charset="UTF-8">
-    <title>Yalla - Faites un don</title>
-
+    <title>Yalla! pour les enfants - Faites un don</title>
 </head>
 
 <body>
-    <!-- ---- début header ----- -->
-    <header class="missionpage-header">
-        <!-- prévoir burger menu au clic avec logo -->
-        <h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1>
+    <!-- ***** début header ***** -->
+    <header class="for-each missionpage-header clearfix">
+        <!-- desktop -->
+        <div class="nav-desktop">
+            <h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#">Contexte</a>
+                    </li>
+                    <li>
+                        <a href="#">Missions</a>
+                    </li>
+                    <li>
+                        <a href="#">Nous connaître</a>
+                    </li>
+                    <li>
+                        <a href="#">Dons</a>
+                    </li>
+                    <li class="help-us">
+                        <a href="#">Aidez-nous !</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-        <nav>
-            <!-- burger menu caché -->
-            <ul>
-                <li>
-                    <a href="#">Contexte</a>
-                </li>
-                <li>
-                    <a href="#">Missions</a>
-                </li>
-                <li>
-                    <a href="#">Nous connaître</a>
-                </li>
-                <li class="help-us">
-                    <a href="#">Aidez-nous !</a>
-                </li>
-            </ul>
-        </nav>
-        <h2>Dons</h2>
+        <!-- mobile - tablette -->
+        <div class="nav-mobtab">
+            <img class="menu-picto" src="img-layout/menubar-blue.svg">
+            <div class="show-burger">
+                <h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#">Contexte</a>
+                        </li>
+                        <li>
+                            <a href="#">Missions</a>
+                        </li>
+                        <li>
+                            <a href="#">Nous connaître</a>
+                        </li>
+                        <li>
+                            <a href="#">Dons</a>
+                        </li>
+                        <li class="help-us">
+                            <a href="#">Aidez-nous !</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h2>Dons</h2>
+        </div>
+
     </header>
-    <!-- ---- fin header ----- -->
+    <div class="mask-nav"></div>
+    <!--  fin header  -->
 
-    <!-- ---- début main ----- -->
+    <!-- *
+    ***************************
+    *************************** début main *** -->
     <main class="makedonation-main">
         <h3 class="makedonation">Merci !</h3>
-        <p class="donation-type">Plusieurs solutions existent pour faire un ou plusieurs dons à Yalla!</p>
+        <p class="donation-type">Plusieurs solutions existent pour faire un ou plusieurs dons à Yalla! pour les enfants:</p>
 
         <!-- *** WWW *** -->
         <div class="donation-www clearfix">
@@ -57,25 +96,25 @@
 
             </div>
             <div class="www-right">
-                <h4>Women worldwide web</h4>
+                <h4>1. Women worldwide web</h4>
                 <p>don en ligne sur le site de notre partenaire la plateforme de financement participatif W4 (Women’s WorldWide Web). C’est simple et rapide, tout nous est reversé (pas de commission), et les dons sont déductibles d’impôts !</p>
             </div>
         </div>
 
-        <!-- *** cheque *** -->
+        <!-- *** CHEQUE *** -->
         <div class="donation-cheque clearfix">
             <div class="cheque-right">
                 <img src="img-content/fairedon3.png">
             </div>
             <div class="cheque-left">
-                <h4>Chèque bancaire</h4>
+                <h4>2. Chèque bancaire</h4>
                 <p>chèque bancaire à l’ordre de <span class="cheque-adress">« Yalla!
                     Pour les Enfants » </span></p>
                 <p>adressé à <span class="cheque-adress">Yalla! 13, rue René Villermé 75011 Paris.</span></p>
             </div>
         </div>
 
-        <!-- *** virement *** -->
+        <!-- *** VIREMENT *** -->
         <div class="donation-virement clearfix">
             <div class="virement-center">
                 <!-- mobile -->
@@ -84,7 +123,7 @@
                 <img src="img-content/fairedon1.png" class="make-a-donation-mq1040">
             </div>
             <div class="virement-info">
-                <h4>Virement bancaire</h4>
+                <h4>3. Virement bancaire</h4>
                 <p><span class="credit">CREDIT COOPERATIF</span></p>
                 <p><span class="credit">RIB :</span> 42559 00005 41020040979 04 </p>
                 <p><span class="credit">IBAN : </span>FR76 4255 9000 0541 0200 4097 904</p>
@@ -94,8 +133,20 @@
 
 
     </main>
-    <!-- -------------- fin main ------------------- -->
-
+    <!--  fin main  -->
+    <footer>
+        <ul>
+            <li>
+                <a href="#">©Yalla! 2017</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="#">Archives</a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 

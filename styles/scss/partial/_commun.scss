@@ -28,16 +28,6 @@ a {
 
 ul {
     list-style-type: none;
-    .help-us {
-        background: $blue;
-        color: #fff;
-        width: 473.5px;
-        height: 57px;
-        padding: 10px 5%;
-        font-size: 27px;
-        font-family: $rozha;
-        border: 1px solid $blue;
-    }
 }
 
 .btn-view {
@@ -89,6 +79,7 @@ ul {
         font-size: 24px;
     }
 }
+
 .admin-moderation-banner {
     float: left;
     width: 20%;
