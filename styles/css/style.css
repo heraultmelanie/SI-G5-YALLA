@@ -2537,7 +2537,7 @@ footer {
         .contextpage-content .context .context-history .context-explain1 p {
           font-size: 12px;
           line-height: 180%;
-          margin-bottom: 50px; }
+          margin-bottom: 20px; }
         .contextpage-content .context .context-history .context-explain1 .context-wrap {
           width: 100%;
           height: 40px; }
@@ -2545,10 +2545,10 @@ footer {
             width: 24px;
             float: right; }
             .contextpage-content .context .context-history .context-explain1 .context-wrap .context-img img {
-              margin: 10px 0; }
+              height: 410px;
+              margin-bottom: 50px; }
           .contextpage-content .context .context-history .context-explain1 .context-wrap p {
             width: 90%;
-            padding-top: 30px;
             display: block;
             float: left; }
             .contextpage-content .context .context-history .context-explain1 .context-wrap p .style-sentence {
@@ -2557,11 +2557,13 @@ footer {
             .contextpage-content .context .context-history .context-explain1 .context-wrap p .style-sentence1 {
               color: #2b6847;
               text-decoration: underline; }
+          .contextpage-content .context .context-history .context-explain1 .context-wrap:nth-child(2) {
+            margin-bottom: 20px; }
       .contextpage-content .context .context-history .context-explain2 h3 {
         position: absolute;
         z-index: -5;
         margin: 0 auto;
-        top: 600px;
+        top: 590px;
         right: 0;
         color: #EDEDED;
         font-size: 141px; }
@@ -2601,7 +2603,10 @@ footer {
           color: #902a15; }
         .contextpage-content .context .contextpage-objectif h5 #style-word {
           color: #fff;
-          background: #902a15; }
+          background: #902a15;
+          padding: 0 30px; }
+      .contextpage-content .context .contextpage-objectif .context-logo2 {
+        display: none; }
       .contextpage-content .context .contextpage-objectif .context-img #symb-fond {
         width: 50%;
         position: absolute;
@@ -2620,7 +2625,8 @@ footer {
       color: #2b6847; }
       .contextpage-content .context .context-juridiction h5 .style-word {
         background: #2b6847;
-        color: #fff; }
+        color: #fff;
+        padding: 0 30px; }
     .contextpage-content .context .context-juridiction .context-img {
       width: 100%;
       position: absolute;
@@ -2640,9 +2646,10 @@ footer {
           background: #243160;
           color: #fff; }
     .contextpage-content .context .context-condition {
-      width: 100%; }
+      width: 100%;
+      margin-top: 30px; }
       .contextpage-content .context .context-condition h5 {
-        width: 80%;
+        width: 100%;
         padding-top: 10px;
         position: absolute;
         padding-left: 45px;
@@ -2674,7 +2681,183 @@ footer {
       text-align: center;
       font-size: 14px;
       margin-bottom: 50px; }
+  .contextpage-content footer {
+    display: none; }
 
+@media screen and (min-width: 768px) {
+  .contextpage-header {
+    display: none; }
+
+  .contextpage-content {
+    width: 100%; }
+    .contextpage-content .context {
+      width: 100%; }
+      .contextpage-content .context h2 {
+        color: #243160;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 50px; }
+      .contextpage-content .context .context-history {
+        width: 70%;
+        padding-top: 130px;
+        text-align: right; }
+        .contextpage-content .context .context-history .context-explain1 {
+          overflow: hidden; }
+          .contextpage-content .context .context-history .context-explain1 h3 {
+            position: absolute;
+            z-index: -5;
+            margin: 0 auto;
+            top: 0px;
+            right: -10px;
+            text-align: right;
+            color: #EDEDED;
+            font-size: 188px; }
+          .contextpage-content .context .context-history .context-explain1 p {
+            font-size: 18px;
+            line-height: 180%;
+            margin-bottom: 20px; }
+          .contextpage-content .context .context-history .context-explain1 .context-wrap {
+            width: 100%;
+            height: 40px; }
+            .contextpage-content .context .context-history .context-explain1 .context-wrap .context-img {
+              width: 24px;
+              float: right; }
+              .contextpage-content .context .context-history .context-explain1 .context-wrap .context-img img {
+                height: 530px;
+                margin-bottom: 80px; }
+            .contextpage-content .context .context-history .context-explain1 .context-wrap p {
+              width: 90%;
+              display: block;
+              float: left; }
+              .contextpage-content .context .context-history .context-explain1 .context-wrap p .style-sentence {
+                background: #902a15;
+                color: #fff; }
+              .contextpage-content .context .context-history .context-explain1 .context-wrap p .style-sentence1 {
+                color: #2b6847;
+                text-decoration: underline; }
+            .contextpage-content .context .context-history .context-explain1 .context-wrap:nth-child(2) {
+              margin-bottom: 20px; }
+        .contextpage-content .context .context-history .context-explain2 h3 {
+          position: absolute;
+          z-index: -5;
+          margin: 0 auto;
+          top: 800px;
+          right: 0;
+          color: #EDEDED;
+          font-size: 188px; }
+        .contextpage-content .context .context-history .context-explain2 p {
+          font-size: 18px;
+          line-height: 180%;
+          margin-bottom: 50px; }
+          .contextpage-content .context .context-history .context-explain2 p .style-sentence {
+            background: #2b6847;
+            color: #fff; }
+      .contextpage-content .context .contextpage-objectif {
+        width: 100%; }
+        .contextpage-content .context .contextpage-objectif h4 {
+          width: 80%;
+          font-size: 24px;
+          line-height: 30px;
+          text-align: center;
+          color: #2b6847;
+          margin-bottom: 60px; }
+        .contextpage-content .context .contextpage-objectif .context-logo1 {
+          display: none; }
+        .contextpage-content .context .contextpage-objectif .btn-view {
+          display: none; }
+        .contextpage-content .context .contextpage-objectif h5 {
+          width: 80%;
+          font-size: 34px;
+          text-align: right;
+          color: #902a15; }
+          .contextpage-content .context .contextpage-objectif h5 #style-point {
+            font-size: 68px;
+            color: #902a15; }
+          .contextpage-content .context .contextpage-objectif h5 #style-word {
+            color: #fff;
+            background: #902a15;
+            padding: 0 30px; }
+        .contextpage-content .context .contextpage-objectif .context-logo2 {
+          display: block; }
+          .contextpage-content .context .contextpage-objectif .context-logo2 img {
+            width: 50%;
+            float: left; }
+        .contextpage-content .context .contextpage-objectif .context-img #symb-fond {
+          width: 25%;
+          position: absolute;
+          z-index: -5;
+          left: 0; }
+        .contextpage-content .context .contextpage-objectif .context-explain {
+          width: 80%; }
+          .contextpage-content .context .contextpage-objectif .context-explain p {
+            font-size: 12px;
+            margin-bottom: 30px; }
+            .contextpage-content .context .contextpage-objectif .context-explain p .style-sentence {
+              background: #ffca59; }
+      .contextpage-content .context .context-juridiction h5 {
+        width: 80%;
+        font-size: 34px;
+        color: #2b6847; }
+        .contextpage-content .context .context-juridiction h5 .style-word {
+          background: #2b6847;
+          color: #fff;
+          padding: 0 30px; }
+      .contextpage-content .context .context-juridiction .context-img {
+        width: 100%;
+        position: absolute;
+        z-index: -5;
+        left: -135px; }
+        .contextpage-content .context .context-juridiction .context-img #symb-fond {
+          width: 50%;
+          left: 0; }
+      .contextpage-content .context .context-juridiction .context-explain {
+        width: 80%; }
+        .contextpage-content .context .context-juridiction .context-explain p {
+          text-align: right;
+          margin-top: 50px;
+          font-size: 12px;
+          margin-bottom: 30px; }
+          .contextpage-content .context .context-juridiction .context-explain p .style-sentence {
+            background: #243160;
+            color: #fff; }
+      .contextpage-content .context .context-condition {
+        width: 100%;
+        margin-top: 30px; }
+        .contextpage-content .context .context-condition h5 {
+          width: 100%;
+          padding-top: 10px;
+          position: absolute;
+          padding-left: 45px;
+          font-size: 34px; }
+          .contextpage-content .context .context-condition h5 .style-condi {
+            color: #fff;
+            border-bottom: 6px dotted #902a15; }
+          .contextpage-content .context .context-condition h5 .style-life {
+            color: #2b6847;
+            border-bottom: 6px dotted #902a15; }
+        .contextpage-content .context .context-condition .context-img {
+          width: 100%;
+          z-index: -5;
+          margin-bottom: 100px; }
+          .contextpage-content .context .context-condition .context-img img {
+            width: 100%; }
+        .contextpage-content .context .context-condition .context-explain {
+          width: 80%;
+          margin-bottom: 50px; }
+          .contextpage-content .context .context-condition .context-explain p {
+            font-size: 12px;
+            text-align: right; }
+            .contextpage-content .context .context-condition .context-explain p .style-sentence {
+              background: #2b6847;
+              color: #fff; }
+      .contextpage-content .context h6 {
+        width: 80%;
+        color: #902a15;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 50px; }
+    .contextpage-content footer {
+      display: none; } }
 header {
   display: none; }
 
@@ -2784,6 +2967,65 @@ header {
         .articlepage .articlepage-article .articlepage-content .articles-content .content1 .btn-overflow {
           overflow: auto;
           height: 320px; }
+        .articlepage .articlepage-article .articlepage-content .articles-content #img-deco img {
+          width: 100%;
+          height: 320px; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content2 p {
+          line-height: 19px;
+          margin: 50px 0;
+          text-align: center; } }
+@media screen and (min-width: 1040px) {
+  h2 {
+    display: none; }
+
+  .articlepage .articlepage-article {
+    width: 100%; }
+    .articlepage .articlepage-article .articlepage-content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto; }
+      .articlepage .articlepage-article .articlepage-content .article-title {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        height: auto; }
+        .articlepage .articlepage-article .articlepage-content .article-title h3 {
+          margin-top: 30px;
+          font-size: 24px;
+          color: #243160;
+          text-align: left; }
+        .articlepage .articlepage-article .articlepage-content .article-title h4 {
+          font-size: 12px;
+          text-align: left;
+          margin-bottom: 30px; }
+      .articlepage .articlepage-article .articlepage-content h2 {
+        position: absolute;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        margin: 0 35%;
+        margin-top: 10px;
+        font-weight: 400; }
+      .articlepage .articlepage-article .articlepage-content .article-img img {
+        width: 50%;
+        float: left; }
+      .articlepage .articlepage-article .articlepage-content .articles-content {
+        width: 45%;
+        float: left;
+        margin-left: 20px; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content1 p {
+          line-height: 19px;
+          margin: 30px 0;
+          text-align: left; }
+          .articlepage .articlepage-article .articlepage-content .articles-content .content1 p:first-child {
+            margin-top: 0; }
+          .articlepage .articlepage-article .articlepage-content .articles-content .content1 p #style-point {
+            color: #902a15; }
+        .articlepage .articlepage-article .articlepage-content .articles-content .content1 .btn-overflow {
+          overflow: auto;
+          height: 530px; }
         .articlepage .articlepage-article .articlepage-content .articles-content #img-deco img {
           width: 100%;
           height: 320px; }
