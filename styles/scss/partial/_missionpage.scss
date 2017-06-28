@@ -1,4 +1,5 @@
 header.missionpage-header {
+    /*
     position: relative;
     background-image: none;
     height: auto;
@@ -15,9 +16,9 @@ header.missionpage-header {
                 height: 1;
             }
         }
-    }
+    }*/
     /* ----- HEADER ----- */
-    h2 {
+    /*h2 {
         font-family: $rozha;
         font-size: 24px;
         text-align: center;
@@ -25,6 +26,7 @@ header.missionpage-header {
         margin: 0;
         color: $blue;
     }
+    */
 }
 
 
@@ -326,6 +328,7 @@ main.missionpage-main {
         }
         div.percentage-topic {
             height: 470px;
+            margin-bottom: 10%;
             font-size: 14px;
             color: #FFF;
             text-align: center;
@@ -413,7 +416,7 @@ main.missionpage-main {
 ------------------------------------------------------------- 950 PX ----------------*/
 
 @media screen and (min-width: 950px) {
-    header.missionpage-header {
+    /*header.missionpage-header {
         position: relative;
         height: 150px;
         z-index: -50;
@@ -428,7 +431,7 @@ main.missionpage-main {
         h2 {
             display: none;
         }
-    }
+    }*/
     main.missionpage-main {
         font-size: 18px;
         section.functionning {

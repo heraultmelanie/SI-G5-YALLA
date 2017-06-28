@@ -1,172 +1,160 @@
 .contactpage-header {
-	display:none;
+    //display: none;
 }
+
 .contactpage-content {
-	width: 100%;
-	h2 {
-		font-size: 34px;
-		color: $blue;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-	.contactpage-container {
-		width: 80%;
-		margin: 0 auto;
-		.contactpage-details {
-			
-			h3 {
-				color: $blue;
-				font-size: 34px;
-			}
-			p{
-				font-size: 19px;
-				margin-bottom: 20px;
-			}
-		}
-
-		.contactpage-form {
-			form {
-				div {
-					label {
-						font-size: 20px;
-						font-family: $rozha;
-						color: $red;
-					}
-					input {
-						width: 100%;
-						box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.5);
-						border: 1px solid #cfcfcf;
-						height: 34px;
-						margin-bottom: 20px;
-
-					}
-					textarea {
-						width: 100%;
-						box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.5);
-						height: 90px;
-					}
-				}
-
-			}
-		}	
-	}
+    width: 100%;
+    h2 {
+        font-size: 34px;
+        color: $blue;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contactpage-container {
+        width: 80%;
+        margin: 0 auto;
+        .contactpage-details {
+            h3 {
+                color: $blue;
+                font-size: 34px;
+            }
+            p {
+                font-size: 19px;
+                margin-bottom: 20px;
+            }
+        }
+        .contactpage-form {
+            form {
+                div {
+                    label {
+                        font-size: 20px;
+                        font-family: $rozha;
+                        color: $red;
+                    }
+                    input {
+                        width: 100%;
+                        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                        border: 1px solid #cfcfcf;
+                        height: 34px;
+                        margin-bottom: 20px;
+                    }
+                    textarea {
+                        width: 100%;
+                        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-footer {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-}
 
 /*-----------RESPONSIVE -----------*/
 
 @media screen and (min-width: 768px) {
-	.contactpage-content {
-		width: 70%;
-		h2 {
-			font-size: 34px;
-			color: $blue;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		.contactpage-container {
-			.contactpage-details {
-				width: 50%;
-				margin: 0 auto;
-				float: left;
-				h3 {
-					color: $blue;
-					font-size: 34px;
-				}
-				p{
-					font-size: 19px;
-					margin-bottom: 20px;
-				}
-			}
-
-			.contactpage-form {
-				width: 40%;
-				float: right;
-				margin-top: 120px;
-				form {
-					div {
-						label {
-							font-size: 20px;
-							font-family: $rozha;
-							color: $red;
-						}
-						input {
-							width: 100%;
-							box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.5);
-							border: 1px solid #cfcfcf;
-							height: 34px;
-							margin-bottom: 20px;
-
-						}
-						textarea {
-							width: 100%;
-							box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.5);
-							height: 90px;
-						}
-					}
-				}
-			}	
-		}
-	}
+    .contactpage-content {
+        width: 70%;
+        h2 {
+            font-size: 34px;
+            color: $blue;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contactpage-container {
+            margin-bottom: 10%;
+            .contactpage-details {
+                width: 50%;
+                margin: 0 auto;
+                float: left;
+                h3 {
+                    color: $blue;
+                    font-size: 34px;
+                }
+                p {
+                    font-size: 19px;
+                    margin-bottom: 20px;
+                }
+            }
+            .contactpage-form {
+                width: 40%;
+                float: right;
+                margin-top: 120px;
+                form {
+                    div {
+                        label {
+                            font-size: 20px;
+                            font-family: $rozha;
+                            color: $red;
+                        }
+                        input {
+                            width: 100%;
+                            box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                            border: 1px solid #cfcfcf;
+                            height: 34px;
+                            margin-bottom: 20px;
+                        }
+                        textarea {
+                            width: 100%;
+                            box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                            height: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-
-
 @media screen and (max-width: 1040px) {
-	// .contactpage-header {
-	// 	position: relative;
-	// 	z-index: -50;
-	// 	h1 {
-	// 		a {
-	// 			#logo {
-	// 				height: 125px;	
-	// 				width: 108px;
-	// 				margin-top: 108px;
-	// 				margin-left: 41%;
-	// 			}
-	// 		}
-	// 	}
-	// 	/*NAV*/
-	// 	nav {
-	// 		width:100%;
-	// 		display: none;
-	// 		ul  {
-	// 			text-align: center;
-	// 			display: flex;
-	// 			justify-content: start-end;
-	// 			li {
-	// 				width: 100%;
-	// 				padding-top: 10px;
-	// 				a {
-	// 					font-size: 18px;
-	// 					color: #fff;
-	// 				}
-	// 			}
-	// 			.help-us-nav  {
-	// 				background: $blue;
-	// 				padding: 10px 20px;
-	// 			}
-	// 		}
-	// 		.help-us {
-	// 			display: inline-block;
-	// 			background: $blue;
-
-	// 			width: 100%;
-	// 			height: 57px;
-	// 			padding: 10px 5%;
-	// 			font-size: 27px;
-	// 			font-family: $rozha;
-	// 			border: 1px solid $blue;
-	// 			text-align: center;
-	// 			a {
-	// 				color: #fff;
-	// 			}
-	// 		}
-	// 	}
-	// }
+    // .contactpage-header {
+    // 	position: relative;
+    // 	z-index: -50;
+    // 	h1 {
+    // 		a {
+    // 			#logo {
+    // 				height: 125px;	
+    // 				width: 108px;
+    // 				margin-top: 108px;
+    // 				margin-left: 41%;
+    // 			}
+    // 		}
+    // 	}
+    // 	/*NAV*/
+    // 	nav {
+    // 		width:100%;
+    // 		display: none;
+    // 		ul  {
+    // 			text-align: center;
+    // 			display: flex;
+    // 			justify-content: start-end;
+    // 			li {
+    // 				width: 100%;
+    // 				padding-top: 10px;
+    // 				a {
+    // 					font-size: 18px;
+    // 					color: #fff;
+    // 				}
+    // 			}
+    // 			.help-us-nav  {
+    // 				background: $blue;
+    // 				padding: 10px 20px;
+    // 			}
+    // 		}
+    // 		.help-us {
+    // 			display: inline-block;
+    // 			background: $blue;
+    // 			width: 100%;
+    // 			height: 57px;
+    // 			padding: 10px 5%;
+    // 			font-size: 27px;
+    // 			font-family: $rozha;
+    // 			border: 1px solid $blue;
+    // 			text-align: center;
+    // 			a {
+    // 				color: #fff;
+    // 			}
+    // 		}
+    // 	}
+    // }
 }
