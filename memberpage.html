@@ -37,47 +37,61 @@
 		<section class="memberpage-details clearfix">
 			<h2>Dons</h2>
 			<h3>Merci <span id="style-point">!</span></h3>
-			<form>
-				<div>
-					<label for="nom">Nom Prénom</label><br>
-					<input type="text" id="nom" />
-				</div>
-				<div>
-					<label for="courriel">E-mail</label><br>
-					<input type="email" id="courriel" />
-				</div>
-				<div>
-					<label for="message">Adresse</label><br>
-					<textarea id="message"></textarea>
-				</div>
-				<div class="input-content">
-					<div class="input1">
-						<label for="ville">Ville</label><br>
-						<input id="ville">
+			<article>
+				<form>
+					<div>
+						<label for="nom">Nom Prénom</label><br>
+						<input type="text" id="nom" />
 					</div>
-					<div class="input2">
-						<label for="code-postal">Code Postal</label><br>
-						<input id="code-postal">
+					<div>
+						<label for="courriel">E-mail</label><br>
+						<input type="email" id="courriel" />
 					</div>
-				</div>
-				<div>
-					<label for="langue">Langue</label><br>
-					<form>
-						<select name="langue" id="langue">
-							<option value="français">Français</option>
-							<option value="anglais">Anglais</option>
-						</select>
-					</form>
-				</div>
-				<form class="choice clearfix">
-					<div class="choice1">
-						<input type="checkbox" name="choix1" value="1"> Newsletter
+					<div>
+						<label for="message">Adresse</label><br>
+						<textarea id="message"></textarea>
 					</div>
-					<div class="choice2"> 
-						<input type="checkbox" name="choix2" value="2"> Bénévolat
+					<div class="input-content">
+						<div class="input1">
+							<label for="ville">Ville</label><br>
+							<input id="ville">
+						</div>
+						<div class="input2">
+							<label for="code-postal">Code Postal</label><br>
+							<input id="code-postal">
+						</div>
+					</div>
+					<div class="input-select-lang">
+						<label for="langue">Langue</label><br>
+						<form>
+							<select name="langue" id="langue">
+								<option value="français">Français</option>
+								<option value="anglais">Anglais</option>
+							</select>
+						</form>
+					</div>
+					<div class="choix1 clearfix">
+						<input type="checkbox" name="choix1"> Newsletter
+					</div>
+					<div class="choix2"> 
+						<input type="checkbox" name="choix2"> Bénévolat
 					</div>
 				</form>
+			</article>
 		</section>
 	</main>
+	<footer>
+        <ul>
+            <li>
+                <a href="#">©Yalla! 2017</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="#">Archives</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

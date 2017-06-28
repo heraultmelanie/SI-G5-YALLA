@@ -2808,39 +2808,100 @@ header {
   .memberpage-content .memberpage-details form div label {
     text-align: right;
     color: #902a15;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Rozha One", serif; }
   .memberpage-content .memberpage-details form div input {
     width: 100%;
     margin-bottom: 20px;
-    height: 30px; }
+    height: 30px;
+    border: none;
+    box-shadow: inset 1px 1px 1px 1px #cfcfcf; }
   .memberpage-content .memberpage-details form div textarea {
     width: 100%;
     height: 50px;
-    margin-bottom: 20px; }
-  .memberpage-content .memberpage-details form div select {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: inset 1px 1px 1px 1px #cfcfcf; }
+  .memberpage-content .memberpage-details .input-content {
+    width: 100%; }
+    .memberpage-content .memberpage-details .input-content .input1 {
+      width: 45%;
+      float: left; }
+    .memberpage-content .memberpage-details .input-content .input2 {
+      width: 45%;
+      float: right; }
+  .memberpage-content .memberpage-details .input-select-lang select {
     width: 50%;
     height: 30px;
     font-family: "Rozha One", serif;
     color: #243160;
-    font-size: 14px; }
-  .memberpage-content .memberpage-details form .input-content {
-    width: 100%; }
-    .memberpage-content .memberpage-details form .input-content .input1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: inset 1px 1px 1px 1px #cfcfcf; }
+  .memberpage-content .memberpage-details .choix1 {
+    width: 50%;
+    float: left;
+    color: #2b6847;
+    font-family: "Rozha One", serif;
+    font-size: 16px; }
+    .memberpage-content .memberpage-details .choix1 input[type=checkbox] {
+      padding-left: 35px;
+      height: 30px;
+      display: inline-block;
+      line-height: 30px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      font-size: 30px;
+      vertical-align: middle;
+      cursor: pointer; }
+  .memberpage-content .memberpage-details .choix2 {
+    width: 50%;
+    float: right;
+    color: #2b6847;
+    font-family: "Rozha One", serif;
+    font-size: 16px; }
+    .memberpage-content .memberpage-details .choix2 input[type=checkbox] {
+      padding-left: 35px;
+      height: 30px;
+      display: inline-block;
+      line-height: 30px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      font-size: 30px;
+      vertical-align: middle;
+      cursor: pointer; }
+
+@media screen and (min-width: 768px) {
+  .memberpage-content .memberpage-details {
+    width: 100%;
+    margin-top: 50px; }
+    .memberpage-content .memberpage-details h3 {
       width: 45%;
-      float: left; }
-    .memberpage-content .memberpage-details form .input-content .input2 {
+      float: right;
+      font-size: 70px;
+      margin-top: 150px;
+      padding-right: 50px; }
+    .memberpage-content .memberpage-details article {
+      width: 50%;
+      float: right;
+      posiion: absolute;
+      padding-left: 30px; } }
+@media screen and (min-width: 1040px) {
+  .memberpage-content .memberpage-details {
+    width: 100%;
+    margin-top: 50px; }
+    .memberpage-content .memberpage-details h3 {
       width: 45%;
-      float: right; }
-    .memberpage-content .memberpage-details form .input-content .choice {
-      width: 100%; }
-      .memberpage-content .memberpage-details form .input-content .choice .choice1 input {
-        width: 50%;
-        float: left;
-        display: block; }
-      .memberpage-content .memberpage-details form .input-content .choice .choice2 input {
-        width: 50%;
-        float: left;
-        display: block; }
+      margin: 0 auto;
+      float: right;
+      font-size: 120px;
+      margin-top: 120px;
+      padding-right: 80px; }
+    .memberpage-content .memberpage-details article {
+      width: 30%;
+      float: left;
+      posiion: static;
+      margin-left: 120px; } }
 
 /*# sourceMappingURL=style.css.map */
