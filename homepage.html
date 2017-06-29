@@ -8,63 +8,35 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Rozha+One" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/style.css">
     <meta charset="UTF-8">
-    <title>Yalla ! pour les enfants - Accueil</title>
+    <title>Yalla - Accueil</title>
 </head>
 
 <body>
+    <header class="homepage-header clearfix">
+        <h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1>
+        <!-- <input id="burger" type="checkbox" /> -->
 
-    <!-- ***** début header : navigation***** -->
-    <header class="for-each clearfix">
+        <!-- <a href="" class="icone-burger"><img src="#">Burger</a>
+        <ul>
+           <li class="team-active">1></li>
+                <li class="mq768">2</li>
+                <li class="mq768">3</li>
+                <li class="mq768">4</li>
+                <li class="mq768">5</li>
+                <li class="mq768">6</li>
+                <li class="mq768">7</li>
+                <li class="mq768">8</li>
+        </ul> -->
+        <!--
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    -->
 
-        <!-- desktop -->
-        <div class="nav-desktop">
-            <h1>
-                <a href="#"><img src="img-content/yalla-logo.svg" alt="logo Yalla!" id="logo"></a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#">Contexte</a>
-                    </li>
-                    <li>
-                        <a href="#">Missions</a>
-                    </li>
-                    <li>
-                        <a href="#">Nous connaître</a>
-                    </li>
-                    <li>
-                        <a href="#">Dons</a>
-                    </li>
-                    <li class="help-us">
-                        <a href="#">Aidez-nous !</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- mobile - tablette -->
-        <div class="nav-mobtab">
-            <img class="menu-picto" src="img-layout/menubar-blue.svg">
-            <h2>Accueil</h2>
-        </div>
-    </header>
-    <!-- burger, nécessité nav -->
-    <div class="mask-nav-home"></div>
-    <div class="show-burger clearfix">
-        <div class="hello-burger">
-            <div>bonjour</div>
-            <div>hello</div>
-            <div>مَرْحَبَاً</div>
-        </div>
-        <img src="img-content/close-picto.png">
         <nav>
             <ul>
-                <li>
-                    <a href="#">Accueil</a>
-                </li>
                 <li>
                     <a href="#">Contexte</a>
                 </li>
@@ -74,29 +46,14 @@
                 <li>
                     <a href="#">Nous connaître</a>
                 </li>
-                <li>
-                    <a href="#">Dons</a>
-                </li>
-                <li class="help-us">
+                <li class="help-us-nav">
                     <a href="#">Aidez-nous !</a>
                 </li>
             </ul>
         </nav>
-        <!-- <h1><a href="#"><img src="img-layout/yalla-logo.svg" alt="logo Yalla!" id="logo"></a></h1> -->
-    </div>
-    <!--  fin nav  -->
-
-
-    <!-- ***** header-like : photo ***** -->
-    <div class="img-content-home">
-        <img src="img-layout/header-fond1.jpg">
-
-        <div class="logo-homepage-title">
-            <img src="img-content/yalla-logo.svg" alt="logo yalla! pour les enfants">
-            <h2>Pour<br><span class="slide-words">le bonheur </span><br> des enfants syriens</h2>
-        </div>
-        <a class="help-us" href="#">Aidez-nous !</a>
-    </div>
+        <h2>Pour<br><span id="slide-words"> LE BONHEUR</span><br> des enfants syriens</h2>
+        <button class="help-us"><a href="#">Aidez-nous !</a></button>
+    </header>
 
 
     <!-- *
@@ -112,7 +69,7 @@
                 <img src="img-content/symbol.png" alt="image orientale 2" class="img-deco deco2">
                 <p>Basée au Liban, <span class="style-text">Yalla!</span> se donne pour mission première de remettre les enfants déscolarisés à la suite d'un conflit sur le chemin de l'école.
                     <br>
-                    <a class="more-information">En savoir plus</a>
+                    <button class="more-information"><a href="#">En savoir plus</a></button>
                 </p>
             </article>
             <article class="homepage-newsletter">
